@@ -3,6 +3,48 @@
 
 ![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
 
+# Quick-start for Diego Polanco
+
+To get this customized site online with the least effort:
+
+1. Create (or sign in to) the GitHub account that will host the site.
+2. Create a new public repository named `dpolanco.github.io` using this project as the contents (clone locally and push, or upload via the GitHub web UI).
+3. On GitHub, open the repository **Settings → Pages** section and ensure GitHub Pages is enabled for the `main` branch.
+4. Visit the **Actions** tab and make sure the "pages-build-deployment" workflow finishes successfully (green checkmark). If it fails, click the run for error details.
+5. Wait a couple of minutes for the first build to complete, then visit `https://dpolanco.github.io` to confirm the site is live.
+6. When you are ready to expand the content, edit the Markdown files in `_pages/` (for example `about.md`, `cv.md`, etc.) and commit + push to redeploy automatically.
+
+## Publishing workflow (after the first deployment)
+
+1. Make local edits and commit them: `git commit -am "Describe your change"`.
+2. Push the commits to GitHub: `git push origin main` (or use the GitHub Desktop/web UI if you prefer).
+3. GitHub Pages will automatically rebuild the site—monitor the status from the **Actions** tab. New changes go live at `https://dpolanco.github.io` as soon as the workflow completes.
+4. If you need a custom domain later, add a `CNAME` file in the repository root and update your DNS to point to GitHub Pages. Re-deploying after that change works the same way.
+
+## Pathways for growing the site
+
+Once the bare-bones site is live, here are three practical ways to expand it depending on how much time you have.
+
+### 1. Minimum viable polish (1–2 hours)
+
+* Swap the placeholder copy in `_pages/about.md` with a short bio (2–3 sentences) and a recent headshot in `images/`.
+* Upload your current CV PDF to the `files/` folder and link it from `_pages/cv.md`.
+* Double-check the social links in `_config.yml` so that the homepage sidebar shows every profile you want highlighted.
+
+### 2. Rich academic profile (an afternoon)
+
+* Structure the `_pages/cv.md` file into sections (Research Interests, Education, Experience, Publications) using Markdown headers. Start with bullet summaries if the full CV is not ready.
+* Add individual publication entries under `_publications/` using the template in `markdown_generator/` so the Publications page renders automatically.
+* Populate `_portfolio/` or `_posts/` with at least one representative project or blog update that demonstrates your work.
+
+### 3. Full customization (weekend project)
+
+* Configure analytics, comments, or newsletter integrations by editing `_config.yml` (see the [Academic Pages documentation](https://academicpages.github.io/) for options).
+* Adjust the color theme by overriding styles in `_sass/` or switch layouts in `_layouts/` for a bespoke look.
+* Set up automated data ingestion (e.g., Google Scholar exports) with the scripts in `markdown_generator/` or the `talkmap.py` utility so future updates are semi-automated.
+
+Pick the pathway that matches your bandwidth right now—you can always layer on the next tier once the earlier milestones feel solid.
+
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
