@@ -10,8 +10,16 @@ To get this customized site online with the least effort:
 1. Create (or sign in to) the GitHub account that will host the site.
 2. Create a new public repository named `dpolanco.github.io` using this project as the contents (clone locally and push, or upload via the GitHub web UI).
 3. On GitHub, open the repository **Settings → Pages** section and ensure GitHub Pages is enabled for the `main` branch.
-4. Wait a couple of minutes for the first build to complete, then visit `https://dpolanco.github.io` to confirm the site is live.
-5. When you are ready to expand the content, edit the Markdown files in `_pages/` (for example `about.md`, `cv.md`, etc.) and commit + push to redeploy automatically.
+4. Visit the **Actions** tab and make sure the "pages-build-deployment" workflow finishes successfully (green checkmark). If it fails, click the run for error details.
+5. Wait a couple of minutes for the first build to complete, then visit `https://dpolanco.github.io` to confirm the site is live.
+6. When you are ready to expand the content, edit the Markdown files in `_pages/` (for example `about.md`, `cv.md`, etc.) and commit + push to redeploy automatically.
+
+## Publishing workflow (after the first deployment)
+
+1. Make local edits and commit them: `git commit -am "Describe your change"`.
+2. Push the commits to GitHub: `git push origin main` (or use the GitHub Desktop/web UI if you prefer).
+3. GitHub Pages will automatically rebuild the site—monitor the status from the **Actions** tab. New changes go live at `https://dpolanco.github.io` as soon as the workflow completes.
+4. If you need a custom domain later, add a `CNAME` file in the repository root and update your DNS to point to GitHub Pages. Re-deploying after that change works the same way.
 
 # Getting Started
 
