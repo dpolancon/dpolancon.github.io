@@ -15,6 +15,27 @@
 
 See more info at https://academicpages.github.io/
 
+## Repository structure overview
+
+This repository follows the standard Academic Pages layout. The most common content directories are:
+
+* `_pages/` – add or edit standalone pages (e.g., About, CV) by creating or updating Markdown files here.
+* `_posts/` – create dated blog/news updates with Markdown files that follow the `YYYY-MM-DD-title.md` naming convention.
+* `_portfolio/` – curate portfolio projects by adding one Markdown file per project.
+* `_teaching/` – document courses taught by creating Markdown files that include course metadata and descriptions.
+* `_publications/` – list publications by adding Markdown files with the required front matter (title, venue, etc.).
+* `_talks/` – publish talks by adding Markdown files with date, location, and links to slides or recordings.
+* `files/` – upload supporting documents (PDFs, slides, datasets) that should be directly downloadable.
+* `images/` – store images referenced throughout the site; organize them in subdirectories as needed.
+
+Site-wide settings (title, author details, social links, collections, etc.) are defined in `_config.yml`, while supplemental data such as contact information, resume entries, and other lists live under `_data/`.
+
+Navigation menus are controlled through `_data/navigation.yml`. To surface a brand-new section of the site, declare or update the corresponding collection in `_config.yml` and then link to it from the navigation data.
+
+Layouts and reusable partials live in `_layouts/` and `_includes/`, respectively. Supporting styling and script assets reside in `assets/` and `_sass/`, where you can customize site appearance or behavior.
+
+For publication and talk pages, the helper scripts in `markdown_generator/` can transform TSV source files into properly formatted Markdown entries that belong in `_publications/` or `_talks/`.
+
 ## Running locally
 
 When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
