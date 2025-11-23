@@ -14,6 +14,7 @@ lang_toggle_label: Esp
 
 {% endif %}
 
-{% for post in site.talks reversed %}
+{% assign posts = site.talks | where: "lang", "en" %}
+{% for post in posts reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}

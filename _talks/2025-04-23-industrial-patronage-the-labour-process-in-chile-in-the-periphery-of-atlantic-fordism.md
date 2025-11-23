@@ -7,6 +7,9 @@ venue: "International Labour Process Conference (ILPC) 2025"
 location: "Santiago, Chile"
 event_url: "https://example.com/ilpc-2025"
 slides: "/files/ILPC_ppt_dpolanco.pdf"
+lang: en
+lang_toggle_url: /talks/2025-04-23-industrial-patronage-the-labour-process-in-chile-in-the-periphery-of-atlantic-fordism-es/
+lang_toggle_label: Esp
 tags:
   - Labour Process
   - Chile

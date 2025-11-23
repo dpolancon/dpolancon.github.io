@@ -14,6 +14,9 @@ many_slides:
     url: "/files/EPCUT_bloque2.pdf"
   - label: "Third Session: The Union as Organic Intellectual of the Working Class"
     url: "/files/EPCUT_bloque3.pdf"
+lang: en
+lang_toggle_url: /talks/2024-11-19-why-should-workers-understand-political-economy-cut-training-course-es/
+lang_toggle_label: Esp
 tags:
   - Trade Unions
   - Political Economy
@@ -26,4 +29,3 @@ The three blocks offer a worker-centered introduction to political economy that 
 
 
 *Note: Three sessions training delivered for CUT union leaders presented in spanish.*
-

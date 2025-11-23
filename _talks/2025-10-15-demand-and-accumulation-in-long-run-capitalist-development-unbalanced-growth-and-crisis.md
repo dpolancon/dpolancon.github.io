@@ -24,6 +24,9 @@ tags:
   - Job Market Paper
   - Political Economy
   - Heterodox Macroeconomics
+lang: en
+lang_toggle_url: /talks/2025-10-15-demand-and-accumulation-in-long-run-capitalist-development-unbalanced-growth-and-crisis-es/
+lang_toggle_label: Esp
 ---
 
 This talk proposes a Marxist reformulation of demand-led growth in which balanced growth is not the norm but an exception. Starting from the question of how class conflict shapes the long-run co-evolution of accumulation, investment, and capacity under persistent technological imbalance, it develops a nonlinear macro framework with capacity formation governed by a transformation law where the only source of productive capacities is capital accumulation. The choice of technique is endogenized via a mechanization rule disciplined by distribution and institutions, while savings and import leakages are endogenous to distribution, defining the external constraint. The model shows that once Harrodian feedback is triggered and the elasticity of productive capacities to capital stock is endogenous to distribution, interior balanced growth collapses; dynamics instead partitions itself into stagnation, partial crisis, and accumulation-regime crisis. A *“Marxist supermultiplier”* organizes the crisis condition and separates policy-stabilizable episodes from those requiring institutional change. The contribution is a mapping from technology–distribution–institution configurations to regime stability, clarifying when macro-policy can tame divergence and when only a new set of institutional compromises can.

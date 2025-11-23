@@ -1,7 +1,7 @@
 ---
 permalink: /cv/
 redirect_to:
-  - /files/CV_dpolancon_05112025.pdf
+  - /files/CV_dpolancon.pdf
 redirect_from:
   - /resume
 ---

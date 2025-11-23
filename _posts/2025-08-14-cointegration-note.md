@@ -1,11 +1,13 @@
 ---
 title: 'Cointegration as a Reduced-Rank Structure: A comment on Long-Run Dynamics'
 date: 2025-08-14
-permalink: /files/blog_posts/20-11-2025_cointegration_note.md/
 tags:
   - Time Series
   - Co-Integration
   - Johansen
+lang: en
+lang_toggle_url: /cointegracion-note_es/
+lang_toggle_label: Esp
 ---
 
 Cointegration is often described as a technique for identifying stable long-run relationships among non-stationary variables. While this introductory definition is not incorrect, it is insufficient for understanding the dynamic architecture underlying macroeconomic processes that unfold over long horizons. In settings where series display trends, high persistence, or structural breaks, the existence of stationary linear combinations raises a deeper analytical question: what structural restrictions allow certain relationships to remain anchored while the rest of the system drifts over time?

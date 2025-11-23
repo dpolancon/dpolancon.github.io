@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Charlas y presentaciones"
+permalink: /talks_es/
+author_profile: true
+lang: es
+lang_toggle_url: /talks/
+lang_toggle_label: Eng
+---
+
+{% assign posts = site.talks | where: "lang", "es" %}
+{% for post in posts reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}

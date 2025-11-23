@@ -21,7 +21,7 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /files/CV_dpolancon_05112025.pdf    
+    url: /files/CV_dpolancon.pdf    
 
 main_es:
   - title: "Investigación"
@@ -34,10 +34,10 @@ main_es:
     url: /teaching_es/
 
   - title: "Blog"
-    url: /year-archive/
+    url: /year-archive-es/
 
   - title: "CV"
-    url: /files/CV_dpolancon_05112025.pdf    
+    url: /files/CV_dpolancon.pdf    
     
 #  - title: "Guide"
  #   url: /markdown/

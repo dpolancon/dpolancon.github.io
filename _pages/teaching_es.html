@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Docencia"
+permalink: /teaching_es/
+author_profile: true
+lang: es
+lang_toggle_url: /teaching/
+lang_toggle_label: Eng
+---
+
+{% include base_path %}
+
+{% assign courses = site.teaching | where: "lang", "es" %}
+{% for post in courses reversed %}
+  {% include archive-single.html %}
+{% endfor %}

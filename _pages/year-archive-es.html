@@ -1,24 +1,24 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
+permalink: /year-archive-es/
+title: "Blog"
 author_profile: true
-lang: en
-lang_toggle_url: /year-archive-es/
-lang_toggle_label: Esp
+lang: es
+lang_toggle_url: /year-archive/
+lang_toggle_label: Eng
 redirect_from:
-  - /wordpress/blog-posts/
+  - /es/year-archive/
 ---
 
 {% include base_path %}
 
-{% assign posts = site.posts | where: "lang", "en" %}
+{% assign posts = site.posts | where: "lang", "es" %}
 
 {% if posts == empty %}
   <div class="archive__item">
     <article class="archive__item" itemscope itemtype="http://schema.org/Article">
       <p class="archive__item-excerpt" itemprop="description">
-        No posts found yet. Add markdown files to <code>_posts/</code> named as <code>YYYY-MM-DD-title.md</code> and they will appear here automatically.
+        No hay entradas todavía. Agrega archivos Markdown en <code>_posts/</code> con el formato <code>YYYY-MM-DD-titulo.md</code> y aparecerán aquí automáticamente.
       </p>
     </article>
   </div>
