@@ -24,7 +24,7 @@ lang_toggle_label: Esp
 ### Book Chapters
 - Morales, A. M., Figueroa, U., Hurtado, M. T., Ortiz, P., **Polanco, D.**, & Munoz, N. (2019). "Social Exclusion of Incarcerated Individuals." In Contesse, J. & Contreras, L. (Eds.), *The Unsustainable Situation of Prisons in Chile: Debate on Prison and Human Rights*, pp. 15-56. Editorial Juridica de Chile. (In Spanish) [Link](https://www.librotecnia.cl/sitioweb/producto_detalle2266)
 
- ### Other Publications
+### Other Publications
 - Osorio, S. & **Polanco, D.** (2021). "Brief N2: Union Affiliation Rates and Average Sizes in Chile, 1932-2010." *Union Statistics Repository.* (In Spanish) [Repository](https://repositoriosindical.netlify.app/)
 - **Polanco, D.** (2019). "The Profit Rate in Chile: 1900-2010." *UMass Amherst Economics Department Working Paper Series*, No. 2019-17. [Link](https://scholarworks.umass.edu/entities/publication/ed045e66-6540-446a-9f0a-adf3dde9bd0d)
 - Berlien, K., Franken, H., Pavez, P., **Polanco, D.**, & Varela, P. (2016). "Participation of Women in the Chilean Economy." Subsecretaria de Economia y Empresas de Menor Tamano - Isonoma Consultorias Sociales Ltda. (In Spanish) [Link](https://www.economia.gob.cl/wp-content/uploads/2016/05/Estudio-Incorporacion-Mujer-.pdf)
