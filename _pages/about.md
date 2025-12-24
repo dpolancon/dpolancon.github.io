@@ -17,6 +17,7 @@ My dissertation develops this framework through a comparative analysis of Chile 
 I am also exploring the **political economy of law**, analyzing the hierarchical networks of the repressive apparatuses of the state (RSA) that exercised state terrorism during the Chilean civic–military dictatorship (1973–1990) and the enduring legacies of weak institutional accountability.  
 
 Together, these projects aim to explain how capitalist and state dynamics intertwine—how social formations accumulate, institutions adapt, and power reproduces itself across the economic and juridical architectures of modern societies.  
+
 Future research will broaden its temporal scope toward the post-Fordist period and its comparative horizon to other Southern Cone countries, tracing the historical and institutional diversity of Latin American development.  
 
 ---
@@ -55,7 +56,7 @@ Using web scraping of digitized archives and network analysis, I map the **civil
 - *The Ideological Embeddedness of Macroeconomic Indexes* — **Paper submitted for review**  
   - Traces how U.S. capacity-utilization metrics shifted from a Keynesian tool to mobilize slack under Fordism to an inflation sentinel in the 1970s, showing that utilization measures were institutionally constructed in the symbiotic interests of *Monopoly Capital* and the state.  
   - Reframes American Keynesianism as government-by-numbers, documenting how survey-based indices crowded out physical measures and arguing for plural, transparent indicators to reopen the policy dashboard to democratic contestation.  
-  - [Link](https://drive.google.com/file/d/11r5-6VNUzZ5Qftlokly3hdZKH9-fTWrm/view)
+  - [Link]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
 
 - *Reconstructing Capital Stocks for Chile, 1901–1994: Dataset & Methods Paper*  
   - Reconstructs Chile’s gross and net capital stocks in a stock–flow consistent framework, harmonizing Hofman, Clio-Lab, Díaz-Wagner, Tafunell-Ducoing, and Pérez-Eyzaguirre to deliver sectoral series with implicit depreciation and depletion.  

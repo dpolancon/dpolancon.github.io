@@ -13,7 +13,7 @@ lang_toggle_label: Esp
 ### Recent Work in Progress
 
 - **Polanco, D.** (2025). *Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis.* **Job Market Paper.** [Link]({{ '/files/JMP_DemandAccumulationLR.pdf' | relative_url }})
-- **Polanco, D.** (2025). *The Ideological Embeddedness of Macroeconomic Indexes: Capacity Utilization in the Rise and Fall of American Keynesianism.* *Working Paper.* [Link](https://drive.google.com/file/d/1JKvF1DV6mJRSzjMhZTP4eNrjHLGE54Ew/view?usp=sharing)
+- **Polanco, D.** (2025). *The Ideological Embeddedness of Macroeconomic Indexes: Capacity Utilization in the Rise and Fall of American Keynesianism.* *Working Paper.* [Link]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
 - **Polanco, D.** (2025). *Reconstructing Capital Stocks for Chile, 1901-1994: A Stock-Flow Consistent Approach.* *Working Paper.* [Link](https://drive.google.com/file/d/1TV2dgbvnD9ZEQAfukpAmbF45cQ66UNst/view?usp=sharing)
 
 ## Peer-Reviewed Publications
