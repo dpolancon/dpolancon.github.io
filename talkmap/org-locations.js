@@ -10,6 +10,11 @@ var addressPoints = [
     -72.5198761
   ],
   [
+    "Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis<br />Graduate Student Workshop (First Session, Fall 2025); Amherst, MA, USA",
+    42.3731948,
+    -72.5198761
+  ],
+  [
     "Revisitando la econom\u00eda pol\u00edtica del ascenso y ca\u00edda de la Unidad Popular (1970-1973)<br />VII Congreso Nacional de Historia Econ\u00f3mica (CNHE); Vi\u00f1a del Mar, Chile",
     -33.0244535,
     -71.5517636
@@ -38,11 +43,6 @@ var addressPoints = [
     "Industrial Patronage: The Labour Process in Chile in the Periphery of Atlantic Fordism<br />International Labour Process Conference (ILPC) 2025; Santiago, Chile",
     -33.4377756,
     -70.6504502
-  ],
-  [
-    "Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis<br />Graduate Student Workshop (First Session, Fall 2025); Amherst, MA, USA",
-    42.3731948,
-    -72.5198761
   ],
   [
     "Patronazgo industrial: el proceso de trabajo en Chile en la periferia del fordismo atl\u00e1ntico<br />International Labour Process Conference (ILPC) 2025; Santiago, Chile",
