@@ -13,7 +13,7 @@ many_slides:
     url: "/files/Marcuzzo_Talk_Joan Robinson.pdf"
 
 # Keep the video URL simple to avoid parsing issues
-video: "https://www.youtube.com/watch?v=XuUpszL6arI&t=32s"
+video: "https://www.youtube.com/watch?v=PlxQMlqGVo8&t=2s"
 tags:
   - UMass Amherst
   - Historia del Pensamiento Económico
@@ -21,7 +21,7 @@ tags:
   - Joan Robinson
 
 lang: es
-lang_toggle_url: /talks//talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics-es/
+lang_toggle_url: /talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics/
 lang_toggle_label: Eng
 
 ---
@@ -29,15 +29,6 @@ lang_toggle_label: Eng
 Esta presentación fue dictada por **Maria Cristina Marcuzzo**, una de las principales historiadoras del pensamiento económico contemporáneo y *Distinguished Fellow* de la History of Economics Society, reconocida por sus contribuciones al estudio de la *economía de Cambridge*, la *teoría keynesiana* y el pensamiento monetario. Es Profesora Honoraria de Economía Política en la Sapienza, Università di Roma, y ha ocupado cargos de liderazgo en asociaciones internacionales de historia económica. Más información sobre su trayectoria puede encontrarse en **[su sitio profesional](https://sites.google.com/a/uniroma1.it/mcm/)**.
 
 En esta sesión del **Historical and Political Economy Workshop** del Departamento de Economía de UMass Amherst, la profesora Marcuzzo presentó un análisis de la trayectoria intelectual de *Joan Robinson* y de su papel central en la tradición económica de Cambridge.
-
-<iframe width="100%" height="420"
-src="https://www.youtube.com/embed/PlxQMlqGVo8"
-title="Joan Robinson: The Beacon of Cambridge Economics"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
-
 
 ## Mi contribución 
 

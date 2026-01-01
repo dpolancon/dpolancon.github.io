@@ -13,29 +13,21 @@ many_slides:
     url: "/files/Marcuzzo_Talk_Joan Robinson.pdf"
 
 # Keep the video URL simple to avoid parsing issues
-video: "https://www.youtube.com/watch?v=XuUpszL6arI&t=32s"
+video: "https://www.youtube.com/watch?v=PlxQMlqGVo8&t=2s"
 
 tags:
   - UMass Amherst
   - History of Economic Thought
   - Cambridge School of Econmics
   - Joan Robinson
-lang_toggle_url: /talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics/
+lang_toggle_url: /talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics-es/
 lang_toggle_label: Esp
-lang: Eng
+lang: en
 ---
 
 This talk was delivered by **Maria Cristina Marcuzzo**, a leading historian of economic thought and Distinguished Fellow of the History of Economics Society, known for her work on *Cambridge economics*, *Keynesian theory*, and monetary thought. She serves as Honorary Professor of Political Economy at Sapienza, Università di Roma and has held leadership roles in major international societies for the history of economics. You can find more about her career on **[her professional website](https://sites.google.com/a/uniroma1.it/mcm/)**.
 
 In this session at the **Historical and Political Economy Workshop at UMass Amherst**, Prof. Marcuzzo’s presentation focused on the intellectual legacy of *Joan Robinson* and her central place in Cambridge economic thought.
-
-<iframe width="100%" height="420"
-src="https://www.youtube.com/embed/PlxQMlqGVo8"
-title="Joan Robinson: The Beacon of Cambridge Economics"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
 
 ## My Discussion Contribution
 
