@@ -20,7 +20,7 @@ tags:
   - History of Economic Thought
   - Cambridge School of Econmics
   - Joan Robinson
-lang_toggle_url: /talks/2025-10-15-joan-robinson-the-beacon-of-cambridge-economics/
+lang_toggle_url: /talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics/
 lang_toggle_label: Esp
 lang: Eng
 ---

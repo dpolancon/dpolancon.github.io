@@ -21,7 +21,7 @@ tags:
   - Joan Robinson
 
 lang: es
-lang_toggle_url: /talks//talks/2025-10-15-joan-robinson-the-beacon-of-cambridge-economics-es/
+lang_toggle_url: /talks//talks/2025-12-12-joan-robinson-the-beacon-of-cambridge-economics-es/
 lang_toggle_label: Eng
 
 ---
