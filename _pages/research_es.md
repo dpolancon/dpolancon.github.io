@@ -12,6 +12,8 @@ lang_toggle_label: En
 
 ### Trabajos recientes en progreso
 
+- **Polanco, D.** (2026). *Distributive Cycles, Financial Fragility, and Wealth Inequality in a Goodwin-Minsky Model.* *Documento de trabajo.* [Enlace]({{ '/files/WP_GoodwinMinskyAssetIneq.pdf' | relative_url }})
+- **Polanco, D.** (2026). *Growth, Distribution, and Working-Class Power.* *Documento de trabajo.* [Enlace]({{ '/files/WP_GoodwinUnions.pdf' | relative_url }})
 - **Polanco, D.** (2025). *Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis.* **Job Market Paper.** [Enlace]({{ '/files/JMP_DemandAccumulationLR.pdf' | relative_url }})
 - **Polanco, D.** (2025). *The Ideological Embeddedness of Macroeconomic Indexes: Capacity Utilization in the Rise and Fall of American Keynesianism.* *Documento de trabajo.* [Enlace]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
 - **Polanco, D.** (2025). *Reconstructing Capital Stocks for Chile, 1901–1994: A Stock–Flow Consistent Approach.* *Documento de trabajo.* [Enlace](https://drive.google.com/file/d/1TV2dgbvnD9ZEQAfukpAmbF45cQ66UNst/view?usp=sharing)

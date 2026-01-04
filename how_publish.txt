@@ -1,0 +1,49 @@
+How to publish a paper on this site (quick checklist)
+
+1) Add the PDF
+   - Put the file in /files (example: files/WP_MyPaper.pdf).
+
+2) Create the publication page
+   - Create a new file in _publications with a date prefix:
+     _publications/YYYY-MM-DD-paper-slug.md
+   - Example front matter:
+     ---
+     title: "Paper Title"
+     collection: publications
+     category: manuscripts
+     permalink: /publication/YYYY-MM-DD-paper-slug
+     excerpt: 'One-sentence summary for listings.'
+     date: YYYY-MM-DD
+     venue: 'Working Paper'
+     authors: "Diego Polanco"
+     tags:
+       - tag one
+       - tag two
+     draft: false
+     paperurl: '/files/WP_MyPaper.pdf'
+     citation: 'Polanco, Diego. (YYYY). &quot;Paper Title.&quot; Working Paper.'
+     ---
+
+   - Body example:
+     **Abstract:**
+     Short abstract text.
+
+     **Key contributions:**
+     - Point 1
+     - Point 2
+
+     **Download:**
+     [PDF](/files/WP_MyPaper.pdf)
+
+3) Update the Research pages (Work in Progress list)
+   - _pages/research.md
+   - _pages/research_es.md
+   - Add a bullet under the "Recent Work in Progress" section with a PDF link.
+
+4) Preview locally (optional)
+   - jekyll serve -l -H localhost
+
+5) Commit and push
+   - git add _publications/ _pages/ files/ how_publish.txt
+   - git commit -m "Add paper: Paper Title"
+   - git push
