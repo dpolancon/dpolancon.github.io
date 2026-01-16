@@ -30,6 +30,14 @@ The project combines **theoretical modeling, historical analysis, and applied ec
 
 Overall, the dissertation advances a **comparative-relational approach** to studying capitalist dynamics, connecting macroeconomic instability to the historical transformation of accumulation regimes at a global scale.
 
+A complete list of my publications, working papers, policy pieces, and talks is available on my **[Research](/research/)** and **[Talks](/talks/)** pages.
+
+---
+
+## Teaching and Mentorship
+
+I have taught or assisted at **UMass Amherst**, **Wesleyan University**, **Amherst College**, **Universidad de Santiago de Chile**, and **Universidad de Chile**, covering topics from *Macroeconomics* and *Economic Development* to *Political Economy of Latin American Development* and *Social History of Chile*.  Also I have  mentored undergraduate and graduate theses on corruption, gender equity, and distributive conflict, with advisees later entering programs at **Columbia**, **Fordham**, and **Universit of Santiago**.
+
 ---
 
 ## Job Market Paper
@@ -43,42 +51,21 @@ Overall, the dissertation advances a **comparative-relational approach** to stud
 
 ---
 
-## New Projects
+## New Project
 
 Alongside my dissertation, I am developing a second research line on **Restorative Justice and the Political Economy of Law**, focused on how coercive institutions reproduce power through legality. It examines how legal and administrative systems preserve coercive power beyond formal regime change, studying the RSA during the Chilean dictatorship and its institutional persistence in political and civil society. Rather than treating repression as a deviation from legality, this research conceives the legal order itself as a **material infrastructure of coercion and hierarchy**, through which the state organized terrorism via networks of knowledge, distributing responsibility and authority through hierarchical channels.  
 
 Using web scraping of digitized archives and network analysis, I map the **civil–military circuits** that enabled surveillance, disappearance, and impunity, tracing how these forms of control persisted within democratic institutions. The project approaches the lack of accountability for state crimes as a structural property of power relations, not merely a moral or post-conflict issue. By linking the topology of repression to the architecture of law, it seeks to clarify how a society’s institutional memory can either sustain or dismantle the very conditions that made systematic violence possible.
 
----
-
-## Ongoing Projects
-
-- *The Ideological Embeddedness of Macroeconomic Indexes* — **Paper submitted for review**  
-  - Traces how U.S. capacity-utilization metrics shifted from a Keynesian tool to mobilize slack under Fordism to an inflation sentinel in the 1970s, showing that utilization measures were institutionally constructed in the symbiotic interests of *Monopoly Capital* and the state.  
-  - Reframes American Keynesianism as government-by-numbers, documenting how survey-based indices crowded out physical measures and arguing for plural, transparent indicators to reopen the policy dashboard to democratic contestation.  
-  - [Link]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
-
-- *Reconstructing Capital Stocks for Chile, 1901–1994: Dataset & Methods Paper*  
-  - Reconstructs Chile’s gross and net capital stocks in a stock–flow consistent framework, harmonizing Hofman, Clio-Lab, Díaz-Wagner, Tafunell-Ducoing, and Pérez-Eyzaguirre to deliver sectoral series with implicit depreciation and depletion.  
-  - Establishes a reproducible baseline for profitability and capacity studies, validating accounting identities and documenting sectoral patterns of depreciation and capital scrapping.  
-
-A complete list of my publications, working papers, policy pieces, and talks is available on my **[Research](/research/)** and **[Talks](/talks/)** pages.
-
----
-
-## Teaching and Mentorship
-
-I have taught or assisted at **UMass Amherst**, **Wesleyan University**, **Amherst College**, **Universidad de Santiago de Chile**, and **Universidad de Chile**, covering topics from *Macroeconomics* and *Economic Development* to *Political Economy of Latin American Development* and *Social History of Chile*.  
-
-I have mentored undergraduate and graduate theses on corruption, gender equity, and distributive conflict, with advisees later entering programs at **Columbia**, **Fordham**, and **USACH**.
+A working paper with preliminary results can be found [here]({{ '/files/WP_NetworkAnalysis.pdf' | relative_url }})
 
 ---
 
 ## Research Interests
 
 - Political Economy of Capitalist Development  
-- Macroeconomics of Growth and Distribution  
 - Comparative Capitalisms and State Formation  
+- Macroeconomics of Growth and Distribution  
 - Latin American Economic History  
 - Applied Time-Series Econometrics and Computational Social Science  
 
@@ -87,5 +74,5 @@ I have mentored undergraduate and graduate theses on corruption, gender equity, 
 ## Contact
 
 **Email:** dpolanconeco@umass.com  
-**Department of Economics, University of Massachusetts Amherst**  
+Department of Economics, University of Massachusetts Amherst  
 Currently based in Santiago, Chile

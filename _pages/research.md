@@ -10,13 +10,23 @@ lang_toggle_label: Esp
 
 ## Publications & Work in Progress
 
+
+### Job Market Paper
+
+- **Polanco, D.** (2025). *Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis.* **Job Market Paper.** [Link]({{ '/files/JMP_DemandAccumulationLR.pdf' | relative_url }})
+
+### Work Submited for Review
+
+- **Polanco, D.** (2025). *The Ideological Embeddedness of Macroeconomic Indexes: Capacity Utilization in the Rise and Fall of American Keynesianism.* *Working Paper.* [Link]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
+
 ### Recent Work in Progress
 
 - **Polanco, D.** (2026). *Distributive Cycles, Financial Fragility, and Wealth Inequality in a Goodwin-Minsky Model.* *Working Paper.* [Link]({{ '/files/WP_GoodwinMinskyAssetIneq.pdf' | relative_url }})
 - **Polanco, D.** (2026). *Growth, Distribution, and Working-Class Power.* *Working Paper.* [Link]({{ '/files/WP_GoodwinUnions.pdf' | relative_url }})
-- **Polanco, D.** (2025). *Demand and Accumulation in Long-Run Capitalist Development: Unbalanced Growth and Crisis.* **Job Market Paper.** [Link]({{ '/files/JMP_DemandAccumulationLR.pdf' | relative_url }})
-- **Polanco, D.** (2025). *The Ideological Embeddedness of Macroeconomic Indexes: Capacity Utilization in the Rise and Fall of American Keynesianism.* *Working Paper.* [Link]({{ '/files/CU_AK_workingpaperPolanco2025.pdf' | relative_url }})
-- **Polanco, D.** (2025). *Reconstructing Capital Stocks for Chile, 1901-1994: A Stock-Flow Consistent Approach.* *Working Paper.* [Link](https://drive.google.com/file/d/1TV2dgbvnD9ZEQAfukpAmbF45cQ66UNst/view?usp=sharing)
+- **Polanco, D.** (2025). *Network analysis in criminology: methods, cases, and considerations for studying the repressive network of the civic-military dictatorship in Chile (1973–1990)* *Working Paper.* (in Spanish) [Link]({{ '/files/WP_NetworkAnalysis.pdf' | relative_url }})
+- **Polanco, D.** (2025). *Reconstructing Capital Stocks for Chile, 1900-1994: A Stock-Flow Consistent Approach.* *Working Paper.* [Link](https://drive.google.com/file/d/1TV2dgbvnD9ZEQAfukpAmbF45cQ66UNst/view?usp=sharing)
+
+
 
 ## Peer-Reviewed Publications
 - **Polanco, D.** & Mendez, C. (2021). "Nostalgia for the Light: Astronomy, History and Data Science." *Cuadernos de Beauchef*, 5(1). (In Spanish) [Link](https://revistasdex.uchile.cl/index.php/cdb/article/view/3358/3286)
