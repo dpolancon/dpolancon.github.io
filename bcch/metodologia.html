@@ -471,7 +471,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="interregional_trade-reporte-7-regional" class="level3">
 <h3 class="anchored" data-anchor-id="interregional_trade-reporte-7-regional"><code>interregional_trade</code> — Reporte 7 (regional)</h3>
-<p>Las compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado.</p>
+<p>Las compraventas identifican la región con un token NUMÉRICO (01 = Tarapacá), distinto del sufijo de dos letras de F034 y F022. No es una codificación nueva: es la posicional de F035, que lib.regions ya resuelve. Verificado en la descarga: los doce mnemónicos de compraventas resuelven las 16 regiones por f035_positional. Antes esta nota afirmaba que hacía falta un parser nuevo, y era falso.</p>
 </section>
 <section id="tasas-reporte-8-nacional" class="level3">
 <h3 class="anchored" data-anchor-id="tasas-reporte-8-nacional"><code>tasas</code> — Reporte 8 (nacional)</h3>

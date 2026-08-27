@@ -137,7 +137,7 @@
     "href": "metodologia.html#trampas-por-familia-de-series",
     "title": "Metodología y límites",
     "section": "Trampas por familia de series",
-    "text": "Trampas por familia de series\n\ntwo_axes — Reporte 3 (sectorial-regional)\nLos dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales: sector 10 (Servicios de vivienda e inmobiliarios) es renta espacial, sector 03 (Minería) es renta de recursos, sector 06 (Construcción) es la pata de inversión. Ninguna requiere descarga: ya están en raw_annual.csv. El sector 10 es mayoritariamente ALQUILER IMPUTADO de las cuentas nacionales, no arriendo efectivamente pagado; es el supuesto que sostiene todo el eje espacial y se declara en cada reporte que se apoya en él. La familia abarca dos escalas: 2.037 series sectorial-regionales y 209 totales regionales (sector Z). La escala declarada es la principal, no la única.\n\n\npermits — Reporte 4 (regional)\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nhousing_wealth — Reporte 5 (macro-zona)\nLa geografía son zonas, no regiones: Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana. La correspondencia con las 16 regiones es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona. Ojo con la transposición de origen: la zona 1 es IVPZ1 y no IPVZ1, y corregirla acá sencillamente no encontraría la serie. La familia abarca dos escalas: 56 series zonales y 21 nacionales. VALT y VALC –la descomposición entre valorización del terreno y de la construcción– sólo existen para NAC, CAS y DEP, de modo que la premisa empírica de Knoll et al. es medible en Chile únicamente a escala nacional y nunca por zona.\n\n\nfinancial_depth — Reporte 6 (regional)\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\ninterregional_trade — Reporte 7 (regional)\nLas compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado.\n\n\ntasas — Reporte 8 (nacional)\nEscala nacional, y no le falta desagregación: la tasa de descuento que discute H1 es un precio único de la economía. La cobertura es desigual entre series (captación y colocación desde 1983; TPM desde 1995; hipotecarias y bonos UF desde 2002), de modo que cualquier ventana común es más corta que la más larga. DEUBH mide apalancamiento de hogares como porcentaje del PIB y del ingreso disponible, y es la contraparte financiera del stock de vivienda que mide housing_wealth."
+    "text": "Trampas por familia de series\n\ntwo_axes — Reporte 3 (sectorial-regional)\nLos dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales: sector 10 (Servicios de vivienda e inmobiliarios) es renta espacial, sector 03 (Minería) es renta de recursos, sector 06 (Construcción) es la pata de inversión. Ninguna requiere descarga: ya están en raw_annual.csv. El sector 10 es mayoritariamente ALQUILER IMPUTADO de las cuentas nacionales, no arriendo efectivamente pagado; es el supuesto que sostiene todo el eje espacial y se declara en cada reporte que se apoya en él. La familia abarca dos escalas: 2.037 series sectorial-regionales y 209 totales regionales (sector Z). La escala declarada es la principal, no la única.\n\n\npermits — Reporte 4 (regional)\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nhousing_wealth — Reporte 5 (macro-zona)\nLa geografía son zonas, no regiones: Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana. La correspondencia con las 16 regiones es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona. Ojo con la transposición de origen: la zona 1 es IVPZ1 y no IPVZ1, y corregirla acá sencillamente no encontraría la serie. La familia abarca dos escalas: 56 series zonales y 21 nacionales. VALT y VALC –la descomposición entre valorización del terreno y de la construcción– sólo existen para NAC, CAS y DEP, de modo que la premisa empírica de Knoll et al. es medible en Chile únicamente a escala nacional y nunca por zona.\n\n\nfinancial_depth — Reporte 6 (regional)\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\ninterregional_trade — Reporte 7 (regional)\nLas compraventas identifican la región con un token NUMÉRICO (01 = Tarapacá), distinto del sufijo de dos letras de F034 y F022. No es una codificación nueva: es la posicional de F035, que lib.regions ya resuelve. Verificado en la descarga: los doce mnemónicos de compraventas resuelven las 16 regiones por f035_positional. Antes esta nota afirmaba que hacía falta un parser nuevo, y era falso.\n\n\ntasas — Reporte 8 (nacional)\nEscala nacional, y no le falta desagregación: la tasa de descuento que discute H1 es un precio único de la economía. La cobertura es desigual entre series (captación y colocación desde 1983; TPM desde 1995; hipotecarias y bonos UF desde 2002), de modo que cualquier ventana común es más corta que la más larga. DEUBH mide apalancamiento de hogares como porcentaje del PIB y del ingreso disponible, y es la contraparte financiera del stock de vivienda que mide housing_wealth."
   },
   {
     "objectID": "metodologia.html#reproducir",
@@ -200,7 +200,7 @@
     "href": "escalas/regional.html#qué-usa-el-proyecto",
     "title": "Regional",
     "section": "Qué usa el proyecto",
-    "text": "Qué usa el proyecto\n\nEl ciclo regional de la construcción\nObjetivo. Objetivo 2 — demanda física de suelo. Es el insumo con que la formulación propone reconstruir el Consumo de Suelo Urbano del MINVU a partir de permisos de edificación desde 2010 (Proxy 2).\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nProfundidad financiera y morosidad por región\nObjetivo. Objetivo 4 — huella regional del ciclo financiero. Mide angustia y profundidad de depósitos, nunca volumen de crédito: los volúmenes hipotecarios son nacionales.\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\nEstancamiento del sector dinámico\nObjetivo. Objetivo 1 — dinamismo del sector productivo. El estancamiento se argumenta con participaciones de producto y descomposición shift-share, nunca como caída de productividad medida: el catálogo no contiene ninguna serie de PTF.\nLas compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado."
+    "text": "Qué usa el proyecto\n\nEl ciclo regional de la construcción\nObjetivo. Objetivo 2 — demanda física de suelo. Es el insumo con que la formulación propone reconstruir el Consumo de Suelo Urbano del MINVU a partir de permisos de edificación desde 2010 (Proxy 2).\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nProfundidad financiera y morosidad por región\nObjetivo. Objetivo 4 — huella regional del ciclo financiero. Mide angustia y profundidad de depósitos, nunca volumen de crédito: los volúmenes hipotecarios son nacionales.\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\nEstancamiento del sector dinámico\nObjetivo. Objetivo 1 — dinamismo del sector productivo. El estancamiento se argumenta con participaciones de producto y descomposición shift-share, nunca como caída de productividad medida: el catálogo no contiene ninguna serie de PTF.\nLas compraventas identifican la región con un token NUMÉRICO (01 = Tarapacá), distinto del sufijo de dos letras de F034 y F022. No es una codificación nueva: es la posicional de F035, que lib.regions ya resuelve. Verificado en la descarga: los doce mnemónicos de compraventas resuelven las 16 regiones por f035_positional. Antes esta nota afirmaba que hacía falta un parser nuevo, y era falso."
   },
   {
     "objectID": "escalas/regional.html#lo-que-esta-escala-sostiene",
@@ -320,6 +320,104 @@
     "title": "Nota de familia: El ciclo regional de la construcción",
     "section": "Relacionado",
     "text": "Relacionado\n\n[[briefing_two_axes]] — los sectores 10, 03 y 06, y la trampa del token 7\nlib/families.py — declaración de la familia y matches()\nlib/regions.py — el parser de las cuatro codificaciones"
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html",
+    "href": "briefings/briefing_financial_depth.html",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "",
+    "text": "REGIONAL · 16 regiones\nEscala: regional (16 regiones) · Frecuencia: mensual Fuente: data/raw/regional-spatial-macro-dataset/raw_monthly.csv Universo: universe_financial_depth.csv (96 series) · Manifiesto: manifest_financial_depth.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió acá. No resume el reporte: describe los datos."
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#qué-contiene-la-familia",
+    "href": "briefings/briefing_financial_depth.html#qué-contiene-la-familia",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Qué contiene la familia",
+    "text": "Qué contiene la familia\nSeis indicadores mensuales, cada uno para las 16 regiones. 96 series, cero errores de descarga. Se dividen en dos grupos que no se mezclan.\n\nMorosidad (porcentaje de la cartera)\n\n\n\nMnemónico\nCartera\nRango observado\n\n\n\n\nDV90\nVivienda, deuda con 90 días o más de mora\n0,13 a 4,06 %\n\n\nDCS90\nConsumo\n0,28 a 4,13 %\n\n\nDCM90\nComercial\n0,28 a 9,58 %\n\n\n\nSon porcentajes de la cartera respectiva, no montos. Suben cuando la mora crece o cuando la cartera se contrae: una alza no distingue entre más deudores en problemas y menos crédito vigente. Cualquier lectura tiene que decir cuál de las dos se está afirmando.\n\n\nProfundidad de depósitos\n\n\n\nMnemónico\nQué mide\nUnidad\n\n\n\n\nCCPN\nNúmero de cuentas corrientes y vista\ncuentas\n\n\nSCCPN\nSaldo medio en cuentas corrientes\npesos\n\n\nSDV\nSaldos en depósitos a la vista\npesos"
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#por-qué-esta-familia-importa-en-el-programa",
+    "href": "briefings/briefing_financial_depth.html#por-qué-esta-familia-importa-en-el-programa",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Por qué esta familia importa en el programa",
+    "text": "Por qué esta familia importa en el programa\nEs la huella regional del ciclo financiero, y es lo más cerca que la BDE llega de territorializar la financiarización.\nCon una advertencia que conviene tener presente antes de escribir cualquier conclusión: mide angustia y profundidad de depósitos, nunca volumen de crédito. Los montos de crédito hipotecario, las tasas hipotecarias, el LTV y los plazos son nacionales. Es decir: esta familia dice cómo le está yendo al deudor en cada región, no cuánto crédito entró en cada región. La segunda pregunta no se puede responder con la BDE."
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#cómo-se-leen-los-códigos",
+    "href": "briefings/briefing_financial_depth.html#cómo-se-leen-los-códigos",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Cómo se leen los códigos",
+    "text": "Cómo se leen los códigos\nLa región va pegada al mnemónico, igual que en permits:\nF022 . DV90 AP . TAS . Z . Z . Z . M\n  0      1↑      2     3   4   5   6\n         └── mnemónico + sufijo de región de dos letras\nTAS marca tasa o porcentaje; STO marca stock. Los seis mnemónicos usan uno u otro de forma consistente con lo que miden.\n\nLa trampa del mnemónico pegado\nEsta es la familia por la que existe la lista blanca de raíces en lib.regions. Con el sufijo pegado al mnemónico, la coincidencia por subcadena produce falsos positivos silenciosos:\n\nF022.CTOBI no es Biobío\nF022.CAP no es Arica y Parinacota\n\nY en sentido inverso, esta familia produjo el falso positivo que obligó a anclar la selección: F022.CCPNVA —cuentas corrientes de Valparaíso— contiene NVA y entraba en la familia permits, que es del Reporte 4 y de otro tema. Por eso SeriesFamily.matches() ancla el token al mnemónico como prefijo y no como subcadena.\nRegla: nunca escribir un parser nuevo. lib.regions.parse_region resuelve las cuatro codificaciones del catálogo y ya tiene la lista blanca."
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#cobertura-real",
+    "href": "briefings/briefing_financial_depth.html#cobertura-real",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Cobertura real",
+    "text": "Cobertura real\n\n\n\nMnemónico\nSeries\nObservaciones\nInicio\nFin\n\n\n\n\nDV90\n16\n3.407\n2008-01\n2026-05\n\n\nDCS90\n16\n3.407\n2008-01\n2026-05\n\n\nDCM90\n16\n3.407\n2008-01\n2026-05\n\n\nSDV\n16\n3.423\n2008-01\n2026-06\n\n\nCCPN\n16\n3.243\n2009-01\n2026-06\n\n\nSCCPN\n16\n3.243\n2009-01\n2026-06\n\n\n\nLas series de morosidad empiezan en enero de 2008; las de cuentas corrientes, un año después. La ventana común arranca en 2009-01. Ninguna región falta y ninguna serie viene vacía.\nNótese que esta familia alcanza hasta 2008, más atrás que permits (2014) y que los paneles de PIB regional (2013). Es la serie regional mensual más larga que el programa ha ingerido, y cubre la crisis subprime desde su comienzo."
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#advertencias-al-construir-el-panel",
+    "href": "briefings/briefing_financial_depth.html#advertencias-al-construir-el-panel",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Advertencias al construir el panel",
+    "text": "Advertencias al construir el panel\n\nNo sumar los tres porcentajes de mora. Son porcentajes de carteras distintas y con denominadores distintos: su suma no significa nada. Si se necesita un agregado, hay que ponderarlo por el tamaño de cada cartera, y ese dato no está en esta familia.\nLos saldos están en pesos nominales. SCCPN y SDV no están deflactados. Comparar 2009 con 2026 en pesos corrientes confunde inflación con profundización financiera; hay que deflactar con un índice de precios —que es nacional— y decirlo.\nCCPN es un conteo de cuentas, no de personas. Una persona puede tener varias cuentas y una cuenta puede ser de una empresa. No es una medida de inclusión financiera per cápita, y no se puede convertir en una: la población regional no existe como serie del Banco Central.\nEstacionalidad menor pero presente en los saldos, con picos de fin de año. Para lecturas de nivel usar promedios de doce meses.\n2026 está incompleto —termina en mayo o junio según el indicador—, de modo que cualquier panel anual debe excluirlo o marcarlo."
+  },
+  {
+    "objectID": "briefings/briefing_financial_depth.html#relacionado",
+    "href": "briefings/briefing_financial_depth.html#relacionado",
+    "title": "Nota de familia: Profundidad financiera y morosidad por región",
+    "section": "Relacionado",
+    "text": "Relacionado\n\n[[briefing_permits]] — el mismo sufijo de región pegado, y el falso positivo de NVA dentro de CCPNVA\n[[briefing_two_axes]] — los sectores 10, 03 y 06\nlib/families.py — declaración de la familia y matches()\nlib/regions.py — el parser de las cuatro codificaciones y su lista blanca"
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html",
+    "href": "briefings/briefing_interregional_trade.html",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "",
+    "text": "REGIONAL · 16 regiones\nEscala: regional (16 regiones) · Frecuencia: mensual y anual Fuente: raw_monthly.csv (compraventas) y raw_annual.csv (exportaciones) Universo: universe_interregional_trade.csv (496 series) · Manifiesto: manifest_interregional_trade.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió acá. No resume el reporte: describe los datos."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#qué-contiene-la-familia",
+    "href": "briefings/briefing_interregional_trade.html#qué-contiene-la-familia",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Qué contiene la familia",
+    "text": "Qué contiene la familia\nDos bloques con frecuencias y ventanas temporales distintas. 496 series, cero errores y ninguna serie vacía.\n\nCompraventas regionales (mensual, desde 2018)\n\n\n\nMnemónico\nQué mide\n\n\n\n\nCVRV\nMonto de compraventas según región de venta\n\n\nCVRC\nMonto de compraventas según región de compra\n\n\nNFRV\nNúmero de facturas, región de venta\n\n\nNFRC\nNúmero de facturas, región de compra\n\n\n\nCada uno viene en tres variantes: el total, el sufijo ITE (interregional) y el sufijo ITA (intraregional). Doce mnemónicos × 16 regiones = 192 series.\nLa distinción ITE/ITA es lo interesante del bloque: permite ver qué proporción del comercio de una región se hace consigo misma y qué proporción con el resto del país. Es lo más cerca que la BDE llega de una matriz de flujos interregionales.\n\n\nExportaciones regionales (anual, desde 2013)\nXSE, 304 series, exportaciones de bienes y servicios por región. Es el bloque que conecta la estructura productiva regional con los circuitos externos."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#por-qué-esta-familia-importa-en-el-programa",
+    "href": "briefings/briefing_interregional_trade.html#por-qué-esta-familia-importa-en-el-programa",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Por qué esta familia importa en el programa",
+    "text": "Por qué esta familia importa en el programa\nSirve al Objetivo 1 —dinamismo del sector productivo— y da el contrapunto del eje espacial: si la renta espacial crece mientras la construcción cae (Reporte 4), la pregunta siguiente es qué pasa con el sector que sí produce bienes transables.\n\nEl estancamiento no se puede medir como productividad. El catálogo no contiene ninguna serie de PTF —la búsqueda de «productividad» devuelve cero resultados en las 25.369 series—. El argumento tiene que apoyarse en participaciones de producto, composición del comercio y descomposición shift-share, nunca en una caída de productividad medida. Decir lo contrario sería atribuir a los datos algo que no contienen."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#cómo-se-leen-los-códigos",
+    "href": "briefings/briefing_interregional_trade.html#cómo-se-leen-los-códigos",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Cómo se leen los códigos",
+    "text": "Cómo se leen los códigos\nAcá está la diferencia con permits y financial_depth. La región no va pegada al mnemónico: va en un token posicional y en forma numérica.\nF035 . CVRC . FLU . Z . CLP . Z . Z . Z . Z . 01 . 0 . M\n  0      1      2    3    4    5   6   7   8   9↑   10  11\n                                                └── región, numérica\n01 es Tarapacá, y la numeración sigue el orden norte-sur del F035, no el orden alfabético ni el de los sufijos de dos letras.\n\nCorrección de una nota anterior\nEste registro afirmaba que la codificación numérica era «una quinta codificación que lib.regions todavía no resuelve» y que hacía falta un parser nuevo. Era falso. El token numérico posicional de F035 es precisamente lo que resuelve f035_positional, que ya estaba implementado desde el primer día. Verificado en la descarga: los doce mnemónicos de compraventas resuelven las 16 regiones por ese método, sin tocar una línea de lib.regions.\nVale la pena registrar el error porque el costo de una nota así no es cero: un coinvestigador habría salido a escribir un parser para un problema inexistente."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#cobertura-real",
+    "href": "briefings/briefing_interregional_trade.html#cobertura-real",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Cobertura real",
+    "text": "Cobertura real\n\n\n\nBloque\nSeries\nObservaciones\nInicio\nFin\n\n\n\n\nCVRV (+ ITE, ITA)\n48\n4.896\n2018-01\n2026-06\n\n\nCVRC (+ ITE, ITA)\n48\n4.896\n2018-01\n2026-06\n\n\nNFRV (+ ITE, ITA)\n48\n4.896\n2018-01\n2026-06\n\n\nNFRC (+ ITE, ITA)\n48\n4.896\n2018-01\n2026-06\n\n\nXSE\n304\n3.840\n2013-01\n2025-01\n\n\n\nLas compraventas empiezan en 2018, no antes. Son la serie regional más corta que el programa ha ingerido: ocho años y medio, contra 2008 de financial_depth y 2013 de los paneles de PIB. Cualquier análisis que las cruce con el eje espacial queda limitado a esa ventana, y la ventana no cubre el período de tasas más bajas que interesa al proyecto en su tramo inicial."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#advertencias-al-construir-el-panel",
+    "href": "briefings/briefing_interregional_trade.html#advertencias-al-construir-el-panel",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Advertencias al construir el panel",
+    "text": "Advertencias al construir el panel\n\nITE + ITA debería dar el total, y hay que comprobarlo, no suponerlo. Si no cierra, la diferencia necesita explicación antes de publicar cualquier proporción.\nNo sumar región de venta y región de compra. Cada transacción aparece dos veces —una en cada lado— y sumarlas duplica el comercio nacional. Son dos vistas del mismo flujo, no dos flujos.\nMontos en pesos nominales. Igual que en financial_depth, comparar 2018 con 2026 en pesos corrientes confunde inflación con crecimiento del comercio.\nVentanas distintas dentro de la familia. Compraventas desde 2018 y mensuales; exportaciones desde 2013 y anuales. Cruzarlas exige agregar las compraventas a anual y recortar al rango común 2018–2025, con 2026 excluido por incompleto.\nNFRV/NFRC son conteos de facturas, no de transacciones económicas distintas. Un mismo negocio puede facturarse varias veces."
+  },
+  {
+    "objectID": "briefings/briefing_interregional_trade.html#relacionado",
+    "href": "briefings/briefing_interregional_trade.html#relacionado",
+    "title": "Nota de familia: Estancamiento del sector dinámico",
+    "section": "Relacionado",
+    "text": "Relacionado\n\n[[briefing_two_axes]] — la trampa del token 7 en los códigos F035\n[[briefing_permits]] — el sufijo de región pegado, que acá no aplica\n[[briefing_financial_depth]] — la otra familia regional mensual\nlib/regions.py — f035_positional, que resuelve esta familia sin cambios"
   },
   {
     "objectID": "briefings/briefing_two_axes.html",
@@ -522,7 +620,7 @@
     "href": "index.html#notas-de-familia",
     "title": "La revisión",
     "section": "Notas de familia",
-    "text": "Notas de familia\nCada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.\n\nNota de familia: El ciclo regional de la construcción\nNota de familia: Los dos ejes: renta espacial y renta de recursos"
+    "text": "Notas de familia\nCada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.\n\nNota de familia: Profundidad financiera y morosidad por región\nNota de familia: Estancamiento del sector dinámico\nNota de familia: El ciclo regional de la construcción\nNota de familia: Los dos ejes: renta espacial y renta de recursos"
   },
   {
     "objectID": "index.html#procedencia",
