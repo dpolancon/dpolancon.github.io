@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Metodología y límites – Renta espacial y renta de recursos</title>
+<title>Datos – Renta espacial y renta de recursos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -348,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Explorar</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./datos.html"> 
+    <a class="nav-link active" href="./datos.html" aria-current="page"> 
 <span class="menu-text">Datos</span></a>
   </li>  
   <li class="nav-item">
@@ -356,7 +356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Diseño</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./metodologia.html" aria-current="page"> 
+    <a class="nav-link" href="./metodologia.html"> 
 <span class="menu-text">Metodología</span></a>
   </li>  
 </ul>
@@ -381,21 +381,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lo-que-no-existe-en-el-catálogo" id="toc-lo-que-no-existe-en-el-catálogo" class="nav-link active" data-scroll-target="#lo-que-no-existe-en-el-catálogo">Lo que no existe en el catálogo</a></li>
-  <li><a href="#precios-corrientes-no-volumen-encadenado" id="toc-precios-corrientes-no-volumen-encadenado" class="nav-link" data-scroll-target="#precios-corrientes-no-volumen-encadenado">Precios corrientes, no volumen encadenado</a></li>
-  <li><a href="#empalme-de-años-de-referencia" id="toc-empalme-de-años-de-referencia" class="nav-link" data-scroll-target="#empalme-de-años-de-referencia">Empalme de años de referencia</a></li>
-  <li><a href="#alcance-descriptivo" id="toc-alcance-descriptivo" class="nav-link" data-scroll-target="#alcance-descriptivo">Alcance descriptivo</a></li>
-  <li><a href="#zonas-y-regiones-no-son-lo-mismo" id="toc-zonas-y-regiones-no-son-lo-mismo" class="nav-link" data-scroll-target="#zonas-y-regiones-no-son-lo-mismo">Zonas y regiones no son lo mismo</a></li>
-  <li><a href="#trampas-por-familia-de-series" id="toc-trampas-por-familia-de-series" class="nav-link" data-scroll-target="#trampas-por-familia-de-series">Trampas por familia de series</a>
-  <ul class="collapse">
-  <li><a href="#two_axes-reporte-3-sectorial-regional" id="toc-two_axes-reporte-3-sectorial-regional" class="nav-link" data-scroll-target="#two_axes-reporte-3-sectorial-regional"><code>two_axes</code> — Reporte 3 (sectorial-regional)</a></li>
-  <li><a href="#permits-reporte-4-regional" id="toc-permits-reporte-4-regional" class="nav-link" data-scroll-target="#permits-reporte-4-regional"><code>permits</code> — Reporte 4 (regional)</a></li>
-  <li><a href="#housing_wealth-reporte-5-macro-zona" id="toc-housing_wealth-reporte-5-macro-zona" class="nav-link" data-scroll-target="#housing_wealth-reporte-5-macro-zona"><code>housing_wealth</code> — Reporte 5 (macro-zona)</a></li>
-  <li><a href="#financial_depth-reporte-6-regional" id="toc-financial_depth-reporte-6-regional" class="nav-link" data-scroll-target="#financial_depth-reporte-6-regional"><code>financial_depth</code> — Reporte 6 (regional)</a></li>
-  <li><a href="#interregional_trade-reporte-7-regional" id="toc-interregional_trade-reporte-7-regional" class="nav-link" data-scroll-target="#interregional_trade-reporte-7-regional"><code>interregional_trade</code> — Reporte 7 (regional)</a></li>
-  <li><a href="#tasas-reporte-8-nacional" id="toc-tasas-reporte-8-nacional" class="nav-link" data-scroll-target="#tasas-reporte-8-nacional"><code>tasas</code> — Reporte 8 (nacional)</a></li>
-  </ul></li>
-  <li><a href="#reproducir" id="toc-reproducir" class="nav-link" data-scroll-target="#reproducir">Reproducir</a></li>
+  <li><a href="#cómo-se-regeneran" id="toc-cómo-se-regeneran" class="nav-link active" data-scroll-target="#cómo-se-regeneran">Cómo se regeneran</a></li>
+  <li><a href="#formato" id="toc-formato" class="nav-link" data-scroll-target="#formato">Formato</a></li>
   </ul>
 </nav>
     </div>
@@ -471,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Metodología y límites</h1>
+<h1 class="title">Datos</h1>
 </div>
 
 
@@ -488,64 +475,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Esta página existe para que ningún lector infiera de este sitio algo que los datos no sostienen. Los límites de abajo no son notas al pie: son restricciones que cambian qué preguntas se pueden responder.</p>
-<section id="lo-que-no-existe-en-el-catálogo" class="level2">
-<h2 class="anchored" data-anchor-id="lo-que-no-existe-en-el-catálogo">Lo que no existe en el catálogo</h2>
-<p>Cuatro ausencias condicionan todo el programa. Ninguna se rellena con estimaciones.</p>
-<p><strong>No hay índice de arriendos.</strong> Fuera de un único componente del IPC nacional, el Banco Central no publica precios de arriendo, y menos aún por región. El eje de renta espacial se mide con el sector 10 de las cuentas regionales, que es mayoritariamente <strong>alquiler imputado</strong>.</p>
-<p><strong>No hay productividad total de factores.</strong> El catálogo no contiene ninguna serie de PTF. Por lo tanto el «estancamiento» del sector dinámico se argumenta con participaciones de producto y descomposición <em>shift-share</em>, nunca como una caída de productividad medida.</p>
-<p><strong>No hay uso de suelo urbano.</strong> No existen series de zonificación ni de huella urbana. Las únicas cantidades vinculadas al suelo son los metros cuadrados del stock habitacional y la valorización del terreno, ambas nacionales o por zona.</p>
-<p><strong>No hay población regional como serie propia.</strong> Aparece sólo como denominador dentro de las tablas per cápita. Cualquier cálculo per cápita fuera de ese conjunto requiere ir al INE.</p>
+<p>Todas las bases procesadas de la revisión, en CSV y sin registro previo. Cada figura y cada tabla del sitio enlaza la base que la produce; acá están todas juntas.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Base</th>
+<th>Contenido</th>
+<th style="text-align: right;">Tamaño</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="datos/censo_bde_series.csv"><code>censo_bde_series.csv</code></a></td>
+<td>Cada serie del catálogo, clasificada por escala</td>
+<td style="text-align: right;">4.8 MB</td>
+</tr>
+<tr class="even">
+<td><a href="datos/censo_bde_resumen.csv"><code>censo_bde_resumen.csv</code></a></td>
+<td>Series por escala, capítulo y frecuencia</td>
+<td style="text-align: right;">3 KB</td>
+</tr>
+<tr class="odd">
+<td><a href="datos/panel_two_axes_annual.csv"><code>panel_two_axes_annual.csv</code></a></td>
+<td>Renta espacial y de recursos, región × año</td>
+<td style="text-align: right;">72 KB</td>
+</tr>
+<tr class="even">
+<td><a href="datos/panel_two_axes_summary.csv"><code>panel_two_axes_summary.csv</code></a></td>
+<td>Resumen anual de los dos ejes</td>
+<td style="text-align: right;">3 KB</td>
+</tr>
+<tr class="odd">
+<td><a href="datos/panel_regional_pib_annual.csv"><code>panel_regional_pib_annual.csv</code></a></td>
+<td>PIB regional anual</td>
+<td style="text-align: right;">27 KB</td>
+</tr>
+</tbody>
+</table>
+<div class="fuente">
+<p><strong>Fuente:</strong> elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile.</p>
+</div>
+<section id="cómo-se-regeneran" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-se-regeneran">Cómo se regeneran</h2>
+<p>Cada base se reconstruye desde la fuente primaria con un comando. No hay paso manual en ninguna etapa.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/13_census_bde.py                      <span class="co"># censo del catálogo</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/01_fetch_crsm_raw.py <span class="at">--family</span> <span class="op">&lt;</span>fam<span class="op">&gt;</span>   <span class="co"># descarga por familia</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/09_build_theme_panels.py <span class="at">--family</span> <span class="op">&lt;</span>fam<span class="op">&gt;</span>  <span class="co"># panel analítico</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="precios-corrientes-no-volumen-encadenado" class="level2">
-<h2 class="anchored" data-anchor-id="precios-corrientes-no-volumen-encadenado">Precios corrientes, no volumen encadenado</h2>
-<p>Las participaciones sectoriales se calculan sobre precios corrientes. Los volúmenes encadenados <strong>no son aditivos</strong> entre sectores: la suma de los sectores no reproduce el total regional, de modo que una participación construida sobre volúmenes no sería una proporción del producto regional sino un cociente sin denominador interpretable.</p>
-</section>
-<section id="empalme-de-años-de-referencia" class="level2">
-<h2 class="anchored" data-anchor-id="empalme-de-años-de-referencia">Empalme de años de referencia</h2>
-<p>El PIB regional existe con años base 1986, 1996, 2003, 2008, 2013 y 2018, pero sólo las cosechas 2013 y 2018 están etiquetadas como empalmadas. Los reportes que abarcan 2013 en adelante no enfrentan el problema. Cualquier afirmación de largo plazo que cruce hacia atrás debe declarar el empalme explícitamente.</p>
-</section>
-<section id="alcance-descriptivo" class="level2">
-<h2 class="anchored" data-anchor-id="alcance-descriptivo">Alcance descriptivo</h2>
-<p>Este programa es <strong>descriptivo</strong>. Documenta co-movimientos, participaciones y dispersión; no identifica efectos causales. Donde el texto dice «acompaña», «corre contra» o «coincide con», debe leerse literalmente y no como una afirmación de causalidad.</p>
-</section>
-<section id="zonas-y-regiones-no-son-lo-mismo" class="level2">
-<h2 class="anchored" data-anchor-id="zonas-y-regiones-no-son-lo-mismo">Zonas y regiones no son lo mismo</h2>
-<p>El índice de precios de vivienda se publica para siete zonas —Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana— y el producto se publica para dieciséis regiones. La correspondencia es de uno a muchos en todos los casos salvo la RM. La única dirección de agregación honesta es <strong>subir</strong> el dato regional hasta la zona, nunca <strong>bajar</strong> el dato zonal hasta la región.</p>
-</section>
-<section id="trampas-por-familia-de-series" class="level2">
-<h2 class="anchored" data-anchor-id="trampas-por-familia-de-series">Trampas por familia de series</h2>
-<section id="two_axes-reporte-3-sectorial-regional" class="level3">
-<h3 class="anchored" data-anchor-id="two_axes-reporte-3-sectorial-regional"><code>two_axes</code> — Reporte 3 (sectorial-regional)</h3>
-<p>Los dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales: sector 10 (Servicios de vivienda e inmobiliarios) es renta espacial, sector 03 (Minería) es renta de recursos, sector 06 (Construcción) es la pata de inversión. Ninguna requiere descarga: ya están en raw_annual.csv. El sector 10 es mayoritariamente ALQUILER IMPUTADO de las cuentas nacionales, no arriendo efectivamente pagado; es el supuesto que sostiene todo el eje espacial y se declara en cada reporte que se apoya en él. La familia abarca dos escalas: 2.037 series sectorial-regionales y 209 totales regionales (sector Z). La escala declarada es la principal, no la única.</p>
-</section>
-<section id="permits-reporte-4-regional" class="level3">
-<h3 class="anchored" data-anchor-id="permits-reporte-4-regional"><code>permits</code> — Reporte 4 (regional)</h3>
-<p>Primer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.</p>
-</section>
-<section id="housing_wealth-reporte-5-macro-zona" class="level3">
-<h3 class="anchored" data-anchor-id="housing_wealth-reporte-5-macro-zona"><code>housing_wealth</code> — Reporte 5 (macro-zona)</h3>
-<p>La geografía son zonas, no regiones: Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana. La correspondencia con las 16 regiones es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona. Ojo con la transposición de origen: la zona 1 es IVPZ1 y no IPVZ1, y corregirla acá sencillamente no encontraría la serie. La familia abarca dos escalas: 56 series zonales y 21 nacionales. VALT y VALC –la descomposición entre valorización del terreno y de la construcción– sólo existen para NAC, CAS y DEP, de modo que la premisa empírica de Knoll et al.&nbsp;es medible en Chile únicamente a escala nacional y nunca por zona.</p>
-</section>
-<section id="financial_depth-reporte-6-regional" class="level3">
-<h3 class="anchored" data-anchor-id="financial_depth-reporte-6-regional"><code>financial_depth</code> — Reporte 6 (regional)</h3>
-<p>F022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.</p>
-</section>
-<section id="interregional_trade-reporte-7-regional" class="level3">
-<h3 class="anchored" data-anchor-id="interregional_trade-reporte-7-regional"><code>interregional_trade</code> — Reporte 7 (regional)</h3>
-<p>Las compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado.</p>
-</section>
-<section id="tasas-reporte-8-nacional" class="level3">
-<h3 class="anchored" data-anchor-id="tasas-reporte-8-nacional"><code>tasas</code> — Reporte 8 (nacional)</h3>
-<p>Escala nacional, y no le falta desagregación: la tasa de descuento que discute H1 es un precio único de la economía. La cobertura es desigual entre series (captación y colocación desde 1983; TPM desde 1995; hipotecarias y bonos UF desde 2002), de modo que cualquier ventana común es más corta que la más larga. DEUBH mide apalancamiento de hogares como porcentaje del PIB y del ingreso disponible, y es la contraparte financiera del stock de vivienda que mide housing_wealth.</p>
-</section>
-</section>
-<section id="reproducir" class="level2">
-<h2 class="anchored" data-anchor-id="reproducir">Reproducir</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/01_fetch_crsm_raw.py <span class="at">--family</span> <span class="op">&lt;</span>familia<span class="op">&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/09_build_theme_panels.py <span class="at">--family</span> <span class="op">&lt;</span>familia<span class="op">&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/10_generate_site.py</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/11_audit_site.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="formato" class="level2">
+<h2 class="anchored" data-anchor-id="formato">Formato</h2>
+<p>CSV en UTF-8, separador coma, fechas ISO. Los códigos de región y de sector van con relleno de ceros y son texto, no número: leerlos como entero convierte <code>"01"</code> en <code>1</code> y rompe cualquier cruce en silencio.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pd.read_csv(ruta, dtype<span class="op">=</span>{<span class="st">"region_id"</span>: <span class="bu">str</span>, <span class="st">"sector_id"</span>: <span class="bu">str</span>}, parse_dates<span class="op">=</span>[<span class="st">"date"</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>

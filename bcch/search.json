@@ -4,7 +4,7 @@
     "href": "reportes/report3-dos-ejes.html",
     "title": "Los dos ejes: renta espacial y renta de recursos",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nLa renta espacial es difusa y creciente; la renta de recursos es concentrada y se endurece. Son dos geografías distintas dentro del mismo país."
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa renta espacial es difusa y creciente; la renta de recursos es concentrada y se endurece. Son dos geografías distintas dentro del mismo país."
   },
   {
     "objectID": "reportes/report3-dos-ejes.html#el-argumento",
@@ -46,7 +46,7 @@
     "href": "reportes/report1-disparidades.html",
     "title": "Disparidades económicas regionales en Chile",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nLa geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities."
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities."
   },
   {
     "objectID": "reportes/report1-disparidades.html#introducción",
@@ -86,51 +86,149 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "El programa",
+    "title": "La revisión",
     "section": "",
     "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV"
   },
   {
-    "objectID": "index.html#la-tesis-en-dos-registros",
-    "href": "index.html#la-tesis-en-dos-registros",
-    "title": "El programa",
-    "section": "La tesis, en dos registros",
-    "text": "La tesis, en dos registros\nEste programa sostiene un solo argumento, medido en dos niveles distintos porque el Banco Central publica los datos en dos niveles distintos.\nTier A — nacional y por zonas. El inmueble en Chile funciona como reserva de valor. La riqueza habitacional como proporción del PIB, la descomposición entre valor del suelo y valor de la construcción, y el apalancamiento hipotecario de los hogares miden la financiarización del espacio de forma directa.\nTier B — las 16 regiones. Ese proceso nacional deja una huella regional que sí es medible: permisos de edificación, participación del sector 10 en el producto regional, morosidad hipotecaria y profundidad de cuentas corrientes. Esa huella corre contra la inmovilidad estructural que documentó el Reporte 1 —un HHI plano en 0,236–0,244 durante trece años.\n\nLos dos tiers no se cruzan libremente. El índice de precios de vivienda existe para siete zonas, no para dieciséis regiones. Cualquier comparación entre tiers declara explícitamente la pérdida por agregación, o se restringe a Norte / Centro / Sur / RM. No se ofrece una tabla de equivalencia región-zona porque no existe una que sea honesta."
+    "objectID": "index.html#qué-mide-el-banco-central-y-a-qué-escala",
+    "href": "index.html#qué-mide-el-banco-central-y-a-qué-escala",
+    "title": "La revisión",
+    "section": "Qué mide el Banco Central, y a qué escala",
+    "text": "Qué mide el Banco Central, y a qué escala\nEsta revisión recorre la Base de Datos Estadísticos del Banco Central para el proyecto sobre las determinantes financieras del precio del suelo metropolitano. Su resultado no es un inventario sino una asimetría.\nEl catálogo publica 25.369 series únicas repartidas de forma muy desigual entre cuatro escalas de observación:\n\n\n\nEscala\nSeries\nParticipación\n\n\n\n\nNacional\n21.287\n83,9%\n\n\nSectorial-regional\n2.331\n9,2%\n\n\nRegional\n1.695\n6,7%\n\n\nMacro-zona\n56\n0,2%\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv.\n\nLa BDE mide las escalas que al Banco Central le interesa gobernar. El grueso es nacional porque el mandato es la política monetaria nacional; la región aparece por vía de Cuentas Nacionales; la macro-zona aparece como estadística experimental. La asimetría no es una limitación técnica del catálogo: es una propiedad de la institución que lo produce.\n\nEl área metropolitana no existe en ninguna escala. Es la unidad que el proyecto mide, y la BDE no la publica. Lo más próximo son las macro-zonas —56 series, la escala más pequeña del catálogo—, y la correspondencia con las regiones es de uno a muchos salvo en la Región Metropolitana. La única dirección de agregación honesta es subir el dato regional hasta la zona, nunca bajar el zonal hasta la región."
   },
   {
     "objectID": "index.html#hoja-de-ruta",
     "href": "index.html#hoja-de-ruta",
-    "title": "El programa",
+    "title": "La revisión",
     "section": "Hoja de ruta",
-    "text": "Hoja de ruta\nCada reporte abre exactamente una familia de series nueva, y las familias están ordenadas por costo de ingesta creciente. El equipo nunca enfrenta dos estructuras de datos desconocidas al mismo tiempo. El orden es el diseño de absorción.\n\n\n\n#\nReporte\nTier\nFamilia\nFrec.\nEstado\n\n\n\n\n3\nLos dos ejes: renta espacial y renta de recursos\nTier B\ntwo_axes\nA, T\npublicado\n\n\n4\nEl ciclo regional de la construcción\nTier B\npermits\nM\nen preparación\n\n\n5\nEl inmueble como reserva de valor\nTier A\nhousing_wealth\nA, T\nen preparación\n\n\n6\nProfundidad financiera y morosidad por región\nTier B\nfinancial_depth\nM\nen preparación\n\n\n7\nEstancamiento del sector dinámico\nTier B\ninterregional_trade\nM, T, A\nen preparación"
+    "text": "Hoja de ruta\nCada reporte abre exactamente una familia de series nueva, y las familias están ordenadas por costo de ingesta creciente. El equipo nunca enfrenta dos estructuras de datos desconocidas al mismo tiempo. El orden es el diseño de absorción.\n\n\n\n#\nReporte\nTier\nFamilia\nFrec.\nEstado\n\n\n\n\n3\nLos dos ejes: renta espacial y renta de recursos\nsectorial-regional\ntwo_axes\nA, T\npublicado\n\n\n4\nEl ciclo regional de la construcción\nregional\npermits\nM\nen preparación\n\n\n5\nEl inmueble como reserva de valor\nmacro-zona\nhousing_wealth\nA, T\nen preparación\n\n\n6\nProfundidad financiera y morosidad por región\nregional\nfinancial_depth\nM\nen preparación\n\n\n7\nEstancamiento del sector dinámico\nregional\ninterregional_trade\nM, T, A\nen preparación\n\n\n8\nEl precio del dinero: tasas y apalancamiento\nnacional\ntasas\nD, M, T, A\nen preparación"
   },
   {
     "objectID": "index.html#cómo-avanza-el-programa",
     "href": "index.html#cómo-avanza-el-programa",
-    "title": "El programa",
+    "title": "La revisión",
     "section": "Cómo avanza el programa",
     "text": "Cómo avanza el programa\nEl ritmo lo fija la comprensión, no el calendario. Corren dos vías en paralelo.\nVía lenta — los reportes. Un ciclo no se cierra en una fecha: se cierra cuando existen tres artefactos.\n\nel reporte publicado,\nuna nota de familia que explica qué significan los códigos, cómo se codifican las regiones y dónde están las trampas —lo que necesita leer la próxima persona, no la que ya hizo el trabajo,\nuna respuesta escrita del equipo, enlazada desde la página del reporte.\n\nVía rápida — las notas de datos. Una nota breve cada vez que aterriza una familia nueva en data/raw/, antes del reporte que la usa. Se genera desde el manifiesto de descarga: cuántas series, qué regiones, qué rango de fechas, qué falta. Barata y mecánica; mantiene la ingesta en movimiento entre reportes.\nLa compuerta. La descarga del reporte N+1 no corre hasta que existe la nota de familia del reporte N. Ese es el mecanismo de autorregulación, y es verificable de forma automática."
   },
   {
     "objectID": "index.html#notas-de-familia",
     "href": "index.html#notas-de-familia",
-    "title": "El programa",
+    "title": "La revisión",
     "section": "Notas de familia",
-    "text": "Notas de familia\nCada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.\n\nNota de familia: Los dos ejes: renta espacial y renta de recursos"
+    "text": "Notas de familia\nCada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.\n\nNota de familia: El ciclo regional de la construcción\nNota de familia: Los dos ejes: renta espacial y renta de recursos"
   },
   {
     "objectID": "index.html#procedencia",
     "href": "index.html#procedencia",
-    "title": "El programa",
+    "title": "La revisión",
     "section": "Procedencia",
-    "text": "Procedencia\nTodo número de este sitio proviene de un CSV en data/, y todo CSV proviene de la API del Banco Central de Chile. No hay datos sintéticos, estimados ni interpolados en ninguna etapa —la ausencia se reporta como ausencia. Los paneles publicados están disponibles para descarga."
+    "text": "Procedencia\nTodo número de este sitio proviene de un CSV en data/, y todo CSV proviene de la API del Banco Central de Chile. No hay datos sintéticos, estimados ni interpolados en ninguna etapa —la ausencia se reporta como ausencia. Todas las bases procesadas están disponibles para descarga, y el crosswalk permite rastrear cualquier cifra hasta el código de serie que la origina."
+  },
+  {
+    "objectID": "escalas/sectorial-regional.html",
+    "href": "escalas/sectorial-regional.html",
+    "title": "Sectorial-regional",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nRegión por sector, enteramente dentro de Cuentas Nacionales y casi enteramente anual. Es la escala más fina que publica la BDE y la que permite caracterizar la estructura productiva de cada territorio."
+  },
+  {
+    "objectID": "escalas/sectorial-regional.html#el-censo",
+    "href": "escalas/sectorial-regional.html#el-censo",
+    "title": "Sectorial-regional",
+    "section": "El censo",
+    "text": "El censo\nLa BDE publica 2.331 series en esta escala. 9.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones × 13 sectores.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n2.331\nanual 2123. trimestral 208\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "escalas/sectorial-regional.html#qué-usa-el-proyecto",
+    "href": "escalas/sectorial-regional.html#qué-usa-el-proyecto",
+    "title": "Sectorial-regional",
+    "section": "Qué usa el proyecto",
+    "text": "Qué usa el proyecto\n\nLos dos ejes: renta espacial y renta de recursos\nObjetivo. Contexto de selección de casos. No responde a un objetivo específico: sostiene el marco muestral, al medir cuán extractivas son las economías regionales cuyas capitales el proyecto estudia.\nLos dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales: sector 10 (Servicios de vivienda e inmobiliarios) es renta espacial, sector 03 (Minería) es renta de recursos, sector 06 (Construcción) es la pata de inversión. Ninguna requiere descarga: ya están en raw_annual.csv. El sector 10 es mayoritariamente ALQUILER IMPUTADO de las cuentas nacionales, no arriendo efectivamente pagado; es el supuesto que sostiene todo el eje espacial y se declara en cada reporte que se apoya en él. La familia abarca dos escalas: 2.037 series sectorial-regionales y 209 totales regionales (sector Z). La escala declarada es la principal, no la única."
+  },
+  {
+    "objectID": "escalas/sectorial-regional.html#lo-que-esta-escala-sostiene",
+    "href": "escalas/sectorial-regional.html#lo-que-esta-escala-sostiene",
+    "title": "Sectorial-regional",
+    "section": "Lo que esta escala sostiene",
+    "text": "Lo que esta escala sostiene\nLa medición de cuán extractiva es cada economía regional, que sostiene el marco muestral del proyecto: las dos conurbaciones menores entran a la muestra por ser centros urbanos de economías extractivas, y esta escala lo mide en vez de asumirlo."
+  },
+  {
+    "objectID": "escalas/sectorial-regional.html#lo-que-no-sostiene",
+    "href": "escalas/sectorial-regional.html#lo-que-no-sostiene",
+    "title": "Sectorial-regional",
+    "section": "Lo que no sostiene",
+    "text": "Lo que no sostiene\nProductividad: el catálogo no contiene ninguna serie de PTF, de modo que el estancamiento se argumenta con participaciones de producto y descomposición shift-share, nunca como caída de productividad medida."
+  },
+  {
+    "objectID": "escalas/nacional.html",
+    "href": "escalas/nacional.html",
+    "title": "Nacional",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nNACIONAL · una economía\nEs la escala donde la BDE es abundante y larga, y no por casualidad: el mandato del Banco Central es la política monetaria nacional, de modo que mide con detalle aquello que gobierna."
+  },
+  {
+    "objectID": "escalas/nacional.html#el-censo",
+    "href": "escalas/nacional.html#el-censo",
+    "title": "Nacional",
+    "section": "El censo",
+    "text": "El censo\nLa BDE publica 21.287 series en esta escala. 83.9% de los 25.369 códigos únicos del catálogo. La unidad de observación es una economía.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n8.652\ntrimestral 6882. anual 1497. mensual 273\n\n\nDerivados y Spot\n2.171\nmensual 1457. diaria 714\n\n\nSector Externo\n2.043\nmensual 823. trimestral 550. anual 543. diaria 127\n\n\nPrecios\n2.034\nmensual 2032. diaria 2\n\n\nEstadísticas Monetarias y Financieras\n1.227\nmensual 1158. diaria 38. anual 30. trimestral 1\n\n\nOperaciones de Mercado Abierto\n737\ndiaria 684. mensual 53\n\n\nExpectativas Económicas\n714\ntrimestral 426. mensual 252. diaria 36\n\n\nMercado de Capitales\n684\nmensual 665. trimestral 11. diaria 8\n\n\notros 12 capítulos\n3.025\n\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "escalas/nacional.html#qué-usa-el-proyecto",
+    "href": "escalas/nacional.html#qué-usa-el-proyecto",
+    "title": "Nacional",
+    "section": "Qué usa el proyecto",
+    "text": "Qué usa el proyecto\n\nEl precio del dinero: tasas y apalancamiento\nObjetivo. Objetivo 4 e hipótesis H1 — el efecto del descenso de las tasas sobre la variación del precio del suelo. Es el único conjunto de regresores de H1 que la BDE publica completo.\nEscala nacional, y no le falta desagregación: la tasa de descuento que discute H1 es un precio único de la economía. La cobertura es desigual entre series (captación y colocación desde 1983; TPM desde 1995; hipotecarias y bonos UF desde 2002), de modo que cualquier ventana común es más corta que la más larga. DEUBH mide apalancamiento de hogares como porcentaje del PIB y del ingreso disponible, y es la contraparte financiera del stock de vivienda que mide housing_wealth."
+  },
+  {
+    "objectID": "escalas/nacional.html#lo-que-esta-escala-sostiene",
+    "href": "escalas/nacional.html#lo-que-esta-escala-sostiene",
+    "title": "Nacional",
+    "section": "Lo que esta escala sostiene",
+    "text": "Lo que esta escala sostiene\nEl conjunto completo de regresores financieros de H1 –tasa de política monetaria, captación y colocación, hipotecarias, bonos en UF– y el apalancamiento hipotecario de los hogares. También la descomposición entre valorización del terreno y de la construcción, que en Chile sólo existe a este nivel."
+  },
+  {
+    "objectID": "escalas/nacional.html#lo-que-no-sostiene",
+    "href": "escalas/nacional.html#lo-que-no-sostiene",
+    "title": "Nacional",
+    "section": "Lo que no sostiene",
+    "text": "Lo que no sostiene\nNada que requiera geografía. Una tasa nacional no distingue entre el mercado de suelo de Santiago y el de Puerto Montt, y el proyecto necesita justamente esa distinción para su variable dependiente."
+  },
+  {
+    "objectID": "diseno.html",
+    "href": "diseno.html",
+    "title": "Diseño",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nA qué responde cada pieza de esta revisión dentro de la formulación del proyecto, y dónde la BDE no alcanza."
+  },
+  {
+    "objectID": "diseno.html#correspondencia",
+    "href": "diseno.html#correspondencia",
+    "title": "Diseño",
+    "section": "Correspondencia",
+    "text": "Correspondencia\n\n\n\n\n\n\n\n\nPieza del diseño\nEscala\nEstado\n\n\n\n\nLos dos ejes: renta espacial y renta de recursos\nsectorial-regional\nreporte 3\n\n\nEl ciclo regional de la construcción\nregional\nreporte 4\n\n\nEl inmueble como reserva de valor\nmacro-zona\nreporte 5\n\n\nProfundidad financiera y morosidad por región\nregional\nreporte 6\n\n\nEstancamiento del sector dinámico\nregional\nreporte 7\n\n\nEl precio del dinero: tasas y apalancamiento\nnacional\nreporte 8\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Correspondencia y crosswalk derivados del registro de familias en scripts/lib/families.py. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "diseno.html#dónde-la-bde-no-alcanza",
+    "href": "diseno.html#dónde-la-bde-no-alcanza",
+    "title": "Diseño",
+    "section": "Dónde la BDE no alcanza",
+    "text": "Dónde la BDE no alcanza\nTres piezas del diseño no tienen contraparte en el catálogo del Banco Central y deben venir de otra fuente.\nLa variable dependiente. El precio del suelo metropolitano no está en la BDE en ninguna escala. Viene del Boletín del Mercado del Suelo y de los Conservadores de Bienes Raíces.\nLa demanda física de suelo. El indicador de utilización de suelo por primeras edificaciones se construye desde el Detalle Catastral del Servicio de Impuestos Internos. La BDE aporta los permisos de edificación, que son el insumo del proxy, no el proxy.\nLa población regional. No existe como serie propia: aparece sólo como denominador dentro de las tablas per cápita. Cualquier cálculo per cápita fuera de ese conjunto requiere ir al Instituto Nacional de Estadísticas."
+  },
+  {
+    "objectID": "diseno.html#nota-herramientas-de-apoyo-creadas-con-ia",
+    "href": "diseno.html#nota-herramientas-de-apoyo-creadas-con-ia",
+    "title": "Diseño",
+    "section": "Nota: herramientas de apoyo creadas con IA",
+    "text": "Nota: herramientas de apoyo creadas con IA\nEste sitio combina tres capas de autoría distintas y conviene no confundirlas.\nEl dato es del Banco Central. Todas las series provienen de la Base de Datos Estadísticos del Banco Central de Chile. No hay serie construida, estimada ni interpolada en ninguna etapa: la ausencia se reporta como ausencia.\nLa elaboración es del proyecto. Las decisiones de método son del equipo de investigación: calcular participaciones sobre precios corrientes y no sobre volumen encadenado, seleccionar series por parseabilidad de región y no por capítulo del catálogo, y organizar la revisión por escala de observación.\nLas herramientas de apoyo se construyeron con asistencia de IA. El censo automatizado del catálogo, el crosswalk que aparece abajo, el explorador interactivo y las rutinas de auditoría se desarrollaron con asistencia de modelos de lenguaje. Se verifican contra la fuente primaria y son reproducibles con los comandos publicados en cada página. La responsabilidad por el contenido es de quienes firman.\n\nCrosswalk: reporte, familia, códigos y panel\nPermite rastrear cualquier cifra del sitio hasta el código de serie que la origina.\n\n\n\n\n\n\n\n\n\n\nReporte\nFamilia\nEscala\nMnemónicos BCCh\nPanel derivado\n\n\n\n\n3\ntwo_axes\nsectorial-regional\nPIB\npanel_two_axes_annual.csv\n\n\n4\npermits\nregional\nSAH, SANH, NVA, CEYS\n—\n\n\n5\nhousing_wealth\nmacro-zona\nVALV, VALT, VALC, NUMP, MCT, MCC, IPV, IVPZ, DEUBH\n—\n\n\n6\nfinancial_depth\nregional\nDV90, DCS90, DCM90, CCPN, SCCPN, SDV\n—\n\n\n7\ninterregional_trade\nregional\nCVRV, CVRC, NFRV, NFRC, XSE\n—\n\n\n8\ntasas\nnacional\nTPM, ECB, TIP, BCU, VIV, IPSA, DEUBH\n—"
   },
   {
     "objectID": "briefings/briefing_two_axes.html",
     "href": "briefings/briefing_two_axes.html",
     "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nTier: B (16 regiones) · Frecuencia: anual, con un subconjunto trimestral Fuente: data/raw/regional-spatial-macro-dataset/raw_annual.csv Panel derivado: data/panel_two_axes_annual.csv, data/panel_two_axes_summary.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nTier: B (16 regiones) · Frecuencia: anual, con un subconjunto trimestral Fuente: data/raw/regional-spatial-macro-dataset/raw_annual.csv Panel derivado: data/panel_two_axes_annual.csv, data/panel_two_axes_summary.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
   },
   {
     "objectID": "briefings/briefing_two_axes.html#qué-contiene-la-familia",
@@ -194,6 +292,146 @@
     "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
     "section": "Qué mirar después",
     "text": "Qué mirar después\nLa pregunta que esta familia deja abierta es si la huella regional de la renta espacial se mueve con la cantidad construida o sólo con el precio. El sector 10 no lo distingue. La familia permits (Reporte 4) aporta el lado de la cantidad —superficie autorizada y viviendas autorizadas, mensual, 16 regiones— y es el siguiente paso natural."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html",
+    "href": "briefings/briefing_permits.html",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nREGIONAL · 16 regiones\nTier: B (16 regiones) · Frecuencia: mensual Fuente: data/raw/regional-spatial-macro-dataset/raw_monthly.csv Universo: universe_permits.csv (64 series) · Manifiesto: manifest_permits.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#qué-contiene-la-familia",
+    "href": "briefings/briefing_permits.html#qué-contiene-la-familia",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Qué contiene la familia",
+    "text": "Qué contiene la familia\nCuatro indicadores mensuales, cada uno para las 16 regiones. 64 series, cero errores de descarga.\n\n\n\nMnemónico\nQué mide\nUnidad\nFuente original\n\n\n\n\nSAH\nSuperficie autorizada habitacional\nm²\nINE\n\n\nSANH\nSuperficie autorizada no habitacional\nm²\nINE\n\n\nNVA\nNúmero de viviendas autorizadas\nunidades\nINE\n\n\nCEYS\nConstitución de empresas y sociedades\nunidades\n—\n\n\n\nLas tres primeras son permisos de edificación: intención de construir, no construcción. Un permiso autorizado puede no ejecutarse nunca. Es un indicador adelantado del ciclo, no una medida de stock ni de producto."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#por-qué-esta-familia-importa-en-el-programa",
+    "href": "briefings/briefing_permits.html#por-qué-esta-familia-importa-en-el-programa",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Por qué esta familia importa en el programa",
+    "text": "Por qué esta familia importa en el programa\nEl Reporte 3 dejó una pregunta abierta que el sector 10 no puede responder. La renta espacial se mide ahí como Servicios de vivienda e inmobiliarios, que en cuentas nacionales es en buena parte arriendo imputado: sube cuando suben los precios de la vivienda, aunque no se construya un solo metro cuadrado nuevo. Con sector 10 solo, precio y cantidad son indistinguibles.\nSAH y NVA son cantidad pura, en metros y en unidades, sin precio de por medio. Cruzarlos con el sector 10 y con el sector 06 (Construcción) separa las dos historias: si la renta espacial crece mientras los permisos caen, lo que crece es la valorización del stock existente, no la formación de capital."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#cómo-se-leen-los-códigos",
+    "href": "briefings/briefing_permits.html#cómo-se-leen-los-códigos",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Cómo se leen los códigos",
+    "text": "Cómo se leen los códigos\nEl código lleva la región pegada al mnemónico, no en un token posicional:\nF034 . SAH AP . FLU . INE . Z . 0 . M\n  0      1↑      2      3    4   5   6\n         └── mnemónico + sufijo de región de dos letras\nLos 16 sufijos, de norte a sur: AP TA AN AT CO VA RM LI ML NB BI AR LR LL AI MA.\nNunca escribir un parser nuevo para esto. lib.regions.parse_region ya resuelve las cuatro codificaciones del catálogo y tiene la lista blanca de raíces (GLUED_FAMILY_STEMS) que evita los falsos positivos de esta forma pegada.\n\nLa trampa del subtoken: NVA dentro de CCPNVA\nEncontrada al descargar esta familia. La selección por familia buscaba el token en cualquier posición del código, y F022.CCPNVA —cuentas corrientes de Valparaíso, que pertenece a financial_depth (Reporte 6)— contiene NVA. Resultado: 66 series en vez de 64, con dos intrusas de otra familia y de otro tier temático.\nLa corrección está en SeriesFamily.matches(): el token se ancla al mnemónico (el segundo token del código), como prefijo y no como subcadena. Es prefijo y no igualdad porque el sufijo de región va pegado. SANH y SAH siguen siendo distintos bajo esta regla: \"SANHAP\" no empieza con \"SAH\".\nRegla general: un mnemónico de dos o tres letras aparecerá tarde o temprano dentro de otro. Cualquier familia nueva se declara con tokens y se verifica contando: si el total no es un múltiplo limpio de 16, hay una intrusa."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#cobertura-real",
+    "href": "briefings/briefing_permits.html#cobertura-real",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Cobertura real",
+    "text": "Cobertura real\n\n\n\nMnemónico\nSeries\nObservaciones\nInicio\nFin\n\n\n\n\nCEYS\n16\n2.464\n2013-05\n2026-06\n\n\nNVA\n16\n2.328\n2014-01\n2026-05\n\n\nSAH\n16\n2.328\n2014-01\n2026-05\n\n\nSANH\n16\n2.328\n2014-01\n2026-05\n\n\n\nLas tres series INE empiezan en enero de 2014 y terminan un mes antes que CEYS. Cualquier panel que las combine debe recortar al rango común, no rellenar: lib.transform no interpola y no debe hacerlo.\nNinguna región falta. Ninguna serie viene vacía."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#advertencias-al-construir-el-panel",
+    "href": "briefings/briefing_permits.html#advertencias-al-construir-el-panel",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Advertencias al construir el panel",
+    "text": "Advertencias al construir el panel\n\nSon flujos mensuales, no stocks. No acumular sin decirlo. Para comparar con el PIB sectorial anual hay que sumar los doce meses, y 2026 está incompleto —termina en mayo—, así que el último año es parcial y no debe graficarse junto a años completos sin marcarlo.\nFuerte estacionalidad. Los permisos caen en invierno austral y en enero. Cualquier lectura mes contra mes es ruido; usar variación doce meses o promedios móviles de doce meses.\nLas series no están desestacionalizadas ni deflactadas. SAH y SANH están en metros cuadrados, así que no hay problema de precios; CEYS es un conteo. No hay nada que deflactar, y por eso mismo no hay excusa para mezclarlas con series en pesos sin normalizar.\nCEYS no es un indicador inmobiliario. Es constitución de empresas de todo tipo. Entra en esta familia como control de dinamismo empresarial regional, no como parte del eje espacial. No sumarlo a los otros tres.\nEscala: la Región Metropolitana domina en niveles por población. Para comparar regiones hay que normalizar —per cápita o como índice base 100— y la población regional no existe como serie del BCCh: viene embebida como denominador en las tablas per cápita, o hay que traerla del INE."
+  },
+  {
+    "objectID": "briefings/briefing_permits.html#relacionado",
+    "href": "briefings/briefing_permits.html#relacionado",
+    "title": "Nota de familia: El ciclo regional de la construcción",
+    "section": "Relacionado",
+    "text": "Relacionado\n\n[[briefing_two_axes]] — los sectores 10, 03 y 06, y la trampa del token 7\nlib/families.py — declaración de la familia y matches()\nlib/regions.py — el parser de las cuatro codificaciones"
+  },
+  {
+    "objectID": "datos.html",
+    "href": "datos.html",
+    "title": "Datos",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTodas las bases procesadas de la revisión, en CSV y sin registro previo. Cada figura y cada tabla del sitio enlaza la base que la produce; acá están todas juntas."
+  },
+  {
+    "objectID": "datos.html#cómo-se-regeneran",
+    "href": "datos.html#cómo-se-regeneran",
+    "title": "Datos",
+    "section": "Cómo se regeneran",
+    "text": "Cómo se regeneran\nCada base se reconstruye desde la fuente primaria con un comando. No hay paso manual en ninguna etapa.\npython scripts/13_census_bde.py                      # censo del catálogo\npython scripts/01_fetch_crsm_raw.py --family &lt;fam&gt;   # descarga por familia\npython scripts/09_build_theme_panels.py --family &lt;fam&gt;  # panel analítico"
+  },
+  {
+    "objectID": "datos.html#formato",
+    "href": "datos.html#formato",
+    "title": "Datos",
+    "section": "Formato",
+    "text": "Formato\nCSV en UTF-8, separador coma, fechas ISO. Los códigos de región y de sector van con relleno de ceros y son texto, no número: leerlos como entero convierte \"01\" en 1 y rompe cualquier cruce en silencio.\npd.read_csv(ruta, dtype={\"region_id\": str, \"sector_id\": str}, parse_dates=[\"date\"])"
+  },
+  {
+    "objectID": "escalas/macro-zona.html",
+    "href": "escalas/macro-zona.html",
+    "title": "Macro-zona",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nMACRO-ZONA · 7 zonas\nLa escala más próxima a la unidad metropolitana que el proyecto mide, y la que la BDE casi no publica. Son siete zonas –Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana–, y la mayor parte vive en Estadísticas Experimentales, no en estadística oficial."
+  },
+  {
+    "objectID": "escalas/macro-zona.html#el-censo",
+    "href": "escalas/macro-zona.html#el-censo",
+    "title": "Macro-zona",
+    "section": "El censo",
+    "text": "El censo\nLa BDE publica 56 series en esta escala. 0.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 7 zonas.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nEstadísticas Experimentales\n38\nanual 20. trimestral 18\n\n\nIndicadores Sectoriales\n18\ntrimestral 18\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "escalas/macro-zona.html#qué-usa-el-proyecto",
+    "href": "escalas/macro-zona.html#qué-usa-el-proyecto",
+    "title": "Macro-zona",
+    "section": "Qué usa el proyecto",
+    "text": "Qué usa el proyecto\n\nEl inmueble como reserva de valor\nObjetivo. Reproduce y extiende la Figura 4 de la formulación (valor del stock de suelo residencial, agregado y unitario). VALT frente a VALC es la descomposición terreno/construcción de Knoll et al., premisa empírica de la propuesta, medida para Chile.\nLa geografía son zonas, no regiones: Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana. La correspondencia con las 16 regiones es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona. Ojo con la transposición de origen: la zona 1 es IVPZ1 y no IPVZ1, y corregirla acá sencillamente no encontraría la serie. La familia abarca dos escalas: 56 series zonales y 21 nacionales. VALT y VALC –la descomposición entre valorización del terreno y de la construcción– sólo existen para NAC, CAS y DEP, de modo que la premisa empírica de Knoll et al. es medible en Chile únicamente a escala nacional y nunca por zona."
+  },
+  {
+    "objectID": "escalas/macro-zona.html#lo-que-esta-escala-sostiene",
+    "href": "escalas/macro-zona.html#lo-que-esta-escala-sostiene",
+    "title": "Macro-zona",
+    "section": "Lo que esta escala sostiene",
+    "text": "Lo que esta escala sostiene\nEl índice de precios de vivienda por zona y el valor del stock habitacional. Es lo más cerca que la BDE llega de un precio inmobiliario con desagregación territorial."
+  },
+  {
+    "objectID": "escalas/macro-zona.html#lo-que-no-sostiene",
+    "href": "escalas/macro-zona.html#lo-que-no-sostiene",
+    "title": "Macro-zona",
+    "section": "Lo que no sostiene",
+    "text": "Lo que no sostiene\nEl precio del suelo, que no es el precio de la vivienda. Y ninguna comparación directa con las 16 regiones: la correspondencia es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona, nunca bajar el zonal hasta la región."
+  },
+  {
+    "objectID": "escalas/regional.html",
+    "href": "escalas/regional.html",
+    "title": "Regional",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nREGIONAL · 16 regiones\nDieciséis regiones administrativas, repartidas en varios capítulos del catálogo. Conviene recordar que una región administrativa es una construcción del Estado y no una economía: la Región de Los Lagos no es el área metropolitana de Puerto Montt–Puerto Varas."
+  },
+  {
+    "objectID": "escalas/regional.html#el-censo",
+    "href": "escalas/regional.html#el-censo",
+    "title": "Regional",
+    "section": "El censo",
+    "text": "El censo\nLa BDE publica 1.695 series en esta escala. 6.7% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nRegionales\n585\nmensual 541. anual 44\n\n\nCuentas Nacionales\n577\nanual 369. trimestral 208\n\n\nEstadísticas Experimentales\n304\nmensual 192. anual 64. diaria 32. trimestral 16\n\n\nGénero\n192\nanual 192\n\n\nMercado Laboral y Demografía\n34\nmensual 34\n\n\nMercado de Capitales\n3\ntrimestral 3\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "escalas/regional.html#qué-usa-el-proyecto",
+    "href": "escalas/regional.html#qué-usa-el-proyecto",
+    "title": "Regional",
+    "section": "Qué usa el proyecto",
+    "text": "Qué usa el proyecto\n\nEl ciclo regional de la construcción\nObjetivo. Objetivo 2 — demanda física de suelo. Es el insumo con que la formulación propone reconstruir el Consumo de Suelo Urbano del MINVU a partir de permisos de edificación desde 2010 (Proxy 2).\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nProfundidad financiera y morosidad por región\nObjetivo. Objetivo 4 — huella regional del ciclo financiero. Mide angustia y profundidad de depósitos, nunca volumen de crédito: los volúmenes hipotecarios son nacionales.\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\nEstancamiento del sector dinámico\nObjetivo. Objetivo 1 — dinamismo del sector productivo. El estancamiento se argumenta con participaciones de producto y descomposición shift-share, nunca como caída de productividad medida: el catálogo no contiene ninguna serie de PTF.\nLas compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado."
+  },
+  {
+    "objectID": "escalas/regional.html#lo-que-esta-escala-sostiene",
+    "href": "escalas/regional.html#lo-que-esta-escala-sostiene",
+    "title": "Regional",
+    "section": "Lo que esta escala sostiene",
+    "text": "Lo que esta escala sostiene\nLa demanda física de suelo por la vía de los permisos de edificación, que es el insumo con que la formulación propone reconstruir el Consumo de Suelo Urbano del MINVU. También la morosidad hipotecaria y la profundidad de depósitos, como huella regional del ciclo financiero."
+  },
+  {
+    "objectID": "escalas/regional.html#lo-que-no-sostiene",
+    "href": "escalas/regional.html#lo-que-no-sostiene",
+    "title": "Regional",
+    "section": "Lo que no sostiene",
+    "text": "Lo que no sostiene\nVolumen de crédito, que es nacional. Población regional, que no existe como serie propia y aparece sólo como denominador dentro de las tablas per cápita. Y la unidad metropolitana, que no está en ninguna escala."
   },
   {
     "objectID": "explorar.html",
@@ -263,7 +501,7 @@
     "href": "metodologia.html#trampas-por-familia-de-series",
     "title": "Metodología y límites",
     "section": "Trampas por familia de series",
-    "text": "Trampas por familia de series\n\ntwo_axes — Reporte 3 (Tier B)\nNo API calls required – sector 10 and 03 are already present in raw_annual.csv. Sector 10 is largely IMPUTED rent from national accounts; every report leaning on it must say so.\n\n\npermits — Reporte 4 (Tier B)\nFirst encounter with the two-letter region suffix vocabulary (AP, TA, AN, …). Monthly regional data; pairs against sector-06 construction GDP already on disk.\n\n\nhousing_wealth — Reporte 5 (Tier A)\nTIER A. Geography is 7 IPV zones (Norte/Centro/Sur + 4 RM sub-zones), which do NOT map onto the 16 regions. Any Tier A x Tier B comparison must state the aggregation loss or restrict itself to Norte/Centro/Sur/RM throughout. Note the upstream typo: zone 1 is IVPZ1, not IPVZ1.\n\n\nfinancial_depth — Reporte 6 (Tier B)\nF022 uses the glued-mnemonic encoding. F022.CTOBI is NOT Biobio and F022.CAP is NOT Arica y Parinacota – lib.regions’ GLUED_FAMILY_STEMS whitelist exists for exactly this family. Measures distress and deposit depth, never credit volume: mortgage volumes are national only.\n\n\ninterregional_trade — Reporte 7 (Tier B)\nCompraventas use a NUMERIC region token (15 = Arica y Parinacota) – a fifth encoding lib.regions does not yet handle. Add the parser there, never as a standalone parser elsewhere. No TFP series exists in the catalog, so ‘stagnation’ rests on output shares and shift-share, not productivity."
+    "text": "Trampas por familia de series\n\ntwo_axes — Reporte 3 (sectorial-regional)\nLos dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales: sector 10 (Servicios de vivienda e inmobiliarios) es renta espacial, sector 03 (Minería) es renta de recursos, sector 06 (Construcción) es la pata de inversión. Ninguna requiere descarga: ya están en raw_annual.csv. El sector 10 es mayoritariamente ALQUILER IMPUTADO de las cuentas nacionales, no arriendo efectivamente pagado; es el supuesto que sostiene todo el eje espacial y se declara en cada reporte que se apoya en él. La familia abarca dos escalas: 2.037 series sectorial-regionales y 209 totales regionales (sector Z). La escala declarada es la principal, no la única.\n\n\npermits — Reporte 4 (regional)\nPrimer encuentro con el sufijo de región de dos letras pegado al mnemónico (AP, TA, AN…). Son permisos: intención de construir, no construcción ejecutada. Fuerte estacionalidad, así que toda lectura mes contra mes es ruido; usar variación doce meses. CEYS es constitución de empresas de todo tipo y entra como control de dinamismo empresarial, no como parte del eje espacial: no sumarlo a los otros tres.\n\n\nhousing_wealth — Reporte 5 (macro-zona)\nLa geografía son zonas, no regiones: Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana. La correspondencia con las 16 regiones es de uno a muchos salvo en la RM, de modo que la única dirección de agregación honesta es subir el dato regional hasta la zona. Ojo con la transposición de origen: la zona 1 es IVPZ1 y no IPVZ1, y corregirla acá sencillamente no encontraría la serie. La familia abarca dos escalas: 56 series zonales y 21 nacionales. VALT y VALC –la descomposición entre valorización del terreno y de la construcción– sólo existen para NAC, CAS y DEP, de modo que la premisa empírica de Knoll et al. es medible en Chile únicamente a escala nacional y nunca por zona.\n\n\nfinancial_depth — Reporte 6 (regional)\nF022 usa la codificación de mnemónico pegado. F022.CTOBI NO es Biobío y F022.CAP NO es Arica y Parinacota: la lista blanca de raíces en lib.regions existe exactamente para esta familia. La selección por familia se ancla al mnemónico por la misma razón, después de que NVA hiciera match dentro de CCPNVA.\n\n\ninterregional_trade — Reporte 7 (regional)\nLas compraventas usan un token de región NUMÉRICO (15 = Arica y Parinacota), una quinta codificación que lib.regions todavía no resuelve. El parser va ahí, nunca como parser suelto en otro lado.\n\n\ntasas — Reporte 8 (nacional)\nEscala nacional, y no le falta desagregación: la tasa de descuento que discute H1 es un precio único de la economía. La cobertura es desigual entre series (captación y colocación desde 1983; TPM desde 1995; hipotecarias y bonos UF desde 2002), de modo que cualquier ventana común es más corta que la más larga. DEUBH mide apalancamiento de hogares como porcentaje del PIB y del ingreso disponible, y es la contraparte financiera del stock de vivienda que mide housing_wealth."
   },
   {
     "objectID": "metodologia.html#reproducir",
@@ -277,7 +515,7 @@
     "href": "reportes/report2-cobertura.html",
     "title": "Reporte de cobertura de datos regionales",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nQué publica efectivamente el Banco Central a nivel regional, por dominio temático, frecuencia y región.\nEste reporte presenta una auditoría exhaustiva y un análisis de cobertura de todas las series de datos a nivel regional (16 regiones administrativas, \\(r = 1 \\dots 16\\)) y sectorial (\\(s = 1 \\dots 12\\)) disponibles a través de la API del Banco Central de Chile (BCCh).\nEsta versión expandida pone especial énfasis en el Desarrollo Sectorial Integrado, analizando conjuntamente las variables del Sistema Financiero Regional y los indicadores de Uso de Suelo y Desarrollo Territorial."
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nQué publica efectivamente el Banco Central a nivel regional, por dominio temático, frecuencia y región.\nEste reporte presenta una auditoría exhaustiva y un análisis de cobertura de todas las series de datos a nivel regional (16 regiones administrativas, \\(r = 1 \\dots 16\\)) y sectorial (\\(s = 1 \\dots 12\\)) disponibles a través de la API del Banco Central de Chile (BCCh).\nEsta versión expandida pone especial énfasis en el Desarrollo Sectorial Integrado, analizando conjuntamente las variables del Sistema Financiero Regional y los indicadores de Uso de Suelo y Desarrollo Territorial."
   },
   {
     "objectID": "reportes/report2-cobertura.html#resumen-ejecutivo-de-la-cobertura",

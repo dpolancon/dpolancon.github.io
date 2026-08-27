@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>El programa – Renta espacial y renta de recursos</title>
+<title>La revisión – Renta espacial y renta de recursos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -264,8 +264,31 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Programa</span></a>
+<span class="menu-text">La revisión</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-escalas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Escalas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-escalas">    
+        <li>
+    <a class="dropdown-item" href="./escalas/nacional.html">
+ <span class="dropdown-text">Nacional</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./escalas/macro-zona.html">
+ <span class="dropdown-text">Macro-zona</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./escalas/regional.html">
+ <span class="dropdown-text">Regional</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./escalas/sectorial-regional.html">
+ <span class="dropdown-text">Sectorial-regional</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reportes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Reportes</span>
@@ -288,6 +311,14 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./explorar.html"> 
 <span class="menu-text">Explorar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./datos.html"> 
+<span class="menu-text">Datos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./diseno.html"> 
+<span class="menu-text">Diseño</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./metodologia.html"> 
@@ -315,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#la-tesis-en-dos-registros" id="toc-la-tesis-en-dos-registros" class="nav-link active" data-scroll-target="#la-tesis-en-dos-registros">La tesis, en dos registros</a></li>
+  <li><a href="#qué-mide-el-banco-central-y-a-qué-escala" id="toc-qué-mide-el-banco-central-y-a-qué-escala" class="nav-link active" data-scroll-target="#qué-mide-el-banco-central-y-a-qué-escala">Qué mide el Banco Central, y a qué escala</a></li>
   <li><a href="#hoja-de-ruta" id="toc-hoja-de-ruta" class="nav-link" data-scroll-target="#hoja-de-ruta">Hoja de ruta</a></li>
   <li><a href="#cómo-avanza-el-programa" id="toc-cómo-avanza-el-programa" class="nav-link" data-scroll-target="#cómo-avanza-el-programa">Cómo avanza el programa</a></li>
   <li><a href="#notas-de-familia" id="toc-notas-de-familia" class="nav-link" data-scroll-target="#notas-de-familia">Notas de familia</a></li>
@@ -395,8 +426,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">El programa</h1>
-<p class="subtitle lead">Programa de publicaciones sobre datos regionales del Banco Central de Chile</p>
+<h1 class="title">La revisión</h1>
+<p class="subtitle lead">Revisión multiescalar de la Base de Datos Estadísticos del Banco Central de Chile</p>
 </div>
 
 
@@ -413,13 +444,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="la-tesis-en-dos-registros" class="level2">
-<h2 class="anchored" data-anchor-id="la-tesis-en-dos-registros">La tesis, en dos registros</h2>
-<p>Este programa sostiene un solo argumento, medido en dos niveles distintos porque el Banco Central publica los datos en dos niveles distintos.</p>
-<p><strong>Tier A — nacional y por zonas.</strong> El inmueble en Chile funciona como reserva de valor. La riqueza habitacional como proporción del PIB, la descomposición entre valor del <em>suelo</em> y valor de la <em>construcción</em>, y el apalancamiento hipotecario de los hogares miden la financiarización del espacio de forma directa.</p>
-<p><strong>Tier B — las 16 regiones.</strong> Ese proceso nacional deja una huella regional que sí es medible: permisos de edificación, participación del sector 10 en el producto regional, morosidad hipotecaria y profundidad de cuentas corrientes. Esa huella corre contra la inmovilidad estructural que documentó el Reporte 1 —un HHI plano en 0,236–0,244 durante trece años.</p>
+<section id="qué-mide-el-banco-central-y-a-qué-escala" class="level2">
+<h2 class="anchored" data-anchor-id="qué-mide-el-banco-central-y-a-qué-escala">Qué mide el Banco Central, y a qué escala</h2>
+<p>Esta revisión recorre la Base de Datos Estadísticos del Banco Central para el proyecto sobre las determinantes financieras del precio del suelo metropolitano. Su resultado no es un inventario sino una asimetría.</p>
+<p>El catálogo publica <strong>25.369 series únicas</strong> repartidas de forma muy desigual entre cuatro escalas de observación:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Escala</th>
+<th style="text-align: right;">Series</th>
+<th style="text-align: right;">Participación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="./escalas/nacional.html">Nacional</a></td>
+<td style="text-align: right;">21.287</td>
+<td style="text-align: right;">83,9%</td>
+</tr>
+<tr class="even">
+<td><a href="./escalas/sectorial-regional.html">Sectorial-regional</a></td>
+<td style="text-align: right;">2.331</td>
+<td style="text-align: right;">9,2%</td>
+</tr>
+<tr class="odd">
+<td><a href="./escalas/regional.html">Regional</a></td>
+<td style="text-align: right;">1.695</td>
+<td style="text-align: right;">6,7%</td>
+</tr>
+<tr class="even">
+<td><a href="./escalas/macro-zona.html">Macro-zona</a></td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">0,2%</td>
+</tr>
+</tbody>
+</table>
+<div class="fuente">
+<p><strong>Fuente:</strong> elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: <a href="datos/censo_bde_series.csv"><code>censo_bde_series.csv</code></a>.</p>
+</div>
+<p>La BDE mide las escalas que al Banco Central le interesa gobernar. El grueso es nacional porque el mandato es la política monetaria nacional; la región aparece por vía de Cuentas Nacionales; la macro-zona aparece como estadística experimental. La asimetría no es una limitación técnica del catálogo: es una propiedad de la institución que lo produce.</p>
 <div class="caveat">
-<p><strong>Los dos tiers no se cruzan libremente.</strong> El índice de precios de vivienda existe para siete zonas, no para dieciséis regiones. Cualquier comparación entre tiers declara explícitamente la pérdida por agregación, o se restringe a Norte / Centro / Sur / RM. No se ofrece una tabla de equivalencia región-zona porque no existe una que sea honesta.</p>
+<p><strong>El área metropolitana no existe en ninguna escala.</strong> Es la unidad que el proyecto mide, y la BDE no la publica. Lo más próximo son las macro-zonas —56 series, la escala más pequeña del catálogo—, y la correspondencia con las regiones es de uno a muchos salvo en la Región Metropolitana. La única dirección de agregación honesta es subir el dato regional hasta la zona, nunca bajar el zonal hasta la región.</p>
 </div>
 </section>
 <section id="hoja-de-ruta" class="level2">
@@ -440,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>3</td>
 <td><a href="./reportes/report3-dos-ejes.html">Los dos ejes: renta espacial y renta de recursos</a></td>
-<td>Tier B</td>
+<td>sectorial-regional</td>
 <td><code>two_axes</code></td>
 <td>A, T</td>
 <td>publicado</td>
@@ -448,7 +513,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>4</td>
 <td>El ciclo regional de la construcción</td>
-<td>Tier B</td>
+<td>regional</td>
 <td><code>permits</code></td>
 <td>M</td>
 <td>en preparación</td>
@@ -456,7 +521,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>5</td>
 <td>El inmueble como reserva de valor</td>
-<td>Tier A</td>
+<td>macro-zona</td>
 <td><code>housing_wealth</code></td>
 <td>A, T</td>
 <td>en preparación</td>
@@ -464,7 +529,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>6</td>
 <td>Profundidad financiera y morosidad por región</td>
-<td>Tier B</td>
+<td>regional</td>
 <td><code>financial_depth</code></td>
 <td>M</td>
 <td>en preparación</td>
@@ -472,9 +537,17 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>7</td>
 <td>Estancamiento del sector dinámico</td>
-<td>Tier B</td>
+<td>regional</td>
 <td><code>interregional_trade</code></td>
 <td>M, T, A</td>
+<td>en preparación</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>El precio del dinero: tasas y apalancamiento</td>
+<td>nacional</td>
+<td><code>tasas</code></td>
+<td>D, M, T, A</td>
 <td>en preparación</td>
 </tr>
 </tbody>
@@ -496,12 +569,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="notas-de-familia">Notas de familia</h2>
 <p>Cada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.</p>
 <ul>
+<li><a href="./briefings/briefing_permits.html">Nota de familia: El ciclo regional de la construcción</a></li>
 <li><a href="./briefings/briefing_two_axes.html">Nota de familia: Los dos ejes: renta espacial y renta de recursos</a></li>
 </ul>
 </section>
 <section id="procedencia" class="level2">
 <h2 class="anchored" data-anchor-id="procedencia">Procedencia</h2>
-<p>Todo número de este sitio proviene de un CSV en <code>data/</code>, y todo CSV proviene de la API del Banco Central de Chile. No hay datos sintéticos, estimados ni interpolados en ninguna etapa —la ausencia se reporta como ausencia. Los paneles publicados están <a href="./explorar.html">disponibles para descarga</a>.</p>
+<p>Todo número de este sitio proviene de un CSV en <code>data/</code>, y todo CSV proviene de la API del Banco Central de Chile. No hay datos sintéticos, estimados ni interpolados en ninguna etapa —la ausencia se reporta como ausencia. Todas las bases procesadas están <a href="./datos.html">disponibles para descarga</a>, y el <a href="./diseno.html">crosswalk</a> permite rastrear cualquier cifra hasta el código de serie que la origina.</p>
 
 
 </section>
