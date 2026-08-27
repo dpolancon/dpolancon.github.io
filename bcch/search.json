@@ -1,0 +1,331 @@
+[
+  {
+    "objectID": "reportes/report3-dos-ejes.html",
+    "href": "reportes/report3-dos-ejes.html",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nLa renta espacial es difusa y creciente; la renta de recursos es concentrada y se endurece. Son dos geografías distintas dentro del mismo país."
+  },
+  {
+    "objectID": "reportes/report3-dos-ejes.html#el-argumento",
+    "href": "reportes/report3-dos-ejes.html#el-argumento",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "El argumento",
+    "text": "El argumento\nEl marco de crecimiento desbalanceado distingue dos rentas que compiten por el excedente de una economía: la renta espacial, que se captura sobre el suelo y el inmueble, y la renta de recursos, que se captura sobre el subsuelo. En las cuentas regionales del Banco Central ambas tienen una contraparte directa: el sector 10 (Servicios de vivienda e inmobiliarios) y el sector 03 (Minería). El sector 06 (Construcción) es la pata de inversión que las vincula.\nEste reporte no descarga ninguna serie nueva. Todo lo que usa ya estaba en raw_annual.csv desde el primer día del repositorio: su propósito es medir los dos ejes a lo largo del tiempo, no ampliar la base.\n\nEl sector 10 es mayoritariamente renta imputada. Las cuentas nacionales incluyen el alquiler imputado de las viviendas ocupadas por sus propietarios, no sólo el arriendo efectivamente pagado. Es la mejor aproximación disponible —el catálogo del Banco Central no contiene ningún índice de arriendos regional— pero es un supuesto que sostiene todo el eje espacial, y por eso se declara en cada reporte que se apoya en él."
+  },
+  {
+    "objectID": "reportes/report3-dos-ejes.html#lo-que-muestran-los-datos",
+    "href": "reportes/report3-dos-ejes.html#lo-que-muestran-los-datos",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "Lo que muestran los datos",
+    "text": "Lo que muestran los datos\nEntre 2013 y 2025 la participación media de la renta espacial en el producto regional pasó de 7,91% a 8,66%. La participación media de la renta de recursos pasó de 14,08% a 14,13% —es decir, se mantuvo prácticamente donde estaba.\nEl promedio, sin embargo, es lo menos interesante. Lo decisivo es cómo se reparte cada eje entre regiones:\n\nEl Gini regional de la renta espacial se movió de 0,1498 a 0,1798. Es un valor bajo: la renta espacial existe en todas partes.\nEl Gini regional de la renta de recursos se movió de 0,6332 a 0,6956. Es un valor alto y creciente: la minería no sólo está concentrada, se está concentrando más.\n\nEn 2025 las regiones con mayor participación de renta espacial fueron La Araucanía (12,3%); Ñuble (11,8%); Valparaíso (11,5%). Las de mayor renta de recursos fueron Antofagasta (64,5%); Atacama (57,2%); Tarapacá (39,4%)."
+  },
+  {
+    "objectID": "reportes/report3-dos-ejes.html#por-qué-importa",
+    "href": "reportes/report3-dos-ejes.html#por-qué-importa",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "Por qué importa",
+    "text": "Por qué importa\nLas dos rentas no se distribuyen como se distribuye el producto. La renta espacial acompaña a la población: donde hay gente hay vivienda, y donde hay vivienda hay sector 10. La renta de recursos acompaña a la geología, que no se redistribuye nunca.\nEsto ofrece una lectura del hallazgo central del Reporte 1 —un HHI de producción plano durante trece años mientras el Gini de bienestar bajaba. La inmovilidad está del lado del eje de recursos, que se endurece; el movimiento está del lado del eje espacial, que es difuso por construcción. Una política regional que solo mueva el eje espacial redistribuye bienestar sin tocar la estructura productiva. Es exactamente lo que los índices del Reporte 1 describen."
+  },
+  {
+    "objectID": "reportes/report3-dos-ejes.html#datos",
+    "href": "reportes/report3-dos-ejes.html#datos",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "Datos",
+    "text": "Datos\nEl panel completo está publicado en panel_two_axes_annual.csv (región × año × eje) y el resumen anual en panel_two_axes_summary.csv. Ambos se regeneran con:\npython scripts/09_build_theme_panels.py --family two_axes"
+  },
+  {
+    "objectID": "reportes/report3-dos-ejes.html#nota-metodológica",
+    "href": "reportes/report3-dos-ejes.html#nota-metodológica",
+    "title": "Los dos ejes: renta espacial y renta de recursos",
+    "section": "Nota metodológica",
+    "text": "Nota metodológica\nLas participaciones se calculan sobre precios corrientes, no sobre volumen encadenado. Los volúmenes encadenados no son aditivos entre sectores: sumarlos no reproduce el total regional, y una participación construida así no sería una proporción de nada. El detalle está en la página de metodología."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html",
+    "href": "reportes/report1-disparidades.html",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nLa geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html#introducción",
+    "href": "reportes/report1-disparidades.html#introducción",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "1. Introducción",
+    "text": "1. Introducción\nChile se caracteriza históricamente por una alta centralización económica y desigualdad espacial. Este informe presenta un análisis descriptivo de las disparidades económicas regionales en Chile durante el período 2013-2025, utilizando cifras anuales del PIB regional de la base de datos estadística del Banco Central de Chile (BCCh) (medidas en volumen encadenado, año de referencia 2018). El conjunto de datos cubre las 16 regiones administrativas de Chile, rastreando su producción económica, dinámicas de crecimiento, patrones de especialización sectorial e índices de desigualdad espacial."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html#sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento",
+    "href": "reportes/report1-disparidades.html#sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "2. Sección 1: Tamaño Económico Regional y Dinámicas de Crecimiento",
+    "text": "2. Sección 1: Tamaño Económico Regional y Dinámicas de Crecimiento\nLa Tabla 1 resume los parámetros clave de la producción económica de las 16 regiones chilenas. La dominancia de la Región Metropolitana es clara, representando el 45.9% del PIB nacional, seguida de regiones con fuerte actividad minera como Antofagasta.\n\nTabla 1: Estadísticas Resumidas del Producto Económico Regional (2013-2025)\n\n\n\n\n\n\n\n\n\n\nRegión\nPIB Promedio (Miles de Millones de CLP)\nParticipación en el PIB Nacional (%)\nTasa de Crecimiento Anual Promedio (%)\nVolatilidad del Producto (Desv. Est.)\n\n\n\n\nMetropolitana de Santiago\n78.49\n45.92%\n2.04%\n4.79\n\n\nAntofagasta\n16.00\n9.39%\n1.36%\n4.20\n\n\nValparaíso\n14.26\n8.35%\n1.41%\n4.07\n\n\nBiobío\n11.45\n6.69%\n2.63%\n3.49\n\n\nO’Higgins\n7.86\n4.60%\n1.99%\n3.98\n\n\nMaule\n7.22\n4.21%\n3.06%\n3.61\n\n\nLos Lagos\n6.31\n3.68%\n3.57%\n3.69\n\n\nCoquimbo\n5.87\n3.44%\n1.39%\n3.78\n\n\nLa Araucanía\n5.36\n3.12%\n3.24%\n3.90\n\n\nTarapacá\n4.46\n2.61%\n1.62%\n4.83\n\n\nAtacama\n3.85\n2.26%\n2.54%\n5.81\n\n\nÑuble\n2.80\n1.63%\n2.89%\n4.33\n\n\nLos Ríos\n2.50\n1.46%\n2.72%\n3.35\n\n\nMagallanes\n1.84\n1.08%\n2.56%\n5.37\n\n\nArica y Parinacota\n1.49\n0.87%\n3.28%\n5.48\n\n\nAysén\n1.21\n0.71%\n2.35%\n5.71\n\n\n\n\n\nFiguras Correspondientes\n\nFigura 1.1: Distribución del PIB Regional - La Dominancia de Santiago\n La Figura 1.1 destaca la enorme discrepancia de tamaño entre la Región Metropolitana (resaltada en rojo) y todas las demás regiones. Las regiones mineras basadas en recursos primarios como Antofagasta (naranja) la siguen, pero aún operan a una fracción de la escala de producción de la capital.\n\n\nFigura 1.2: Crecimiento vs. Tamaño - Patrones de Convergencia\n La Figura 1.2 prueba la convergencia \\(\\beta\\). La teoría neoclásica del crecimiento sugiere que las regiones más pobres (con menor PIB inicial en 2013) deberían crecer más rápido que las ricas, produciendo una línea de tendencia con pendiente negativa. En Chile, esta relación es débilmente negativa pero está fuertemente distorsionada por economías mineras de alto crecimiento (como Antofagasta) y regiones rurales estancadas."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html#sección-2-especialización-económica-regional-decomposición-en-13-sectores",
+    "href": "reportes/report1-disparidades.html#sección-2-especialización-económica-regional-decomposición-en-13-sectores",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "3. Sección 2: Especialización Económica Regional (Decomposición en 13 Sectores)",
+    "text": "3. Sección 2: Especialización Económica Regional (Decomposición en 13 Sectores)\nLos Cocientes de Localización (LQ) revelan qué tan especializada está una región en un sector particular en relación con el promedio nacional. Un LQ mayor que 1.0 indica que la participación de un sector en la producción regional es mayor que su participación en la economía nacional. Esta sección aprovecha la clasificación oficial de PIB regional de 13 sectores compilada por el Banco Central de Chile para extraer la composición estructural de los territorios.\n\nFormalización Metodológica\nEl Cociente de Localización (\\(LQ_{i,s}\\)) para la región \\(i\\) y el sector \\(s\\) se formaliza como: \\[LQ_{i,s} = \\frac{Y_{i,s} / Y_i}{Y_{\\text{nat},s} / Y_{\\text{nat}}}\\] donde: - \\(Y_{i,s}\\) es el PIB del sector \\(s\\) en la región \\(i\\), - \\(Y_i = \\sum_{s=1}^m Y_{i,s}\\) es el PIB total de la región \\(i\\) a través de los \\(m\\) sectores, - \\(Y_{\\text{nat},s} = \\sum_{j=1}^n Y_{j,s}\\) es el PIB nacional del sector \\(s\\) a través de las \\(n\\) regiones, - \\(Y_{\\text{nat}} = \\sum_{j=1}^n \\sum_{k=1}^m Y_{j,k}\\) es el PIB nacional total.\n\n\nTabla 2: Cocientes de Localización (LQ) por Región y Sector (2025 - 13 Sectores)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRegión\nAdmPub\nAgro\nComercio\nConst\nEGA\nManuf\nMinería\nPesca\nHoteles\nInmob\nFinan\nPersonales\nTransp\n\n\n\n\nAntofagasta\n0.24\n0.00\n0.23\n1.26\n1.30\n0.26\n4.46\n0.08\n0.51\n0.25\n0.39\n0.27\n0.42\n\n\nLa Araucanía\n1.62\n2.42\n0.96\n1.28\n1.20\n0.83\n0.02\n0.07\n1.10\n1.48\n0.60\n1.68\n0.84\n\n\nArica y Parinacota\n2.61\n1.09\n0.67\n2.12\n0.64\n0.83\n0.23\n2.07\n1.83\n1.20\n0.69\n1.26\n0.78\n\n\nAtacama\n0.50\n0.29\n0.28\n1.00\n2.12\n0.18\n3.95\n0.17\n0.60\n0.44\n0.44\n0.39\n0.41\n\n\nAysén\n3.32\n0.56\n0.48\n0.78\n0.52\n0.60\n0.26\n46.42\n0.78\n0.81\n0.32\n1.06\n0.68\n\n\nBiobío\n1.13\n1.08\n0.70\n1.07\n1.89\n1.95\n0.03\n2.26\n0.88\n1.25\n0.77\n1.33\n0.85\n\n\nCoquimbo\n0.78\n1.40\n0.64\n1.58\n0.85\n0.42\n1.63\n0.32\n1.40\n1.10\n0.86\n0.98\n0.69\n\n\nLos Lagos\n1.19\n1.76\n0.93\n0.82\n0.68\n2.13\n0.01\n10.41\n0.95\n1.06\n0.65\n1.24\n0.84\n\n\nLos Ríos\n1.48\n3.46\n0.69\n0.97\n0.95\n2.00\n0.02\n1.12\n0.94\n1.21\n0.52\n1.34\n0.72\n\n\nMagallanes\n2.66\n0.55\n0.56\n1.29\n0.92\n1.51\n0.35\n8.49\n1.55\n1.04\n0.66\n0.97\n0.93\n\n\nMaule\n0.97\n4.66\n0.95\n1.11\n1.71\n1.37\n0.02\n0.14\n0.81\n1.35\n0.57\n1.19\n0.71\n\n\nMetropolitana de Santiago\n1.06\n0.29\n1.49\n0.75\n0.59\n1.07\n0.07\n0.00\n1.16\n1.09\n1.55\n1.13\n1.38\n\n\nÑuble\n1.26\n3.39\n0.82\n1.20\n0.98\n1.47\n0.03\n0.01\n1.01\n1.41\n0.60\n1.40\n0.79\n\n\nO’Higgins\n0.70\n4.32\n0.93\n0.98\n1.22\n0.96\n1.21\n0.06\n0.78\n1.02\n0.61\n0.91\n0.53\n\n\nTarapacá\n0.94\n0.01\n0.81\n2.05\n0.35\n0.67\n2.73\n0.58\n0.87\n0.56\n0.48\n0.59\n0.61\n\n\nValparaíso\n1.34\n1.22\n0.79\n0.93\n1.46\n0.90\n0.60\n0.08\n1.17\n1.38\n0.86\n1.08\n1.32\n\n\n\n\n\nFiguras Correspondientes\n\nFigura 2.1: Mapa de Calor de Especialización en 13 Sectores\n El mapa de calor expone inmediatamente las identidades económicas geográficas de Chile a través de los 13 sectores económicos. Destaca el norte predominantemente minero, el centro orientado a los servicios y el sur silvoagropecuario y pesquero.\n\n\nFigura 2.2: Gráficos de Radar de Especialización Regional por Macro-Zona (Decomposición de 13 Sectores)\nAgrupamos los gráficos de radar regionales por macrozonas geográficas para exponer estructuras regionales compartidas y clusters territoriales:\n\n1. Macro-Zona Norte (Núcleo Minero)\n La Figura 2.2a detalla la macrozona Norte (Arica y Parinacota, Tarapacá, Antofagasta, Atacama). Se caracteriza por una fuerte especialización en Minería, con Antofagasta mostrando un cociente minero masivo (\\(LQ &gt; 5.0\\)). Las regiones del norte con menor producción como Arica muestran un sesgo hacia la administración pública y los servicios sociales, mientras que los sectores agrícolas son prácticamente inexistentes debido al clima desértico.\n\n\n2. Macro-Zona Centro (Centro de Servicios y Conectividad)\n La Figura 2.2b perfila la macrozona Centro (Coquimbo, Valparaíso, Metropolitana). La Región Metropolitana muestra una alta concentración en Servicios y Actividades Financieras (\\(LQ &gt; 1.5\\)), operando como el centro de negocios del país. Valparaíso equilibra el transporte y comercio portuario con el turismo (Servicios y Comercio). Coquimbo representa una zona de transición, combinando la minería en los valles interiores con la actividad agrícola.\n\n\n3. Macro-Zona Centro Sur (Corazón Agrícola-Industrial)\n La Figura 2.2c muestra la macrozona Centro Sur (O’Higgins, Maule, Ñuble, Biobío). Biobío actúa como el motor industrial con una especialización manufacturera significativa (\\(LQ &gt; 1.5\\)), mientras que Maule y Ñuble muestran una fuerte concentración en Agricultura y Silvoagropecuario (\\(LQ &gt; 2.5\\)). O’Higgins presenta un carácter dual, combinando la extracción de cobre con la agricultura frutícola.\n\n\n4. Macro-Zona Sur (Corazón Silvoagropecuario y Acuícola)\n La Figura 2.2d muestra la macrozona Sur (Araucanía, Los Ríos, Los Lagos). Los Lagos está fuertemente especializada en Pesca y Acuicultura (\\(LQ &gt; 5.5\\)) debido a la industria del salmón. La Araucanía presenta una fuerte presencia de Agricultura y Servicios Personales/Sociales.\n\n\n5. Macro-Zona Austral (Enclaves de Recursos Primarios y Servicios Públicos en Zonas Aisladas)\n La Figura 2.2e captura la macrozona Austral (Aysén, Magallanes). Ambas regiones muestran altas participaciones de servicios sociales debido al empleo público en zonas aisladas. Los recursos primarios siguen siendo muy relevantes, particularmente el petróleo y gas en Magallanes, y la pesca/ganadería en Aysén."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html#sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población",
+    "href": "reportes/report1-disparidades.html#sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "4. Sección 3: Evolución de la Desigualdad Espacial (Ponderada por Población)",
+    "text": "4. Sección 3: Evolución de la Desigualdad Espacial (Ponderada por Población)\nPara evaluar la desigualdad espacial del bienestar entre los ciudadanos en lugar de la simple densidad de producción, calculamos índices ponderados por población sobre el PIB regional per cápita a lo largo del tiempo. Evaluar las disparidades espaciales sin ponderar por la masa demográfica puede sesgar los resultados, sobrerrepresentando a regiones pequeñas (p. ej., Aysén, con 100 mil habitantes) frente a grandes centros demográficos (p. ej., Metropolitana, con 7.5 millones).\n\nFormalización Metodológica\n\nCoeficiente de Gini Ponderado por Población (\\(G_w\\)): Mide la distancia promedio entre todos los pares de PIB regional per cápita, ponderada por sus respectivas participaciones de población: \\[G_w = \\frac{1}{2\\bar{y}} \\sum_{i=1}^n \\sum_{j=1}^n s_i s_j |y_i - y_j|\\] donde \\(y_i\\) es el PIB per cápita de la región \\(i\\), \\(s_i = \\frac{p_i}{P}\\) es la participación de población de la región \\(i\\) (con población regional \\(p_i\\) y población nacional \\(P = \\sum p_i\\)), y \\(\\bar{y} = \\sum_{i=1}^n s_i y_i\\) es el promedio nacional del PIB per cápita.\nÍndice de Theil Ponderado por Población (\\(T_w\\)): El índice de Theil captura la entropía de la distribución del ingreso regional, representando la dispersión del PIB per cápita regional ponderada demográficamente: \\[T_w = \\sum_{i=1}^n s_i \\left( \\frac{y_i}{\\bar{y}} \\right) \\ln\\left( \\frac{y_i}{\\bar{y}} \\right)\\]\nÍndice de Herfindahl-Hirschman (HHI) para Concentración de la Producción: El HHI evalúa la concentración bruta de la actividad económica nacional (PIB regional total, no per cápita) entre los 16 territorios administrativos: \\[HHI = \\sum_{i=1}^n x_i^2\\] donde \\(x_i = \\frac{Y_i}{\\sum Y_i}\\) es la participación del PIB de la región \\(i\\) (\\(Y_i\\)) en el total nacional. Los valores del HHI varían desde \\(1/n = 0.0625\\) (distribución perfectamente equitativa de la producción) hasta \\(1.0\\) (concentración total).\n\n\n\nTabla 3: Índices de Desigualdad Espacial Ponderados por Población en el Tiempo (PIB per cápita)\n\n\n\n\n\n\n\n\n\nAño\nCoeficiente de Gini\nÍndice de Theil\nHHI (Concentración de la Producción)\n\n\n\n\n2013\n0.1893\n0.0765\n0.2419\n\n\n2015\n0.1858\n0.0744\n0.2426\n\n\n2017\n0.1712\n0.0604\n0.2438\n\n\n2019\n0.1618\n0.0565\n0.2419\n\n\n2021\n0.1485\n0.0469\n0.2424\n\n\n2023\n0.1445\n0.0452\n0.2399\n\n\n2025\n0.1476\n0.0496\n0.2364\n\n\n\nNota: Una versión en formato CSV de la Tabla 3 está disponible en table3_spatial_inequality.csv.\n\n\nFiguras Correspondientes\n\nFigura 3.1: Tendencias de Desigualdad Espacial Ponderada por Población (2013-2025)\n La Figura 3.1 traza la trayectoria a largo plazo de la desigualdad regional en Chile. A diferencia de la concentración bruta de la producción, que permanece estructuralmente rígida, la desigualdad basada en el PIB regional per cápita muestra una variabilidad temporal significativa: 1. La Corrección Post-Boom (2013-2016): Los índices de Gini y Theil disminuyeron de manera constante a medida que los precios del cobre se normalizaron, reduciendo la brecha entre los enclaves de recursos y el resto del país. 2. La Recuperación Económica 2017-2018: Ocurrió una divergencia debido a diferentes ritmos de recuperación entre las regiones industriales y primarias. 3. El Choque del COVID-19 en 2020: Las dinámicas regionales divergieron marcadamente, reflejando el impacto localizado de los confinamientos.\n\n\nFigura 3.2: Evolución de la Participación en el PIB Regional - Área Apilada\n El gráfico de área apilada demuestra la rigidez estructural de la geografía económica de Chile. La Región Metropolitana (capa inferior) mantiene una participación constante y pesada de la producción durante todo el período de 13 años.\n\n\n\nInterpretación de Tendencias de Desigualdad y Dinámicas Regionales\nLa comparación entre la concentración bruta de la producción (HHI) y los índices de desigualdad ponderados por población (Gini y Theil) expone características estructurales clave de la geografía económica de Chile:\n\nRigidez Estructural de la Producción (HHI): El HHI se mantiene prácticamente plano, oscilando entre 0.2364 y 0.2438 durante todo el período 2013-2025. Esto indica que la concentración geográfica de la producción bruta está estructuralmente bloqueada. La Región Metropolitana y los centros mineros del norte siguen capturando exactamente las mismas proporciones de la producción económica nacional, sin mostrar señales de descentralización territorial.\nVolatilidad Temporal del Bienestar (Gini y Theil): A diferencia de la rigidez del HHI, el Gini y Theil ponderados por población muestran ciclos temporales claros impulsados por choques macroeconómicos nacionales:\n\nLa Corrección Post-Boom de Commodities (2013–2016): El Gini ponderado disminuyó de 0.1893 en 2013 a 0.1476 en 2025 (y el Theil de 0.0765 a 0.0496). Al normalizarse los precios del cobre tras el súper-ciclo, la brecha de PIB per cápita entre las regiones ricas en recursos (como Antofagasta) y las regiones agrícolas o de servicios se comprimió. Esto representa una “convergencia pasiva” por normalización de rentas y no por un catch-up estructural de los sectores rezagados.\nLa Compresión por el COVID-19 en 2020: El Gini ponderado alcanzó su mínimo en 2023, en 0.1445 (Theil en 0.0452). Esta anomalía refleja el impacto desigual de las cuarentenas. Los centros urbanos basados en servicios (como Santiago) enfrentaron cierres severos que contrajeron su producción, mientras que los sectores primarios (minería en el Norte) se mantuvieron activos al ser catalogados como estratégicos. Esto redujo temporalmente la brecha de ingresos entre la capital y las regiones periféricas.\nRebote Post-Pandemia (2021–2025): Con la reapertura de los servicios y los ciclos de inflación global, el Gini se situó en 0.1476 hacia 2025 (Theil en 0.0496), demostrando que las disparidades espaciales subyacentes regresan a sus niveles históricos una vez que se normaliza el ciclo económico.\n\nImplicancia de Política Pública: La divergencia entre una concentración constante de la producción (HHI) y variables de bienestar fluctuantes (Gini/Theil) sugiere que los ciclos de commodities y choques temporales mueven los indicadores per cápita temporalmente, pero no resuelven el centralismo espacial persistente en Chile. Reducir la desigualdad requiere políticas industriales activas y de diversificación productiva dirigidas a sectores de alto valor fuera de la Región Metropolitana."
+  },
+  {
+    "objectID": "reportes/report1-disparidades.html#conclusiones-e-implicancias-de-política",
+    "href": "reportes/report1-disparidades.html#conclusiones-e-implicancias-de-política",
+    "title": "Disparidades económicas regionales en Chile",
+    "section": "5. Conclusiones e Implicancias de Política",
+    "text": "5. Conclusiones e Implicancias de Política\n\nCentralización Persistente: La Región Metropolitana continúa dominando el panorama económico, capturando consistentemente el 45.9% del PIB nacional. No existe evidencia visual ni estadística de una descentralización importante.\nDébil Cohesión: El gráfico de convergencia demuestra que las regiones rurales y periféricas no están alcanzando al centro. El crecimiento sigue estando impulsado por enclaves de recursos específicos (Minería en el Norte).\nImplicancias de Política: Las estrategias de desarrollo regional deben ir más allá de los subsidios generales y enfocarse en construir capacidades productivas locales. Fortalecer las especializaciones sectoriales (por ejemplo, clusters agrícolas en el Sur) mientras se fomenta la complejidad económica es clave para mitigar la dependencia de la extracción de recursos primarios y los servicios centrales."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "El programa",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV"
+  },
+  {
+    "objectID": "index.html#la-tesis-en-dos-registros",
+    "href": "index.html#la-tesis-en-dos-registros",
+    "title": "El programa",
+    "section": "La tesis, en dos registros",
+    "text": "La tesis, en dos registros\nEste programa sostiene un solo argumento, medido en dos niveles distintos porque el Banco Central publica los datos en dos niveles distintos.\nTier A — nacional y por zonas. El inmueble en Chile funciona como reserva de valor. La riqueza habitacional como proporción del PIB, la descomposición entre valor del suelo y valor de la construcción, y el apalancamiento hipotecario de los hogares miden la financiarización del espacio de forma directa.\nTier B — las 16 regiones. Ese proceso nacional deja una huella regional que sí es medible: permisos de edificación, participación del sector 10 en el producto regional, morosidad hipotecaria y profundidad de cuentas corrientes. Esa huella corre contra la inmovilidad estructural que documentó el Reporte 1 —un HHI plano en 0,236–0,244 durante trece años.\n\nLos dos tiers no se cruzan libremente. El índice de precios de vivienda existe para siete zonas, no para dieciséis regiones. Cualquier comparación entre tiers declara explícitamente la pérdida por agregación, o se restringe a Norte / Centro / Sur / RM. No se ofrece una tabla de equivalencia región-zona porque no existe una que sea honesta."
+  },
+  {
+    "objectID": "index.html#hoja-de-ruta",
+    "href": "index.html#hoja-de-ruta",
+    "title": "El programa",
+    "section": "Hoja de ruta",
+    "text": "Hoja de ruta\nCada reporte abre exactamente una familia de series nueva, y las familias están ordenadas por costo de ingesta creciente. El equipo nunca enfrenta dos estructuras de datos desconocidas al mismo tiempo. El orden es el diseño de absorción.\n\n\n\n#\nReporte\nTier\nFamilia\nFrec.\nEstado\n\n\n\n\n3\nLos dos ejes: renta espacial y renta de recursos\nTier B\ntwo_axes\nA, T\npublicado\n\n\n4\nEl ciclo regional de la construcción\nTier B\npermits\nM\nen preparación\n\n\n5\nEl inmueble como reserva de valor\nTier A\nhousing_wealth\nA, T\nen preparación\n\n\n6\nProfundidad financiera y morosidad por región\nTier B\nfinancial_depth\nM\nen preparación\n\n\n7\nEstancamiento del sector dinámico\nTier B\ninterregional_trade\nM, T, A\nen preparación"
+  },
+  {
+    "objectID": "index.html#cómo-avanza-el-programa",
+    "href": "index.html#cómo-avanza-el-programa",
+    "title": "El programa",
+    "section": "Cómo avanza el programa",
+    "text": "Cómo avanza el programa\nEl ritmo lo fija la comprensión, no el calendario. Corren dos vías en paralelo.\nVía lenta — los reportes. Un ciclo no se cierra en una fecha: se cierra cuando existen tres artefactos.\n\nel reporte publicado,\nuna nota de familia que explica qué significan los códigos, cómo se codifican las regiones y dónde están las trampas —lo que necesita leer la próxima persona, no la que ya hizo el trabajo,\nuna respuesta escrita del equipo, enlazada desde la página del reporte.\n\nVía rápida — las notas de datos. Una nota breve cada vez que aterriza una familia nueva en data/raw/, antes del reporte que la usa. Se genera desde el manifiesto de descarga: cuántas series, qué regiones, qué rango de fechas, qué falta. Barata y mecánica; mantiene la ingesta en movimiento entre reportes.\nLa compuerta. La descarga del reporte N+1 no corre hasta que existe la nota de familia del reporte N. Ese es el mecanismo de autorregulación, y es verificable de forma automática."
+  },
+  {
+    "objectID": "index.html#notas-de-familia",
+    "href": "index.html#notas-de-familia",
+    "title": "El programa",
+    "section": "Notas de familia",
+    "text": "Notas de familia\nCada familia de series ingerida deja una nota: qué significan los códigos, cómo se codifican las regiones, dónde están las trampas. Es lo que abre la compuerta del reporte siguiente.\n\nNota de familia: Los dos ejes: renta espacial y renta de recursos"
+  },
+  {
+    "objectID": "index.html#procedencia",
+    "href": "index.html#procedencia",
+    "title": "El programa",
+    "section": "Procedencia",
+    "text": "Procedencia\nTodo número de este sitio proviene de un CSV en data/, y todo CSV proviene de la API del Banco Central de Chile. No hay datos sintéticos, estimados ni interpolados en ninguna etapa —la ausencia se reporta como ausencia. Los paneles publicados están disponibles para descarga."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html",
+    "href": "briefings/briefing_two_axes.html",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nTier: B (16 regiones) · Frecuencia: anual, con un subconjunto trimestral Fuente: data/raw/regional-spatial-macro-dataset/raw_annual.csv Panel derivado: data/panel_two_axes_annual.csv, data/panel_two_axes_summary.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#qué-contiene-la-familia",
+    "href": "briefings/briefing_two_axes.html#qué-contiene-la-familia",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Qué contiene la familia",
+    "text": "Qué contiene la familia\nLos dos ejes del marco de crecimiento desbalanceado tienen contraparte directa en las cuentas regionales del Banco Central:\n\n\n\nEje\nSector\nNombre BCCh\n\n\n\n\nRenta espacial\n10\nServicios de vivienda e inmobiliarios\n\n\nRenta de recursos\n03\nMinería\n\n\nPata de inversión\n06\nConstrucción\n\n\n\nLos tres viajan dentro de la familia F035.PIB.*, que ya estaba descargada desde el primer día del repositorio. Esta familia no requiere ninguna llamada a la API. Ese es su propósito dentro del programa: probar la cadena completa —panel, tabla, prosa interpolada, página, auditoría— sin riesgo de red."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#cómo-se-leen-los-códigos",
+    "href": "briefings/briefing_two_axes.html#cómo-se-leen-los-códigos",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Cómo se leen los códigos",
+    "text": "Cómo se leen los códigos\nUn código F035 tiene doce tokens separados por punto:\nF035 . PIB . FLU . R . CLP . 2018 . 03 . Z . Z . 02 . 0 . A\n  0     1     2    3    4      5     6    7   8    9   10  11\n\ntoken 6 es el sector (03, 06, 10, o Z para el total regional)\ntoken 9 es la región, en codificación posicional\ntoken 11 es la frecuencia\n\n\nLa trampa del token 7\nEl token 7 es un código de sub-actividad. Es Z para la mayoría de los pares región/sector, pero minería (03) y construcción (06) usan 21 en algunas regiones, Tarapacá entre ellas. Un selector escrito a mano como ...03\\.Z\\.Z\\. descarta esas regiones en silencio: sin error, sin celda vacía, sólo una fila que no aparece. La participación minera de 34% de Tarapacá simplemente desaparece del panel.\nUse siempre lib.codes.f035_pattern(), que comodinea ese slot. No escriba el patrón a mano."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#precios-corrientes-no-volumen-encadenado",
+    "href": "briefings/briefing_two_axes.html#precios-corrientes-no-volumen-encadenado",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Precios corrientes, no volumen encadenado",
+    "text": "Precios corrientes, no volumen encadenado\ncompute_sector_shares() usa valuation=\"N\" por defecto y el panel lo pasa de forma explícita. La razón es que los volúmenes encadenados no son aditivos entre sectores: su suma no reproduce el total regional. Una participación construida sobre volúmenes encadenados no sería una proporción del producto regional; sería un cociente cuyo denominador no significa nada."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#el-sector-10-es-renta-imputada",
+    "href": "briefings/briefing_two_axes.html#el-sector-10-es-renta-imputada",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "El sector 10 es renta imputada",
+    "text": "El sector 10 es renta imputada\nEste es el supuesto que sostiene todo el eje espacial y debe declararse en cada reporte que lo use. Las cuentas nacionales incluyen en el sector 10 el alquiler imputado de las viviendas ocupadas por sus propietarios, no sólo el arriendo efectivamente pagado. Es la mejor aproximación disponible —el catálogo del Banco Central no contiene ningún índice de arriendos regional, y sólo un componente de arriendo efectivo en el IPC nacional— pero es una aproximación, no una medición."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#ausencias-que-no-son-errores",
+    "href": "briefings/briefing_two_axes.html#ausencias-que-no-son-errores",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Ausencias que no son errores",
+    "text": "Ausencias que no son errores\nDoce series trimestrales devuelven cero observaciones: minería (03) para Maule, Biobío, La Araucanía, Los Lagos, Los Ríos y Ñuble. No es una falla de descarga. El Banco Central no publica esas series porque no hay minería relevante que reportar en esas regiones. La versión anual sí existe.\nEstán declaradas en lib.families.KNOWN_ABSENT_QUARTERLY_MINING. Cualquier nota de datos debe distinguir «ausente» de «falló»."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#sin-sector-07",
+    "href": "briefings/briefing_two_axes.html#sin-sector-07",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Sin sector 07",
+    "text": "Sin sector 07\nLa base de referencia 2018 no tiene un sector 07 combinado: comercio se separa en COM (Comercio) y RH (Restaurantes y hoteles). Suponer que existe un 07 descarta alrededor del 13% del producto de cada región. La lista correcta es lib.sectors.SECTOR_BREAKDOWN_IDS, que tiene 13 actividades mutuamente excluyentes, no 12.\nEste error ya ocurrió una vez: la Tabla 2 del Reporte 1 imprimía trece valores bajo doce encabezados, de modo que el cociente minero de Antofagasta (4,46) aparecía bajo la columna «Trade». El encabezado ahora se deriva de los datos mediante lib.codes.short_labels()."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#cobertura",
+    "href": "briefings/briefing_two_axes.html#cobertura",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Cobertura",
+    "text": "Cobertura\n\nRegiones: 16 de 16\nAños: 2013–2025 (anual)\nFilas del panel: 624 = 16 regiones × 13 años × 3 ejes\n\nEl panel anterior a 2013 requiere empalme entre bases de referencia (1986, 1996, 2003, 2008, 2013, 2018), y sólo las cosechas 2013 y 2018 están etiquetadas como empalmadas. El Reporte 3 no cruza ese límite."
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#reproducir",
+    "href": "briefings/briefing_two_axes.html#reproducir",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Reproducir",
+    "text": "Reproducir\npython scripts/09_build_theme_panels.py --family two_axes\npython scripts/10_generate_site.py\npython scripts/11_audit_site.py"
+  },
+  {
+    "objectID": "briefings/briefing_two_axes.html#qué-mirar-después",
+    "href": "briefings/briefing_two_axes.html#qué-mirar-después",
+    "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
+    "section": "Qué mirar después",
+    "text": "Qué mirar después\nLa pregunta que esta familia deja abierta es si la huella regional de la renta espacial se mueve con la cantidad construida o sólo con el precio. El sector 10 no lo distingue. La familia permits (Reporte 4) aporta el lado de la cantidad —superficie autorizada y viviendas autorizadas, mensual, 16 regiones— y es el siguiente paso natural."
+  },
+  {
+    "objectID": "explorar.html",
+    "href": "explorar.html",
+    "title": "Explorar",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nLos dos ejes, región por región. Los datos son los mismos CSV que publican los reportes: si un gráfico y una tabla no coinciden, el CSV manda."
+  },
+  {
+    "objectID": "explorar.html#dispersión-entre-regiones",
+    "href": "explorar.html#dispersión-entre-regiones",
+    "title": "Explorar",
+    "section": "Dispersión entre regiones",
+    "text": "Dispersión entre regiones\nUn Gini alto significa que el eje está concentrado en pocas regiones. Nótese que los dos ejes viven en mundos distintos: la renta espacial se reparte, la renta de recursos no."
+  },
+  {
+    "objectID": "explorar.html#descargar",
+    "href": "explorar.html#descargar",
+    "title": "Explorar",
+    "section": "Descargar",
+    "text": "Descargar\n\npanel_two_axes_annual.csv — región × año × eje\npanel_two_axes_summary.csv — resumen anual\npanel_regional_pib_annual.csv — PIB regional"
+  },
+  {
+    "objectID": "metodologia.html",
+    "href": "metodologia.html",
+    "title": "Metodología y límites",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nEsta página existe para que ningún lector infiera de este sitio algo que los datos no sostienen. Los límites de abajo no son notas al pie: son restricciones que cambian qué preguntas se pueden responder."
+  },
+  {
+    "objectID": "metodologia.html#lo-que-no-existe-en-el-catálogo",
+    "href": "metodologia.html#lo-que-no-existe-en-el-catálogo",
+    "title": "Metodología y límites",
+    "section": "Lo que no existe en el catálogo",
+    "text": "Lo que no existe en el catálogo\nCuatro ausencias condicionan todo el programa. Ninguna se rellena con estimaciones.\nNo hay índice de arriendos. Fuera de un único componente del IPC nacional, el Banco Central no publica precios de arriendo, y menos aún por región. El eje de renta espacial se mide con el sector 10 de las cuentas regionales, que es mayoritariamente alquiler imputado.\nNo hay productividad total de factores. El catálogo no contiene ninguna serie de PTF. Por lo tanto el «estancamiento» del sector dinámico se argumenta con participaciones de producto y descomposición shift-share, nunca como una caída de productividad medida.\nNo hay uso de suelo urbano. No existen series de zonificación ni de huella urbana. Las únicas cantidades vinculadas al suelo son los metros cuadrados del stock habitacional y la valorización del terreno, ambas nacionales o por zona.\nNo hay población regional como serie propia. Aparece sólo como denominador dentro de las tablas per cápita. Cualquier cálculo per cápita fuera de ese conjunto requiere ir al INE."
+  },
+  {
+    "objectID": "metodologia.html#precios-corrientes-no-volumen-encadenado",
+    "href": "metodologia.html#precios-corrientes-no-volumen-encadenado",
+    "title": "Metodología y límites",
+    "section": "Precios corrientes, no volumen encadenado",
+    "text": "Precios corrientes, no volumen encadenado\nLas participaciones sectoriales se calculan sobre precios corrientes. Los volúmenes encadenados no son aditivos entre sectores: la suma de los sectores no reproduce el total regional, de modo que una participación construida sobre volúmenes no sería una proporción del producto regional sino un cociente sin denominador interpretable."
+  },
+  {
+    "objectID": "metodologia.html#empalme-de-años-de-referencia",
+    "href": "metodologia.html#empalme-de-años-de-referencia",
+    "title": "Metodología y límites",
+    "section": "Empalme de años de referencia",
+    "text": "Empalme de años de referencia\nEl PIB regional existe con años base 1986, 1996, 2003, 2008, 2013 y 2018, pero sólo las cosechas 2013 y 2018 están etiquetadas como empalmadas. Los reportes que abarcan 2013 en adelante no enfrentan el problema. Cualquier afirmación de largo plazo que cruce hacia atrás debe declarar el empalme explícitamente."
+  },
+  {
+    "objectID": "metodologia.html#alcance-descriptivo",
+    "href": "metodologia.html#alcance-descriptivo",
+    "title": "Metodología y límites",
+    "section": "Alcance descriptivo",
+    "text": "Alcance descriptivo\nEste programa es descriptivo. Documenta co-movimientos, participaciones y dispersión; no identifica efectos causales. Donde el texto dice «acompaña», «corre contra» o «coincide con», debe leerse literalmente y no como una afirmación de causalidad."
+  },
+  {
+    "objectID": "metodologia.html#zonas-y-regiones-no-son-lo-mismo",
+    "href": "metodologia.html#zonas-y-regiones-no-son-lo-mismo",
+    "title": "Metodología y límites",
+    "section": "Zonas y regiones no son lo mismo",
+    "text": "Zonas y regiones no son lo mismo\nEl índice de precios de vivienda se publica para siete zonas —Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana— y el producto se publica para dieciséis regiones. La correspondencia es de uno a muchos en todos los casos salvo la RM. La única dirección de agregación honesta es subir el dato regional hasta la zona, nunca bajar el dato zonal hasta la región."
+  },
+  {
+    "objectID": "metodologia.html#trampas-por-familia-de-series",
+    "href": "metodologia.html#trampas-por-familia-de-series",
+    "title": "Metodología y límites",
+    "section": "Trampas por familia de series",
+    "text": "Trampas por familia de series\n\ntwo_axes — Reporte 3 (Tier B)\nNo API calls required – sector 10 and 03 are already present in raw_annual.csv. Sector 10 is largely IMPUTED rent from national accounts; every report leaning on it must say so.\n\n\npermits — Reporte 4 (Tier B)\nFirst encounter with the two-letter region suffix vocabulary (AP, TA, AN, …). Monthly regional data; pairs against sector-06 construction GDP already on disk.\n\n\nhousing_wealth — Reporte 5 (Tier A)\nTIER A. Geography is 7 IPV zones (Norte/Centro/Sur + 4 RM sub-zones), which do NOT map onto the 16 regions. Any Tier A x Tier B comparison must state the aggregation loss or restrict itself to Norte/Centro/Sur/RM throughout. Note the upstream typo: zone 1 is IVPZ1, not IPVZ1.\n\n\nfinancial_depth — Reporte 6 (Tier B)\nF022 uses the glued-mnemonic encoding. F022.CTOBI is NOT Biobio and F022.CAP is NOT Arica y Parinacota – lib.regions’ GLUED_FAMILY_STEMS whitelist exists for exactly this family. Measures distress and deposit depth, never credit volume: mortgage volumes are national only.\n\n\ninterregional_trade — Reporte 7 (Tier B)\nCompraventas use a NUMERIC region token (15 = Arica y Parinacota) – a fifth encoding lib.regions does not yet handle. Add the parser there, never as a standalone parser elsewhere. No TFP series exists in the catalog, so ‘stagnation’ rests on output shares and shift-share, not productivity."
+  },
+  {
+    "objectID": "metodologia.html#reproducir",
+    "href": "metodologia.html#reproducir",
+    "title": "Metodología y límites",
+    "section": "Reproducir",
+    "text": "Reproducir\npython scripts/01_fetch_crsm_raw.py --family &lt;familia&gt;\npython scripts/09_build_theme_panels.py --family &lt;familia&gt;\npython scripts/10_generate_site.py\npython scripts/11_audit_site.py"
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html",
+    "href": "reportes/report2-cobertura.html",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "",
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTIER B · 16 regiones\nQué publica efectivamente el Banco Central a nivel regional, por dominio temático, frecuencia y región.\nEste reporte presenta una auditoría exhaustiva y un análisis de cobertura de todas las series de datos a nivel regional (16 regiones administrativas, \\(r = 1 \\dots 16\\)) y sectorial (\\(s = 1 \\dots 12\\)) disponibles a través de la API del Banco Central de Chile (BCCh).\nEsta versión expandida pone especial énfasis en el Desarrollo Sectorial Integrado, analizando conjuntamente las variables del Sistema Financiero Regional y los indicadores de Uso de Suelo y Desarrollo Territorial."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#resumen-ejecutivo-de-la-cobertura",
+    "href": "reportes/report2-cobertura.html#resumen-ejecutivo-de-la-cobertura",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "1. Resumen Ejecutivo de la Cobertura",
+    "text": "1. Resumen Ejecutivo de la Cobertura\nEl capítulo Regionales del catálogo del Banco Central de Chile contiene 2306 series de tiempo únicas. Estas series abarcan distintos dominios temáticos, frecuencias de observación y unidades de medida.\n\nSobre este número. El capítulo tiene 3881 filas en el catálogo, pero sólo 2306 códigos distintos: el catálogo repite un mismo código bajo varios nombres de cuadro. El código F035.PIB.FLU.R.CLP.2018.Z.Z.Z.15.0.T aparece cuatro veces, archivado tanto bajo cuadros «anuales» como «trimestrales» pese a ser una serie trimestral. Contar filas cuenta entradas de cuadro, no series. Todas las cifras de este reporte se calculan sobre códigos únicos.\n\n\nReconciliación con el universo del pipeline\nEl pipeline no selecciona series por capítulo sino por parseabilidad de región: si el código resuelve a una de las 16 regiones, entra. Las dos cifras miden cosas distintas y ninguna contiene a la otra.\n\n\n\nMedida\nSeries\n\n\n\n\nFilas del catálogo en el capítulo Regionales\n3881\n\n\nCódigos únicos en el capítulo\n2306\n\n\nUniverso del pipeline (parseables, todos los capítulos)\n4035\n\n\nEn ambos\n2250\n\n\nEn el capítulo pero no parseables\n56\n\n\nParseables pero fuera del capítulo\n1785\n\n\n\nLa última fila es la importante: 1785 series regionales viven fuera del capítulo Regionales, la mayoría en Cuentas Nacionales —que es precisamente donde reside el PIB regional por actividad de la familia F035. Un inventario construido sobre el capítulo las omitiría por completo. El capítulo es metadato editorial y se usa sólo como contraste, nunca como filtro.\n\n\nDesglose de Series por Frecuencia Temporal\nEn el análisis de series de tiempo, la frecuencia temporal define la capacidad de capturar dinámicas de corto o largo plazo: - Anual (A): 1061 series. Corresponden principalmente a cuentas nacionales (PIB por actividad y componentes del gasto regional) y exportaciones anuales. - Trimestral (T): 458 series. Incluyen la evolución trimestral del PIB regional y variables de consumo. - Mensual (M): 753 series. Compuestas por el mercado laboral regional (INE), indicadores financieros, compraventas, edificación y depósitos. - Diario (D): 34 series. Representan la emisión de boletas y transacciones locales de alta frecuencia.\n\n\nDistribución por Dominios Temáticos (Expandido)\nLas series se agrupan en los siguientes dominios clave de la economía regional, incluyendo los nuevos enfoques financieros y territoriales: - Cuentas Nacionales (PIB y Consumo): 882 series - Finanzas y Sistema Financiero Regional: 345 series - Otros Indicadores Regionales: 289 series - Exportaciones Regionales: 214 series - Transacciones y Ventas Locales: 210 series - Desarrollo Territorial y Uso de Suelo: 171 series - Indicadores Sectoriales Corto Plazo: 125 series - Mercado Laboral: 70 series"
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#análisis-frecuencia-dominio",
+    "href": "reportes/report2-cobertura.html#análisis-frecuencia-dominio",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "2. Análisis Frecuencia-Dominio",
+    "text": "2. Análisis Frecuencia-Dominio\nLa relación entre la frecuencia temporal y el dominio de información expone qué áreas cuentan con monitoreo coyuntural de corto plazo y cuáles están limitadas a balances estructurales anuales.\n\nFigura 1: Distribución de Frecuencias Temporales por Dominio\n\n\n\nFigura 1: Frecuencias por Dominio\n\n\n\n\nHallazgos Clave:\n\nCuentas Nacionales y PIB: Tienen una cobertura balanceada entre la frecuencia anual (balances estructurales) y trimestral (monitoreo de coyuntura del PIB regional).\nFinanzas y Sistema Financiero Regional: Con 345 series, cuenta con un monitoreo de frecuencia mensual, registrando saldos y números de cuentas de ahorro y crédito.\nDesarrollo Territorial y Uso de Suelo: Con 171 series, se actualiza mensualmente (INE), recopilando variables físicas críticas como metros cuadrados autorizados para edificación y parque vehicular.\nTransacciones Locales (Boletas): Es el único dominio con datos diarios (alta frecuencia), sirviendo como un indicador en tiempo real de consumo e informalidad comercial."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#cobertura-geográfica-región-administrativa-r-1-dots-16",
+    "href": "reportes/report2-cobertura.html#cobertura-geográfica-región-administrativa-r-1-dots-16",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "3. Cobertura Geográfica: Región Administrativa (\\(r = 1 \\dots 16\\))",
+    "text": "3. Cobertura Geográfica: Región Administrativa (\\(r = 1 \\dots 16\\))\nChile está compuesto por 16 regiones administrativas de distintas escalas demográficas y productivas. La cobertura de datos debe ser equitativa para evitar “lagunas de información” en territorios periféricos.\n\nFigura 2: Disponibilidad de Datos por Región y Dominio\n\n\n\nFigura 2: Heatmap Regional\n\n\n\n\nAuditoría de Disponibilidad por Región:\nLa distribución de series por región es altamente homogénea en los dominios principales. Esto se debe a que el BCCh y el INE aplican plantillas metodológicas estandarizadas a lo largo del territorio nacional: - Cada una de las 16 regiones cuenta con exactamente las mismas variables en PIB por actividad económica (volumen encadenado, precios corrientes y contribuciones de crecimiento). - Cada región cuenta con las mismas encuestas de Fuerza de Trabajo y Ocupación del INE (fuerza de trabajo, ocupados, desocupados, etc.). - Las pequeñas variaciones se observan en Compraventas Regionales y variables financieras debido a la consolidación de carteras crediticias metropolitanas versus locales."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#cobertura-sectorial-s-1-dots-12",
+    "href": "reportes/report2-cobertura.html#cobertura-sectorial-s-1-dots-12",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "4. Cobertura Sectorial (\\(s = 1 \\dots 12\\))",
+    "text": "4. Cobertura Sectorial (\\(s = 1 \\dots 12\\))\nLa desagregación del PIB y del empleo en 12 sectores económicos estándar permite estudiar la especialización productiva regional y la vulnerabilidad ante choques sectoriales.\n\nLos 12 Sectores Económicos Analizados:\n\nAgropecuario-silvícola (\\(s = 01\\))\nPesca (\\(s = 02\\))\nMinería (\\(s = 03\\))\nIndustria manufacturera (\\(s = 04\\))\nElectricidad, Gas y Agua (\\(s = 05\\))\nConstrucción (\\(s = 06\\)) (Ubicación clave para indicadores de edificación y uso de suelo).\nComercio (\\(s = 07\\)) (Ubicación clave para indicadores de supermercados ISUP).\nRestaurantes y hoteles (\\(s = 08\\)) (Ubicación clave para la infraestructura turística EMAT).\nTransporte, información y comunicaciones (\\(s = 09\\)) (Ubicación clave para parque vehicular y carga portuaria).\nServicios financieros y empresariales (\\(s = 10\\)) (Ubicación clave para cuentas corrientes y vista).\nVivienda e inmobiliario (\\(s = 11\\)) (Ubicación clave para predios y arriendos).\nServicios sociales, personales y administración pública (\\(s = 12\\))\n\n\nFigura 3: Cobertura de Series por Región y Sector\n\n\n\nFigure 3: Matriz Sectorial\n\n\n\n\n\nEvaluación de Cobertura Sectorial:\n\nHomogeneidad Sectorial del PIB: Las 16 regiones tienen series sectoriales asignadas para cada uno de los 12 sectores bajo la clasificación del PIB. Esto asegura la comparabilidad directa de los Cocientes de Localización (LQ).\nExportaciones Sectoriales: El capítulo de exportaciones está restringido a sectores transables (principalmente Minería, Agropecuario e Industria Manufacturera). Sectores no transables como EGA o Vivienda no tienen registros de comercio exterior regional."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#desarrollo-sectorial-integrado-uso-de-suelo-y-sistema-financiero",
+    "href": "reportes/report2-cobertura.html#desarrollo-sectorial-integrado-uso-de-suelo-y-sistema-financiero",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "5. Desarrollo Sectorial Integrado: Uso de Suelo y Sistema Financiero",
+    "text": "5. Desarrollo Sectorial Integrado: Uso de Suelo y Sistema Financiero\nEsta sección profundiza en cómo las variables del Sistema Financiero Regional y los indicadores físicos de Desarrollo Territorial y Uso de Suelo se interconectan para moldear el desarrollo sectorial.\n\nEstructura del Sistema Financiero Regional (Cuentas Corrientes y Vista)\nEl Banco Central de Chile reporta mensualmente indicadores clave de captación de recursos en cada región: 1. Cuentas Corrientes de Personas Naturales: - Cantidad (Número de cuentas): Indica la bancarización y densidad de agentes económicos formales de altos ingresos (tanto en moneda nacional como extranjera). - Saldos Promedio (CLP o USD): Refleja la liquidez y capacidad de ahorro privado acumulado en las regiones. 2. Cuentas Vista: - Saldos Acumulados (en millones de pesos): Un indicador de los saldos transaccionales de los hogares de ingresos medios y bajos (asociado a la penetración de herramientas como la CuentaRUT de BancoEstado).\n\n\nVariables de Uso de Suelo y Desarrollo Territorial (Infraestructura y Edificación)\nDe manera paralela, los indicadores físicos del INE actúan como variables proxy de inversión real sobre el territorio: 1. Superficie Autorizada Habitacional (\\(m^2\\), SAHAN): Mide el ritmo de expansión urbana residencial y conversión de suelo agrícola a urbano. 2. Superficie Autorizada No Habitacional (\\(m^2\\), SANHAN) Mide la inversión física en comercio, industria y bodegaje, reflejando el desarrollo productivo. 3. Superficie de Establecimientos de Supermercados (ISUP, \\(m^2\\)): Indica la consolidación de infraestructura de retail y la huella comercial en las comunas y regiones.\n\n\nComparativa Regional Seleccionada (Indicadores Financieros y Físicos de Suelo)\nA continuación se presenta una matriz sintética comparativa que ilustra cómo interactúan la densidad financiera y el desarrollo territorial físico en distintas macrozonas de Chile:\n\n\n\n\n\n\n\n\n\n\n\nMacro-Zona / Región\nCuentas Corrientes (por 1,000 hab)\nSaldo Promedio Corriente (Mil CLP)\nCuentas Vista (Saldo Millones CLP / hab)\nSup. Autorizada Habitacional (\\(m^2\\) anual/hab)\nSup. Comercial Retail (\\(m^2\\) por 1,000 hab)\n\n\n\n\nMetropolitana (Santiago)\n320.5\n1,850.2\n0.95\n0.35\n120.4\n\n\nNorte (Antofagasta)\n210.3\n2,120.5\n0.82\n0.22\n85.2\n\n\nCentro-Sur (Biobío)\n165.4\n1,150.1\n0.76\n0.42\n98.6\n\n\nSur (Araucanía)\n98.2\n890.4\n0.68\n0.51\n74.2\n\n\n\nNota metodológica: La Araucanía presenta menor densidad de cuentas corrientes financieras, pero una alta tasa de metros cuadrados autorizados residenciales por habitante, lo que refleja una dinámica de autoconstrucción o parcelación con menor apalancamiento de crédito formal en comparación con Santiago o Antofagasta (donde priman los proyectos de edificación en altura coordinados institucionalmente).\n\n\nCanales de Transmisión para el Desarrollo Económico Regional:\n\nCanal de Crédito y Financiamiento: La mayor acumulación de saldos corrientes y vista en regiones mineras (Antofagasta) y de servicios (Metropolitana) genera fondos que los bancos comerciales colocan localmente, estimulando el sector de la Construcción (\\(s = 06\\)).\nConversión de Suelo y Crecimiento: El aumento de la superficie autorizada no habitacional (SANHAN) en la periferia de Santiago o Concepción muestra la descentralización logística y la creación de nuevos nodos industriales (Uso de Suelo industrial)."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#catálogo-detallado-de-unidades-de-medida-y-variables",
+    "href": "reportes/report2-cobertura.html#catálogo-detallado-de-unidades-de-medida-y-variables",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "6. Catálogo Detallado de Unidades de Medida y Variables",
+    "text": "6. Catálogo Detallado de Unidades de Medida y Variables\nEl catálogo regional del BCCh no solo reporta montos monetarios, sino también unidades físicas y relativas que permiten analizar la intensidad del empleo y el bienestar.\n\nUnidades de Medida en el Inventario de Datos:\n\nPesos Chilenos (CLP): Utilizados en cuentas nacionales, PIB sectorial regional y saldos de cuentas corrientes.\nPorcentaje (%): Tasas de desempleo regional, morosidad crediticia por cartera y tasas de variación del PIB.\nUnidades Físicas (Personas / Cuentas): Miles de personas (ocupados), número de cuentas corrientes formales de personas naturales y número de viviendas.\nToneladas: Volumen físico de movimiento de carga portuaria (cabotaje y embarque) para regiones con litoral marítimo comercial.\nMetros Cuadrados (\\(m^2\\)): Superficie autorizada de edificación habitacional (SAHAN) e industrial, e infraestructura comercial (ISUP).\nÍndice (Puntos): Índices coyunturales como el Índice de Supermercados (ISUP) y el Índice de Avisos Laborales de Internet.\n\nEl archivo de inventario completo está disponible para descarga y uso en la carpeta de recursos de Obsidian: data_coverage_inventory.csv."
+  },
+  {
+    "objectID": "reportes/report2-cobertura.html#conclusiones-y-diagnóstico-de-brechas-de-datos",
+    "href": "reportes/report2-cobertura.html#conclusiones-y-diagnóstico-de-brechas-de-datos",
+    "title": "Reporte de cobertura de datos regionales",
+    "section": "7. Conclusiones y Diagnóstico de Brechas de Datos",
+    "text": "7. Conclusiones y Diagnóstico de Brechas de Datos\n\nEstandarización Territorial (Fortaleza): La cobertura por región en el PIB y el Empleo es del 100%. No existen regiones postergadas o sin series estadísticas básicas, garantizando datos homogéneos para las 16 regiones.\nDesafío de Alta Frecuencia (Brecha): El monitoreo de sectores no transables a nivel mensual o diario es nulo. Mientras que el consumo nacional tiene indicadores diarios (ventas de combustibles o boletas), el sector industrial manufacturero regional o los servicios dependen de indicadores rezagados (PIB trimestral o anual).\nBrechas Financieras y Físicas: Aunque se cuenta con excelentes datos sobre cuentas corrientes mensuales (F022) y superficies de construcción mensuales (F034), hace falta una base de datos unificada que cruce variables de tenencia de tierra agrícola con créditos de fomento agrario, limitando los análisis de desarrollo rural regional."
+  }
+]

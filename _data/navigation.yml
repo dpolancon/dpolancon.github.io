@@ -19,6 +19,9 @@ main:
     
   - title: "Blog Posts"
     url: /year-archive/
+
+  - title: "BCCh Data"
+    url: /bcch/
     
   - title: "CV"
     url: /files/CV_dpolancon.pdf    
@@ -35,6 +38,9 @@ main_es:
 
   - title: "Blog"
     url: /year-archive-es/
+
+  - title: "Datos BCCh"
+    url: /bcch/
 
   - title: "CV"
     url: /files/CV_dpolancon.pdf    

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Disparidades económicas regionales en Chile – Renta espacial y renta de recursos</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8b348f4b4b74a528bf910da1e8c5139e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<meta name="color-scheme" content="light dark">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Renta espacial y renta de recursos</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Programa</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reportes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Reportes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reportes">    
+        <li>
+    <a class="dropdown-item" href="../reportes/report1-disparidades.html">
+ <span class="dropdown-text">1 · Disparidades regionales</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reportes/report2-cobertura.html">
+ <span class="dropdown-text">2 · Cobertura de datos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reportes/report3-dos-ejes.html">
+ <span class="dropdown-text">3 · Los dos ejes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../explorar.html"> 
+<span class="menu-text">Explorar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../metodologia.html"> 
+<span class="menu-text">Metodología</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><strong>1. Introducción</strong></a></li>
+  <li><a href="#sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento" id="toc-sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento" class="nav-link" data-scroll-target="#sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento"><strong>2. Sección 1: Tamaño Económico Regional y Dinámicas de Crecimiento</strong></a>
+  <ul class="collapse">
+  <li><a href="#tabla-1-estadísticas-resumidas-del-producto-económico-regional-2013-2025" id="toc-tabla-1-estadísticas-resumidas-del-producto-económico-regional-2013-2025" class="nav-link" data-scroll-target="#tabla-1-estadísticas-resumidas-del-producto-económico-regional-2013-2025"><strong>Tabla 1: Estadísticas Resumidas del Producto Económico Regional (2013-2025)</strong></a></li>
+  <li><a href="#figuras-correspondientes" id="toc-figuras-correspondientes" class="nav-link" data-scroll-target="#figuras-correspondientes"><strong>Figuras Correspondientes</strong></a></li>
+  </ul></li>
+  <li><a href="#sección-2-especialización-económica-regional-decomposición-en-13-sectores" id="toc-sección-2-especialización-económica-regional-decomposición-en-13-sectores" class="nav-link" data-scroll-target="#sección-2-especialización-económica-regional-decomposición-en-13-sectores"><strong>3. Sección 2: Especialización Económica Regional (Decomposición en 13 Sectores)</strong></a>
+  <ul class="collapse">
+  <li><a href="#formalización-metodológica" id="toc-formalización-metodológica" class="nav-link" data-scroll-target="#formalización-metodológica"><strong>Formalización Metodológica</strong></a></li>
+  <li><a href="#tabla-2-cocientes-de-localización-lq-por-región-y-sector-2025---13-sectores" id="toc-tabla-2-cocientes-de-localización-lq-por-región-y-sector-2025---13-sectores" class="nav-link" data-scroll-target="#tabla-2-cocientes-de-localización-lq-por-región-y-sector-2025---13-sectores"><strong>Tabla 2: Cocientes de Localización (LQ) por Región y Sector (2025 - 13 Sectores)</strong></a></li>
+  <li><a href="#figuras-correspondientes-1" id="toc-figuras-correspondientes-1" class="nav-link" data-scroll-target="#figuras-correspondientes-1"><strong>Figuras Correspondientes</strong></a></li>
+  </ul></li>
+  <li><a href="#sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población" id="toc-sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población" class="nav-link" data-scroll-target="#sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población"><strong>4. Sección 3: Evolución de la Desigualdad Espacial (Ponderada por Población)</strong></a>
+  <ul class="collapse">
+  <li><a href="#formalización-metodológica-1" id="toc-formalización-metodológica-1" class="nav-link" data-scroll-target="#formalización-metodológica-1"><strong>Formalización Metodológica</strong></a></li>
+  <li><a href="#tabla-3-índices-de-desigualdad-espacial-ponderados-por-población-en-el-tiempo-pib-per-cápita" id="toc-tabla-3-índices-de-desigualdad-espacial-ponderados-por-población-en-el-tiempo-pib-per-cápita" class="nav-link" data-scroll-target="#tabla-3-índices-de-desigualdad-espacial-ponderados-por-población-en-el-tiempo-pib-per-cápita"><strong>Tabla 3: Índices de Desigualdad Espacial Ponderados por Población en el Tiempo (PIB per cápita)</strong></a></li>
+  <li><a href="#figuras-correspondientes-2" id="toc-figuras-correspondientes-2" class="nav-link" data-scroll-target="#figuras-correspondientes-2"><strong>Figuras Correspondientes</strong></a></li>
+  <li><a href="#interpretación-de-tendencias-de-desigualdad-y-dinámicas-regionales" id="toc-interpretación-de-tendencias-de-desigualdad-y-dinámicas-regionales" class="nav-link" data-scroll-target="#interpretación-de-tendencias-de-desigualdad-y-dinámicas-regionales"><strong>Interpretación de Tendencias de Desigualdad y Dinámicas Regionales</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusiones-e-implicancias-de-política" id="toc-conclusiones-e-implicancias-de-política" class="nav-link" data-scroll-target="#conclusiones-e-implicancias-de-política"><strong>5. Conclusiones e Implicancias de Política</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<style>
+
+.personal-site-nav {
+
+  background: #1e293b;
+
+  padding: 0.7rem 2rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.5rem;
+
+  flex-wrap: wrap;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+
+.personal-site-nav a {
+
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+
+  transition: color 0.15s;
+
+}
+
+.personal-site-nav a:hover,
+
+.personal-site-nav a:focus-visible { color: #fff; }
+
+.personal-site-nav a.nav-home {
+
+  font-weight: 700;
+
+  font-size: 0.95rem;
+
+  color: #f1f5f9;
+
+  margin-right: auto;
+
+}
+
+</style>
+
+<nav class="personal-site-nav" aria-label="Sitio personal">
+
+<a href="https://dpolancon.github.io/" class="nav-home">Diego Polanco</a>
+
+<a href="https://dpolancon.github.io/research_es/">Investigación</a>
+
+<a href="https://dpolancon.github.io/talks_es/">Presentaciones</a>
+
+<a href="https://dpolancon.github.io/teaching_es/">Enseñanza</a>
+
+<a href="https://dpolancon.github.io/year-archive-es/">Blog</a>
+
+<a href="https://dpolancon.github.io/files/CV_dpolancon.pdf">CV</a>
+
+</nav>
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Disparidades económicas regionales en Chile</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><span class="tier tier-b">TIER B · 16 regiones</span></p>
+<p><em>La geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities.</em></p>
+<hr>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción"><strong>1. Introducción</strong></h2>
+<p>Chile se caracteriza históricamente por una alta centralización económica y desigualdad espacial. Este informe presenta un análisis descriptivo de las disparidades económicas regionales en Chile durante el período 2013-2025, utilizando cifras anuales del PIB regional de la base de datos estadística del Banco Central de Chile (BCCh) (medidas en volumen encadenado, año de referencia 2018). El conjunto de datos cubre las 16 regiones administrativas de Chile, rastreando su producción económica, dinámicas de crecimiento, patrones de especialización sectorial e índices de desigualdad espacial.</p>
+<hr>
+</section>
+<section id="sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento" class="level2">
+<h2 class="anchored" data-anchor-id="sección-1-tamaño-económico-regional-y-dinámicas-de-crecimiento"><strong>2. Sección 1: Tamaño Económico Regional y Dinámicas de Crecimiento</strong></h2>
+<p>La Tabla 1 resume los parámetros clave de la producción económica de las 16 regiones chilenas. La dominancia de la Región Metropolitana es clara, representando el 45.9% del PIB nacional, seguida de regiones con fuerte actividad minera como Antofagasta.</p>
+<section id="tabla-1-estadísticas-resumidas-del-producto-económico-regional-2013-2025" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-1-estadísticas-resumidas-del-producto-económico-regional-2013-2025"><strong>Tabla 1: Estadísticas Resumidas del Producto Económico Regional (2013-2025)</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Región</th>
+<th style="text-align: center;">PIB Promedio (Miles de Millones de CLP)</th>
+<th style="text-align: center;">Participación en el PIB Nacional (%)</th>
+<th style="text-align: center;">Tasa de Crecimiento Anual Promedio (%)</th>
+<th style="text-align: center;">Volatilidad del Producto (Desv. Est.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Metropolitana de Santiago</td>
+<td style="text-align: center;">78.49</td>
+<td style="text-align: center;">45.92%</td>
+<td style="text-align: center;">2.04%</td>
+<td style="text-align: center;">4.79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Antofagasta</td>
+<td style="text-align: center;">16.00</td>
+<td style="text-align: center;">9.39%</td>
+<td style="text-align: center;">1.36%</td>
+<td style="text-align: center;">4.20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Valparaíso</td>
+<td style="text-align: center;">14.26</td>
+<td style="text-align: center;">8.35%</td>
+<td style="text-align: center;">1.41%</td>
+<td style="text-align: center;">4.07</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biobío</td>
+<td style="text-align: center;">11.45</td>
+<td style="text-align: center;">6.69%</td>
+<td style="text-align: center;">2.63%</td>
+<td style="text-align: center;">3.49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">O’Higgins</td>
+<td style="text-align: center;">7.86</td>
+<td style="text-align: center;">4.60%</td>
+<td style="text-align: center;">1.99%</td>
+<td style="text-align: center;">3.98</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maule</td>
+<td style="text-align: center;">7.22</td>
+<td style="text-align: center;">4.21%</td>
+<td style="text-align: center;">3.06%</td>
+<td style="text-align: center;">3.61</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Los Lagos</td>
+<td style="text-align: center;">6.31</td>
+<td style="text-align: center;">3.68%</td>
+<td style="text-align: center;">3.57%</td>
+<td style="text-align: center;">3.69</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Coquimbo</td>
+<td style="text-align: center;">5.87</td>
+<td style="text-align: center;">3.44%</td>
+<td style="text-align: center;">1.39%</td>
+<td style="text-align: center;">3.78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">La Araucanía</td>
+<td style="text-align: center;">5.36</td>
+<td style="text-align: center;">3.12%</td>
+<td style="text-align: center;">3.24%</td>
+<td style="text-align: center;">3.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tarapacá</td>
+<td style="text-align: center;">4.46</td>
+<td style="text-align: center;">2.61%</td>
+<td style="text-align: center;">1.62%</td>
+<td style="text-align: center;">4.83</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Atacama</td>
+<td style="text-align: center;">3.85</td>
+<td style="text-align: center;">2.26%</td>
+<td style="text-align: center;">2.54%</td>
+<td style="text-align: center;">5.81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ñuble</td>
+<td style="text-align: center;">2.80</td>
+<td style="text-align: center;">1.63%</td>
+<td style="text-align: center;">2.89%</td>
+<td style="text-align: center;">4.33</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Los Ríos</td>
+<td style="text-align: center;">2.50</td>
+<td style="text-align: center;">1.46%</td>
+<td style="text-align: center;">2.72%</td>
+<td style="text-align: center;">3.35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Magallanes</td>
+<td style="text-align: center;">1.84</td>
+<td style="text-align: center;">1.08%</td>
+<td style="text-align: center;">2.56%</td>
+<td style="text-align: center;">5.37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arica y Parinacota</td>
+<td style="text-align: center;">1.49</td>
+<td style="text-align: center;">0.87%</td>
+<td style="text-align: center;">3.28%</td>
+<td style="text-align: center;">5.48</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Aysén</td>
+<td style="text-align: center;">1.21</td>
+<td style="text-align: center;">0.71%</td>
+<td style="text-align: center;">2.35%</td>
+<td style="text-align: center;">5.71</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figuras-correspondientes" class="level3">
+<h3 class="anchored" data-anchor-id="figuras-correspondientes"><strong>Figuras Correspondientes</strong></h3>
+<section id="figura-1.1-distribución-del-pib-regional---la-dominancia-de-santiago" class="level4">
+<h4 class="anchored" data-anchor-id="figura-1.1-distribución-del-pib-regional---la-dominancia-de-santiago"><strong>Figura 1.1: Distribución del PIB Regional - La Dominancia de Santiago</strong></h4>
+<p><img src="../assets/fig1_1_distribution.png" class="img-fluid" alt="Figura 1.1: Distribución del PIB Regional"> <em>La Figura 1.1 destaca la enorme discrepancia de tamaño entre la Región Metropolitana (resaltada en rojo) y todas las demás regiones. Las regiones mineras basadas en recursos primarios como Antofagasta (naranja) la siguen, pero aún operan a una fracción de la escala de producción de la capital.</em></p>
+</section>
+<section id="figura-1.2-crecimiento-vs.-tamaño---patrones-de-convergencia" class="level4">
+<h4 class="anchored" data-anchor-id="figura-1.2-crecimiento-vs.-tamaño---patrones-de-convergencia"><strong>Figura 1.2: Crecimiento vs.&nbsp;Tamaño - Patrones de Convergencia</strong></h4>
+<p><img src="../assets/fig1_2_convergence.png" class="img-fluid" alt="Figura 1.2: Crecimiento vs.&nbsp;Tamaño"> <em>La Figura 1.2 prueba la convergencia <span class="math inline">\(\beta\)</span>. La teoría neoclásica del crecimiento sugiere que las regiones más pobres (con menor PIB inicial en 2013) deberían crecer más rápido que las ricas, produciendo una línea de tendencia con pendiente negativa. En Chile, esta relación es débilmente negativa pero está fuertemente distorsionada por economías mineras de alto crecimiento (como Antofagasta) y regiones rurales estancadas.</em></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="sección-2-especialización-económica-regional-decomposición-en-13-sectores" class="level2">
+<h2 class="anchored" data-anchor-id="sección-2-especialización-económica-regional-decomposición-en-13-sectores"><strong>3. Sección 2: Especialización Económica Regional (Decomposición en 13 Sectores)</strong></h2>
+<p>Los Cocientes de Localización (LQ) revelan qué tan especializada está una región en un sector particular en relación con el promedio nacional. Un LQ mayor que 1.0 indica que la participación de un sector en la producción regional es mayor que su participación en la economía nacional. Esta sección aprovecha la clasificación oficial de PIB regional de 13 sectores compilada por el Banco Central de Chile para extraer la composición estructural de los territorios.</p>
+<section id="formalización-metodológica" class="level3">
+<h3 class="anchored" data-anchor-id="formalización-metodológica"><strong>Formalización Metodológica</strong></h3>
+<p>El Cociente de Localización (<span class="math inline">\(LQ_{i,s}\)</span>) para la región <span class="math inline">\(i\)</span> y el sector <span class="math inline">\(s\)</span> se formaliza como: <span class="math display">\[LQ_{i,s} = \frac{Y_{i,s} / Y_i}{Y_{\text{nat},s} / Y_{\text{nat}}}\]</span> donde: - <span class="math inline">\(Y_{i,s}\)</span> es el PIB del sector <span class="math inline">\(s\)</span> en la región <span class="math inline">\(i\)</span>, - <span class="math inline">\(Y_i = \sum_{s=1}^m Y_{i,s}\)</span> es el PIB total de la región <span class="math inline">\(i\)</span> a través de los <span class="math inline">\(m\)</span> sectores, - <span class="math inline">\(Y_{\text{nat},s} = \sum_{j=1}^n Y_{j,s}\)</span> es el PIB nacional del sector <span class="math inline">\(s\)</span> a través de las <span class="math inline">\(n\)</span> regiones, - <span class="math inline">\(Y_{\text{nat}} = \sum_{j=1}^n \sum_{k=1}^m Y_{j,k}\)</span> es el PIB nacional total.</p>
+</section>
+<section id="tabla-2-cocientes-de-localización-lq-por-región-y-sector-2025---13-sectores" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-2-cocientes-de-localización-lq-por-región-y-sector-2025---13-sectores"><strong>Tabla 2: Cocientes de Localización (LQ) por Región y Sector (2025 - 13 Sectores)</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Región</th>
+<th style="text-align: center;">AdmPub</th>
+<th style="text-align: center;">Agro</th>
+<th style="text-align: center;">Comercio</th>
+<th style="text-align: center;">Const</th>
+<th style="text-align: center;">EGA</th>
+<th style="text-align: center;">Manuf</th>
+<th style="text-align: center;">Minería</th>
+<th style="text-align: center;">Pesca</th>
+<th style="text-align: center;">Hoteles</th>
+<th style="text-align: center;">Inmob</th>
+<th style="text-align: center;">Finan</th>
+<th style="text-align: center;">Personales</th>
+<th style="text-align: center;">Transp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Antofagasta</strong></td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">1.26</td>
+<td style="text-align: center;">1.30</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">4.46</td>
+<td style="text-align: center;">0.08</td>
+<td style="text-align: center;">0.51</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">0.42</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>La Araucanía</strong></td>
+<td style="text-align: center;">1.62</td>
+<td style="text-align: center;">2.42</td>
+<td style="text-align: center;">0.96</td>
+<td style="text-align: center;">1.28</td>
+<td style="text-align: center;">1.20</td>
+<td style="text-align: center;">0.83</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">0.07</td>
+<td style="text-align: center;">1.10</td>
+<td style="text-align: center;">1.48</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">1.68</td>
+<td style="text-align: center;">0.84</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Arica y Parinacota</strong></td>
+<td style="text-align: center;">2.61</td>
+<td style="text-align: center;">1.09</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">2.12</td>
+<td style="text-align: center;">0.64</td>
+<td style="text-align: center;">0.83</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;">2.07</td>
+<td style="text-align: center;">1.83</td>
+<td style="text-align: center;">1.20</td>
+<td style="text-align: center;">0.69</td>
+<td style="text-align: center;">1.26</td>
+<td style="text-align: center;">0.78</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Atacama</strong></td>
+<td style="text-align: center;">0.50</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">1.00</td>
+<td style="text-align: center;">2.12</td>
+<td style="text-align: center;">0.18</td>
+<td style="text-align: center;">3.95</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.44</td>
+<td style="text-align: center;">0.39</td>
+<td style="text-align: center;">0.41</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Aysén</strong></td>
+<td style="text-align: center;">3.32</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">0.26</td>
+<td style="text-align: center;">46.42</td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">0.81</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">1.06</td>
+<td style="text-align: center;">0.68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Biobío</strong></td>
+<td style="text-align: center;">1.13</td>
+<td style="text-align: center;">1.08</td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">1.07</td>
+<td style="text-align: center;">1.89</td>
+<td style="text-align: center;">1.95</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">2.26</td>
+<td style="text-align: center;">0.88</td>
+<td style="text-align: center;">1.25</td>
+<td style="text-align: center;">0.77</td>
+<td style="text-align: center;">1.33</td>
+<td style="text-align: center;">0.85</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Coquimbo</strong></td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">1.40</td>
+<td style="text-align: center;">0.64</td>
+<td style="text-align: center;">1.58</td>
+<td style="text-align: center;">0.85</td>
+<td style="text-align: center;">0.42</td>
+<td style="text-align: center;">1.63</td>
+<td style="text-align: center;">0.32</td>
+<td style="text-align: center;">1.40</td>
+<td style="text-align: center;">1.10</td>
+<td style="text-align: center;">0.86</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">0.69</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Los Lagos</strong></td>
+<td style="text-align: center;">1.19</td>
+<td style="text-align: center;">1.76</td>
+<td style="text-align: center;">0.93</td>
+<td style="text-align: center;">0.82</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">2.13</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">10.41</td>
+<td style="text-align: center;">0.95</td>
+<td style="text-align: center;">1.06</td>
+<td style="text-align: center;">0.65</td>
+<td style="text-align: center;">1.24</td>
+<td style="text-align: center;">0.84</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Los Ríos</strong></td>
+<td style="text-align: center;">1.48</td>
+<td style="text-align: center;">3.46</td>
+<td style="text-align: center;">0.69</td>
+<td style="text-align: center;">0.97</td>
+<td style="text-align: center;">0.95</td>
+<td style="text-align: center;">2.00</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">1.12</td>
+<td style="text-align: center;">0.94</td>
+<td style="text-align: center;">1.21</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">1.34</td>
+<td style="text-align: center;">0.72</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Magallanes</strong></td>
+<td style="text-align: center;">2.66</td>
+<td style="text-align: center;">0.55</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">1.29</td>
+<td style="text-align: center;">0.92</td>
+<td style="text-align: center;">1.51</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">8.49</td>
+<td style="text-align: center;">1.55</td>
+<td style="text-align: center;">1.04</td>
+<td style="text-align: center;">0.66</td>
+<td style="text-align: center;">0.97</td>
+<td style="text-align: center;">0.93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Maule</strong></td>
+<td style="text-align: center;">0.97</td>
+<td style="text-align: center;">4.66</td>
+<td style="text-align: center;">0.95</td>
+<td style="text-align: center;">1.11</td>
+<td style="text-align: center;">1.71</td>
+<td style="text-align: center;">1.37</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">0.14</td>
+<td style="text-align: center;">0.81</td>
+<td style="text-align: center;">1.35</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">1.19</td>
+<td style="text-align: center;">0.71</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Metropolitana de Santiago</strong></td>
+<td style="text-align: center;">1.06</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">1.49</td>
+<td style="text-align: center;">0.75</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">1.07</td>
+<td style="text-align: center;">0.07</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">1.16</td>
+<td style="text-align: center;">1.09</td>
+<td style="text-align: center;">1.55</td>
+<td style="text-align: center;">1.13</td>
+<td style="text-align: center;">1.38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Ñuble</strong></td>
+<td style="text-align: center;">1.26</td>
+<td style="text-align: center;">3.39</td>
+<td style="text-align: center;">0.82</td>
+<td style="text-align: center;">1.20</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">1.47</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">1.01</td>
+<td style="text-align: center;">1.41</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">1.40</td>
+<td style="text-align: center;">0.79</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>O’Higgins</strong></td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">4.32</td>
+<td style="text-align: center;">0.93</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">1.22</td>
+<td style="text-align: center;">0.96</td>
+<td style="text-align: center;">1.21</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">1.02</td>
+<td style="text-align: center;">0.61</td>
+<td style="text-align: center;">0.91</td>
+<td style="text-align: center;">0.53</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Tarapacá</strong></td>
+<td style="text-align: center;">0.94</td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.81</td>
+<td style="text-align: center;">2.05</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">2.73</td>
+<td style="text-align: center;">0.58</td>
+<td style="text-align: center;">0.87</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">0.48</td>
+<td style="text-align: center;">0.59</td>
+<td style="text-align: center;">0.61</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Valparaíso</strong></td>
+<td style="text-align: center;">1.34</td>
+<td style="text-align: center;">1.22</td>
+<td style="text-align: center;">0.79</td>
+<td style="text-align: center;">0.93</td>
+<td style="text-align: center;">1.46</td>
+<td style="text-align: center;">0.90</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">0.08</td>
+<td style="text-align: center;">1.17</td>
+<td style="text-align: center;">1.38</td>
+<td style="text-align: center;">0.86</td>
+<td style="text-align: center;">1.08</td>
+<td style="text-align: center;">1.32</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figuras-correspondientes-1" class="level3">
+<h3 class="anchored" data-anchor-id="figuras-correspondientes-1"><strong>Figuras Correspondientes</strong></h3>
+<section id="figura-2.1-mapa-de-calor-de-especialización-en-13-sectores" class="level4">
+<h4 class="anchored" data-anchor-id="figura-2.1-mapa-de-calor-de-especialización-en-13-sectores"><strong>Figura 2.1: Mapa de Calor de Especialización en 13 Sectores</strong></h4>
+<p><img src="../assets/fig2_1_heatmap.png" class="img-fluid" alt="Figura 2.1: Mapa de Calor de Especialización"> <em>El mapa de calor expone inmediatamente las identidades económicas geográficas de Chile a través de los 13 sectores económicos. Destaca el norte predominantemente minero, el centro orientado a los servicios y el sur silvoagropecuario y pesquero.</em></p>
+</section>
+<section id="figura-2.2-gráficos-de-radar-de-especialización-regional-por-macro-zona-decomposición-de-13-sectores" class="level4">
+<h4 class="anchored" data-anchor-id="figura-2.2-gráficos-de-radar-de-especialización-regional-por-macro-zona-decomposición-de-13-sectores"><strong>Figura 2.2: Gráficos de Radar de Especialización Regional por Macro-Zona (Decomposición de 13 Sectores)</strong></h4>
+<p>Agrupamos los gráficos de radar regionales por macrozonas geográficas para exponer estructuras regionales compartidas y clusters territoriales:</p>
+<section id="macro-zona-norte-núcleo-minero" class="level5">
+<h5 class="anchored" data-anchor-id="macro-zona-norte-núcleo-minero"><strong>1. Macro-Zona Norte (Núcleo Minero)</strong></h5>
+<p><img src="../assets/fig2_2a_radar_norte.png" class="img-fluid" alt="Figura 2.2a: Macro-Zona Norte"> <em>La Figura 2.2a detalla la macrozona Norte (</em>Arica y Parinacota, Tarapacá, Antofagasta, Atacama<em>). Se caracteriza por una fuerte especialización en Minería, con Antofagasta mostrando un cociente minero masivo (<span class="math inline">\(LQ &gt; 5.0\)</span>). Las regiones del norte con menor producción como Arica muestran un sesgo hacia la administración pública y los servicios sociales, mientras que los sectores agrícolas son prácticamente inexistentes debido al clima desértico.</em></p>
+</section>
+<section id="macro-zona-centro-centro-de-servicios-y-conectividad" class="level5">
+<h5 class="anchored" data-anchor-id="macro-zona-centro-centro-de-servicios-y-conectividad"><strong>2. Macro-Zona Centro (Centro de Servicios y Conectividad)</strong></h5>
+<p><img src="../assets/fig2_2b_radar_centro.png" class="img-fluid" alt="Figura 2.2b: Macro-Zona Centro"> <em>La Figura 2.2b perfila la macrozona Centro (</em>Coquimbo, Valparaíso, Metropolitana<em>). La Región Metropolitana muestra una alta concentración en Servicios y Actividades Financieras (<span class="math inline">\(LQ &gt; 1.5\)</span>), operando como el centro de negocios del país. Valparaíso equilibra el transporte y comercio portuario con el turismo (Servicios y Comercio). Coquimbo representa una zona de transición, combinando la minería en los valles interiores con la actividad agrícola.</em></p>
+</section>
+<section id="macro-zona-centro-sur-corazón-agrícola-industrial" class="level5">
+<h5 class="anchored" data-anchor-id="macro-zona-centro-sur-corazón-agrícola-industrial"><strong>3. Macro-Zona Centro Sur (Corazón Agrícola-Industrial)</strong></h5>
+<p><img src="../assets/fig2_2c_radar_centrosur.png" class="img-fluid" alt="Figura 2.2c: Macro-Zona Centro Sur"> <em>La Figura 2.2c muestra la macrozona Centro Sur (</em>O’Higgins, Maule, Ñuble, Biobío<em>). Biobío actúa como el motor industrial con una especialización manufacturera significativa (<span class="math inline">\(LQ &gt; 1.5\)</span>), mientras que Maule y Ñuble muestran una fuerte concentración en Agricultura y Silvoagropecuario (<span class="math inline">\(LQ &gt; 2.5\)</span>). O’Higgins presenta un carácter dual, combinando la extracción de cobre con la agricultura frutícola.</em></p>
+</section>
+<section id="macro-zona-sur-corazón-silvoagropecuario-y-acuícola" class="level5">
+<h5 class="anchored" data-anchor-id="macro-zona-sur-corazón-silvoagropecuario-y-acuícola"><strong>4. Macro-Zona Sur (Corazón Silvoagropecuario y Acuícola)</strong></h5>
+<p><img src="../assets/fig2_2d_radar_sur.png" class="img-fluid" alt="Figura 2.2d: Macro-Zona Sur"> <em>La Figura 2.2d muestra la macrozona Sur (</em>Araucanía, Los Ríos, Los Lagos<em>). Los Lagos está fuertemente especializada en Pesca y Acuicultura (<span class="math inline">\(LQ &gt; 5.5\)</span>) debido a la industria del salmón. La Araucanía presenta una fuerte presencia de Agricultura y Servicios Personales/Sociales.</em></p>
+</section>
+<section id="macro-zona-austral-enclaves-de-recursos-primarios-y-servicios-públicos-en-zonas-aisladas" class="level5">
+<h5 class="anchored" data-anchor-id="macro-zona-austral-enclaves-de-recursos-primarios-y-servicios-públicos-en-zonas-aisladas"><strong>5. Macro-Zona Austral (Enclaves de Recursos Primarios y Servicios Públicos en Zonas Aisladas)</strong></h5>
+<p><img src="../assets/fig2_2e_radar_austral.png" class="img-fluid" alt="Figura 2.2e: Macro-Zona Austral"> <em>La Figura 2.2e captura la macrozona Austral (</em>Aysén, Magallanes<em>). Ambas regiones muestran altas participaciones de servicios sociales debido al empleo público en zonas aisladas. Los recursos primarios siguen siendo muy relevantes, particularmente el petróleo y gas en Magallanes, y la pesca/ganadería en Aysén.</em></p>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población" class="level2">
+<h2 class="anchored" data-anchor-id="sección-3-evolución-de-la-desigualdad-espacial-ponderada-por-población"><strong>4. Sección 3: Evolución de la Desigualdad Espacial (Ponderada por Población)</strong></h2>
+<p>Para evaluar la desigualdad espacial del bienestar entre los ciudadanos en lugar de la simple densidad de producción, calculamos índices <strong>ponderados por población</strong> sobre el PIB regional per cápita a lo largo del tiempo. Evaluar las disparidades espaciales sin ponderar por la masa demográfica puede sesgar los resultados, sobrerrepresentando a regiones pequeñas (p.&nbsp;ej., Aysén, con 100 mil habitantes) frente a grandes centros demográficos (p.&nbsp;ej., Metropolitana, con 7.5 millones).</p>
+<section id="formalización-metodológica-1" class="level3">
+<h3 class="anchored" data-anchor-id="formalización-metodológica-1"><strong>Formalización Metodológica</strong></h3>
+<ol type="1">
+<li><p><strong>Coeficiente de Gini Ponderado por Población (<span class="math inline">\(G_w\)</span>)</strong>: Mide la distancia promedio entre todos los pares de PIB regional per cápita, ponderada por sus respectivas participaciones de población: <span class="math display">\[G_w = \frac{1}{2\bar{y}} \sum_{i=1}^n \sum_{j=1}^n s_i s_j |y_i - y_j|\]</span> donde <span class="math inline">\(y_i\)</span> es el PIB per cápita de la región <span class="math inline">\(i\)</span>, <span class="math inline">\(s_i = \frac{p_i}{P}\)</span> es la participación de población de la región <span class="math inline">\(i\)</span> (con población regional <span class="math inline">\(p_i\)</span> y población nacional <span class="math inline">\(P = \sum p_i\)</span>), y <span class="math inline">\(\bar{y} = \sum_{i=1}^n s_i y_i\)</span> es el promedio nacional del PIB per cápita.</p></li>
+<li><p><strong>Índice de Theil Ponderado por Población (<span class="math inline">\(T_w\)</span>)</strong>: El índice de Theil captura la entropía de la distribución del ingreso regional, representando la dispersión del PIB per cápita regional ponderada demográficamente: <span class="math display">\[T_w = \sum_{i=1}^n s_i \left( \frac{y_i}{\bar{y}} \right) \ln\left( \frac{y_i}{\bar{y}} \right)\]</span></p></li>
+<li><p><strong>Índice de Herfindahl-Hirschman (HHI) para Concentración de la Producción</strong>: El HHI evalúa la concentración bruta de la actividad económica nacional (PIB regional total, no per cápita) entre los 16 territorios administrativos: <span class="math display">\[HHI = \sum_{i=1}^n x_i^2\]</span> donde <span class="math inline">\(x_i = \frac{Y_i}{\sum Y_i}\)</span> es la participación del PIB de la región <span class="math inline">\(i\)</span> (<span class="math inline">\(Y_i\)</span>) en el total nacional. Los valores del HHI varían desde <span class="math inline">\(1/n = 0.0625\)</span> (distribución perfectamente equitativa de la producción) hasta <span class="math inline">\(1.0\)</span> (concentración total).</p></li>
+</ol>
+</section>
+<section id="tabla-3-índices-de-desigualdad-espacial-ponderados-por-población-en-el-tiempo-pib-per-cápita" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-3-índices-de-desigualdad-espacial-ponderados-por-población-en-el-tiempo-pib-per-cápita"><strong>Tabla 3: Índices de Desigualdad Espacial Ponderados por Población en el Tiempo (PIB per cápita)</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Año</th>
+<th style="text-align: center;">Coeficiente de Gini</th>
+<th style="text-align: center;">Índice de Theil</th>
+<th style="text-align: center;">HHI (Concentración de la Producción)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2013</td>
+<td style="text-align: center;">0.1893</td>
+<td style="text-align: center;">0.0765</td>
+<td style="text-align: center;">0.2419</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2015</td>
+<td style="text-align: center;">0.1858</td>
+<td style="text-align: center;">0.0744</td>
+<td style="text-align: center;">0.2426</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2017</td>
+<td style="text-align: center;">0.1712</td>
+<td style="text-align: center;">0.0604</td>
+<td style="text-align: center;">0.2438</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">0.1618</td>
+<td style="text-align: center;">0.0565</td>
+<td style="text-align: center;">0.2419</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;">0.1485</td>
+<td style="text-align: center;">0.0469</td>
+<td style="text-align: center;">0.2424</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2023</td>
+<td style="text-align: center;">0.1445</td>
+<td style="text-align: center;">0.0452</td>
+<td style="text-align: center;">0.2399</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2025</td>
+<td style="text-align: center;">0.1476</td>
+<td style="text-align: center;">0.0496</td>
+<td style="text-align: center;">0.2364</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota: Una versión en formato CSV de la Tabla 3 está disponible en <a href="../assets/table3_spatial_inequality.csv">table3_spatial_inequality.csv</a>.</em></p>
+</section>
+<section id="figuras-correspondientes-2" class="level3">
+<h3 class="anchored" data-anchor-id="figuras-correspondientes-2"><strong>Figuras Correspondientes</strong></h3>
+<section id="figura-3.1-tendencias-de-desigualdad-espacial-ponderada-por-población-2013-2025" class="level4">
+<h4 class="anchored" data-anchor-id="figura-3.1-tendencias-de-desigualdad-espacial-ponderada-por-población-2013-2025"><strong>Figura 3.1: Tendencias de Desigualdad Espacial Ponderada por Población (2013-2025)</strong></h4>
+<p><img src="../assets/fig3_1_inequality.png" class="img-fluid" alt="Figura 3.1: Tendencias de Desigualdad Espacial"> <em>La Figura 3.1 traza la trayectoria a largo plazo de la desigualdad regional en Chile. A diferencia de la concentración bruta de la producción, que permanece estructuralmente rígida, la desigualdad basada en el PIB regional per cápita muestra una variabilidad temporal significativa: 1. <strong>La Corrección Post-Boom (2013-2016)</strong>: Los índices de Gini y Theil disminuyeron de manera constante a medida que los precios del cobre se normalizaron, reduciendo la brecha entre los enclaves de recursos y el resto del país. 2. <strong>La Recuperación Económica 2017-2018</strong>: Ocurrió una divergencia debido a diferentes ritmos de recuperación entre las regiones industriales y primarias. 3. <strong>El Choque del COVID-19 en 2020</strong>: Las dinámicas regionales divergieron marcadamente, reflejando el impacto localizado de los confinamientos.</em></p>
+</section>
+<section id="figura-3.2-evolución-de-la-participación-en-el-pib-regional---área-apilada" class="level4">
+<h4 class="anchored" data-anchor-id="figura-3.2-evolución-de-la-participación-en-el-pib-regional---área-apilada"><strong>Figura 3.2: Evolución de la Participación en el PIB Regional - Área Apilada</strong></h4>
+<p><img src="../assets/fig3_2_stacked_area.png" class="img-fluid" alt="Figura 3.2: Evolución de la Participación en el PIB Regional"> <em>El gráfico de área apilada demuestra la rigidez estructural de la geografía económica de Chile. La Región Metropolitana (capa inferior) mantiene una participación constante y pesada de la producción durante todo el período de 13 años.</em></p>
+</section>
+</section>
+<section id="interpretación-de-tendencias-de-desigualdad-y-dinámicas-regionales" class="level3">
+<h3 class="anchored" data-anchor-id="interpretación-de-tendencias-de-desigualdad-y-dinámicas-regionales"><strong>Interpretación de Tendencias de Desigualdad y Dinámicas Regionales</strong></h3>
+<p>La comparación entre la concentración bruta de la producción (HHI) y los índices de desigualdad ponderados por población (Gini y Theil) expone características estructurales clave de la geografía económica de Chile:</p>
+<ol type="1">
+<li><p><strong>Rigidez Estructural de la Producción (HHI)</strong>: El HHI se mantiene prácticamente plano, oscilando entre <strong>0.2364</strong> y <strong>0.2438</strong> durante todo el período 2013-2025. Esto indica que la concentración geográfica de la producción bruta está estructuralmente bloqueada. La Región Metropolitana y los centros mineros del norte siguen capturando exactamente las mismas proporciones de la producción económica nacional, sin mostrar señales de descentralización territorial.</p></li>
+<li><p><strong>Volatilidad Temporal del Bienestar (Gini y Theil)</strong>: A diferencia de la rigidez del HHI, el Gini y Theil ponderados por población muestran ciclos temporales claros impulsados por choques macroeconómicos nacionales:</p>
+<ul>
+<li><strong>La Corrección Post-Boom de Commodities (2013–2016)</strong>: El Gini ponderado disminuyó de <strong>0.1893</strong> en 2013 a <strong>0.1476</strong> en 2025 (y el Theil de <strong>0.0765</strong> a <strong>0.0496</strong>). Al normalizarse los precios del cobre tras el súper-ciclo, la brecha de PIB per cápita entre las regiones ricas en recursos (como Antofagasta) y las regiones agrícolas o de servicios se comprimió. Esto representa una “convergencia pasiva” por normalización de rentas y no por un catch-up estructural de los sectores rezagados.</li>
+<li><strong>La Compresión por el COVID-19 en 2020</strong>: El Gini ponderado alcanzó su mínimo en 2023, en <strong>0.1445</strong> (Theil en <strong>0.0452</strong>). Esta anomalía refleja el impacto desigual de las cuarentenas. Los centros urbanos basados en servicios (como Santiago) enfrentaron cierres severos que contrajeron su producción, mientras que los sectores primarios (minería en el Norte) se mantuvieron activos al ser catalogados como estratégicos. Esto redujo temporalmente la brecha de ingresos entre la capital y las regiones periféricas.</li>
+<li><strong>Rebote Post-Pandemia (2021–2025)</strong>: Con la reapertura de los servicios y los ciclos de inflación global, el Gini se situó en <strong>0.1476</strong> hacia 2025 (Theil en <strong>0.0496</strong>), demostrando que las disparidades espaciales subyacentes regresan a sus niveles históricos una vez que se normaliza el ciclo económico.</li>
+</ul></li>
+<li><p><strong>Implicancia de Política Pública</strong>: La divergencia entre una concentración constante de la producción (HHI) y variables de bienestar fluctuantes (Gini/Theil) sugiere que los ciclos de commodities y choques temporales mueven los indicadores per cápita temporalmente, pero no resuelven el centralismo espacial persistente en Chile. Reducir la desigualdad requiere políticas industriales activas y de diversificación productiva dirigidas a sectores de alto valor fuera de la Región Metropolitana.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="conclusiones-e-implicancias-de-política" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-e-implicancias-de-política"><strong>5. Conclusiones e Implicancias de Política</strong></h2>
+<ol type="1">
+<li><strong>Centralización Persistente</strong>: La Región Metropolitana continúa dominando el panorama económico, capturando consistentemente el 45.9% del PIB nacional. No existe evidencia visual ni estadística de una descentralización importante.</li>
+<li><strong>Débil Cohesión</strong>: El gráfico de convergencia demuestra que las regiones rurales y periféricas no están alcanzando al centro. El crecimiento sigue estando impulsado por enclaves de recursos específicos (Minería en el Norte).</li>
+<li><strong>Implicancias de Política</strong>: Las estrategias de desarrollo regional deben ir más allá de los subsidios generales y enfocarse en construir capacidades productivas locales. Fortalecer las especializaciones sectoriales (por ejemplo, clusters agrícolas en el Sur) mientras se fomenta la complejidad económica es clave para mitigar la dependencia de la extracción de recursos primarios y los servicios centrales.</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dpolancon\.github\.io\/bcch\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Fuente: Banco Central de Chile. Generado desde bcch-data-repo.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Los datos mandan sobre el texto.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
