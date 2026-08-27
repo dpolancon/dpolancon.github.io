@@ -137,7 +137,7 @@
     "href": "escalas/sectorial-regional.html#el-censo",
     "title": "Sectorial-regional",
     "section": "El censo",
-    "text": "El censo\nLa BDE publica 2.331 series en esta escala. 9.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones × 13 sectores.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n2.331\nanual 2123. trimestral 208\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+    "text": "El censo\nLa BDE publica 2.331 series en esta escala. 9.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones × 13 sectores.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n2.331\nanual 2123. trimestral 208\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv.\n\nExplorar el censo filtrado por esta escala"
   },
   {
     "objectID": "escalas/sectorial-regional.html#qué-usa-el-proyecto",
@@ -172,7 +172,7 @@
     "href": "escalas/nacional.html#el-censo",
     "title": "Nacional",
     "section": "El censo",
-    "text": "El censo\nLa BDE publica 21.287 series en esta escala. 83.9% de los 25.369 códigos únicos del catálogo. La unidad de observación es una economía.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n8.652\ntrimestral 6882. anual 1497. mensual 273\n\n\nDerivados y Spot\n2.171\nmensual 1457. diaria 714\n\n\nSector Externo\n2.043\nmensual 823. trimestral 550. anual 543. diaria 127\n\n\nPrecios\n2.034\nmensual 2032. diaria 2\n\n\nEstadísticas Monetarias y Financieras\n1.227\nmensual 1158. diaria 38. anual 30. trimestral 1\n\n\nOperaciones de Mercado Abierto\n737\ndiaria 684. mensual 53\n\n\nExpectativas Económicas\n714\ntrimestral 426. mensual 252. diaria 36\n\n\nMercado de Capitales\n684\nmensual 665. trimestral 11. diaria 8\n\n\notros 12 capítulos\n3.025\n\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+    "text": "El censo\nLa BDE publica 21.287 series en esta escala. 83.9% de los 25.369 códigos únicos del catálogo. La unidad de observación es una economía.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nCuentas Nacionales\n8.652\ntrimestral 6882. anual 1497. mensual 273\n\n\nDerivados y Spot\n2.171\nmensual 1457. diaria 714\n\n\nSector Externo\n2.043\nmensual 823. trimestral 550. anual 543. diaria 127\n\n\nPrecios\n2.034\nmensual 2032. diaria 2\n\n\nEstadísticas Monetarias y Financieras\n1.227\nmensual 1158. diaria 38. anual 30. trimestral 1\n\n\nOperaciones de Mercado Abierto\n737\ndiaria 684. mensual 53\n\n\nExpectativas Económicas\n714\ntrimestral 426. mensual 252. diaria 36\n\n\nMercado de Capitales\n684\nmensual 665. trimestral 11. diaria 8\n\n\notros 12 capítulos\n3.025\n\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv.\n\nExplorar el censo filtrado por esta escala"
   },
   {
     "objectID": "escalas/nacional.html#qué-usa-el-proyecto",
@@ -375,7 +375,7 @@
     "href": "escalas/macro-zona.html#el-censo",
     "title": "Macro-zona",
     "section": "El censo",
-    "text": "El censo\nLa BDE publica 56 series en esta escala. 0.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 7 zonas.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nEstadísticas Experimentales\n38\nanual 20. trimestral 18\n\n\nIndicadores Sectoriales\n18\ntrimestral 18\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+    "text": "El censo\nLa BDE publica 56 series en esta escala. 0.2% de los 25.369 códigos únicos del catálogo. La unidad de observación es 7 zonas.\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nEstadísticas Experimentales\n38\nanual 20. trimestral 18\n\n\nIndicadores Sectoriales\n18\ntrimestral 18\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv.\n\nExplorar el censo filtrado por esta escala"
   },
   {
     "objectID": "escalas/macro-zona.html#qué-usa-el-proyecto",
@@ -410,7 +410,7 @@
     "href": "escalas/regional.html#el-censo",
     "title": "Regional",
     "section": "El censo",
-    "text": "El censo\nLa BDE publica 1.695 series en esta escala. 6.7% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nRegionales\n585\nmensual 541. anual 44\n\n\nCuentas Nacionales\n577\nanual 369. trimestral 208\n\n\nEstadísticas Experimentales\n304\nmensual 192. anual 64. diaria 32. trimestral 16\n\n\nGénero\n192\nanual 192\n\n\nMercado Laboral y Demografía\n34\nmensual 34\n\n\nMercado de Capitales\n3\ntrimestral 3\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+    "text": "El censo\nLa BDE publica 1.695 series en esta escala. 6.7% de los 25.369 códigos únicos del catálogo. La unidad de observación es 16 regiones.\n\n\n\n\n\n\n\n\nCapítulo\nSeries\nFrecuencias\n\n\n\n\nRegionales\n585\nmensual 541. anual 44\n\n\nCuentas Nacionales\n577\nanual 369. trimestral 208\n\n\nEstadísticas Experimentales\n304\nmensual 192. anual 64. diaria 32. trimestral 16\n\n\nGénero\n192\nanual 192\n\n\nMercado Laboral y Demografía\n34\nmensual 34\n\n\nMercado de Capitales\n3\ntrimestral 3\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv.\n\nExplorar el censo filtrado por esta escala"
   },
   {
     "objectID": "escalas/regional.html#qué-usa-el-proyecto",
@@ -438,7 +438,21 @@
     "href": "explorar.html",
     "title": "Explorar",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nLos dos ejes, región por región. Los datos son los mismos CSV que publican los reportes: si un gráfico y una tabla no coinciden, el CSV manda."
+    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nDos instrumentos autónomos sobre las mismas bases que publican los reportes: si un gráfico y una tabla no coinciden, el CSV manda."
+  },
+  {
+    "objectID": "explorar.html#el-censo-del-catálogo",
+    "href": "explorar.html#el-censo-del-catálogo",
+    "title": "Explorar",
+    "section": "El censo del catálogo",
+    "text": "El censo del catálogo\nQué publica el Banco Central sobre un tema, y en qué escala lo publica. La búsqueda recorre nombre y código de las 25.369 series del catálogo.\n\n\nBuscar\n\n\n\nEscala\n\n\n\nFrecuencia\n\n\n\n\nCargando el censo…\n\n\n\n\nFuente: elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: censo_bde_series.csv."
+  },
+  {
+    "objectID": "explorar.html#los-dos-ejes-región-por-región",
+    "href": "explorar.html#los-dos-ejes-región-por-región",
+    "title": "Explorar",
+    "section": "Los dos ejes, región por región",
+    "text": "Los dos ejes, región por región\nRenta espacial y renta de recursos como participación en el producto de cada región.\n\n\nEje\n\n Renta espacial (sector 10)\n Renta de recursos (sector 03)\n Construcción (sector 06)\n\n\n\nRegiones\n\n\nTodas\nNinguna"
   },
   {
     "objectID": "explorar.html#dispersión-entre-regiones",
