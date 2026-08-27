@@ -79,6 +79,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <meta name="color-scheme" content="light dark">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -369,12 +398,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#el-argumento-desacoplando-precio-y-cantidad" id="toc-el-argumento-desacoplando-precio-y-cantidad" class="nav-link active" data-scroll-target="#el-argumento-desacoplando-precio-y-cantidad">El argumento: Desacoplando precio y cantidad</a></li>
   <li><a href="#la-trayectoria-macroeconómica-nacional" id="toc-la-trayectoria-macroeconómica-nacional" class="nav-link" data-scroll-target="#la-trayectoria-macroeconómica-nacional">La trayectoria macroeconómica nacional</a>
   <ul class="collapse">
+  <li><a href="#tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" id="toc-tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" class="nav-link" data-scroll-target="#tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025">Tabla 1: Matriz Forense del Ciclo de Edificación por Región (2014 vs.&nbsp;2025)</a></li>
   <li><a href="#tabla-2-evolución-macroeconómica-de-la-edificación-y-dinamismo-empresarial-20142025" id="toc-tabla-2-evolución-macroeconómica-de-la-edificación-y-dinamismo-empresarial-20142025" class="nav-link" data-scroll-target="#tabla-2-evolución-macroeconómica-de-la-edificación-y-dinamismo-empresarial-20142025">Tabla 2: Evolución Macroeconómica de la Edificación y Dinamismo Empresarial (2014–2025)</a></li>
   </ul></li>
-  <li><a href="#la-pauta-territorial-matriz-forense-regional" id="toc-la-pauta-territorial-matriz-forense-regional" class="nav-link" data-scroll-target="#la-pauta-territorial-matriz-forense-regional">La pauta territorial: Matriz forense regional</a>
-  <ul class="collapse">
-  <li><a href="#tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" id="toc-tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" class="nav-link" data-scroll-target="#tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025">Tabla 1: Matriz Forense del Ciclo de Edificación por Región (2014 vs.&nbsp;2025)</a></li>
-  </ul></li>
+  <li><a href="#dinámica-del-empleo-y-la-fuerza-de-trabajo-en-la-construcción" id="toc-dinámica-del-empleo-y-la-fuerza-de-trabajo-en-la-construcción" class="nav-link" data-scroll-target="#dinámica-del-empleo-y-la-fuerza-de-trabajo-en-la-construcción">Dinámica del Empleo y la Fuerza de Trabajo en la Construcción</a></li>
   <li><a href="#ortogonalidad-del-dinamismo-empresarial-ceys" id="toc-ortogonalidad-del-dinamismo-empresarial-ceys" class="nav-link" data-scroll-target="#ortogonalidad-del-dinamismo-empresarial-ceys">Ortogonalidad del dinamismo empresarial (CEYS)</a></li>
   <li><a href="#nota-metodológica" id="toc-nota-metodológica" class="nav-link" data-scroll-target="#nota-metodológica">Nota metodológica</a></li>
   </ul>
@@ -408,19 +435,220 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="el-argumento-desacoplando-precio-y-cantidad" class="level2">
 <h2 class="anchored" data-anchor-id="el-argumento-desacoplando-precio-y-cantidad">El argumento: Desacoplando precio y cantidad</h2>
-<p>El Reporte 3 demostró la expansión tendencial de la renta espacial (Sector 10: <em>Servicios de vivienda e inmobiliarios</em>). No obstante, el Sector 10 contiene en buena parte <strong>alquiler imputado</strong>: su valor agregado macroeconómico aumenta automáticamente cuando se incrementa el precio de los inmuebles, se construya o no un metro cuadrado físico nuevo. Precio y cantidad física son formalmente indistinguibles en las cuentas nacionales del sector.</p>
-<p>Los permisos de edificación recopilados por el INE (<code>SAH</code>, <code>SANH</code>, <code>NVA</code>) miden <strong>cantidad física pura sin precio</strong>: metros cuadrados autorizados y unidades de vivienda. Puestos en contraste con la participación del Sector 10, permiten discriminar entre dos hipótesis contrapuestas: 1. Si la renta espacial sube <strong>con</strong> un aumento de los permisos, la valorización refleja una acumulación real de capital físico en estructuras urbanas. 2. Si la renta espacial sube <strong>contra</strong> permisos que se derrumban, lo que crece es la capitalización financiera del suelo urbano y del stock preexistente.</p>
+<p>El Reporte 3 demostró la expansión tendencial de la renta espacial (Sector 10: <em>Servicios de vivienda e inmobiliarios</em>). No obstante, el Sector 10 contiene en buena parte <strong>alquiler imputado</strong>: su valor agregado aumenta automáticamente cuando se incrementa el precio de los inmuebles, se construya o no un metro cuadrado físico nuevo.</p>
+<p>Los permisos de edificación recopilados por el INE (<code>SAH</code>, <code>SANH</code>, <code>NVA</code>) miden <strong>cantidad física pura sin precio</strong>: metros cuadrados autorizados y unidades de vivienda. Puestos en contraste con la participación del Sector 10, permiten discriminar entre la valorización de activos y la acumulación real de capital físico.</p>
 </section>
 <section id="la-trayectoria-macroeconómica-nacional" class="level2">
 <h2 class="anchored" data-anchor-id="la-trayectoria-macroeconómica-nacional">La trayectoria macroeconómica nacional</h2>
-<p>Entre 2014 y 2025, la superficie habitacional autorizada a nivel nacional pasó de <strong>13,3 millones de m²</strong> a <strong>7,2 millones de m²</strong>, lo que representa una contracción acumulada de <strong>46,1%</strong>. Las viviendas autorizadas cayeron de <strong>176 mil</strong> a <strong>90 mil</strong> unidades.</p>
-<p>En el mismo período, la participación media de la renta espacial en el producto regional <strong>subió</strong>: alcanzó un índice de <strong>109,9</strong> frente al índice de <strong>53,9</strong> para la superficie habitacional autorizada (ambos con base 100 en 2014).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/fig4_1_desacople_macro.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 1: El Gran Desacople entre la actividad física de edificación y la renta espacial (2014–2025)</figcaption>
-</figure>
-</div>
+<p>Entre 2014 y 2025, la superficie habitacional autorizada a nivel nacional pasó de <strong>13,3 millones de m²</strong> a <strong>7,2 millones de m²</strong>, representa una contracción acumulada de <strong>46,1%</strong>. Las viviendas autorizadas cayeron de <strong>176 mil</strong> a <strong>90 mil</strong> unidades.</p>
+<p>En el mismo período, la participación media de la renta espacial en el producto regional <strong>subió</strong>: alcanzó un índice de <strong>109,9</strong> frente al índice de <strong>53,9</strong> para la superficie habitacional autorizada.</p>
+<section id="tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025">Tabla 1: Matriz Forense del Ciclo de Edificación por Región (2014 vs.&nbsp;2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Código</th>
+<th style="text-align: left;">Región</th>
+<th style="text-align: center;">Superficie Hab. 2014 (miles m²)</th>
+<th style="text-align: center;">Superficie Hab. 2025 (miles m²)</th>
+<th style="text-align: center;">Δ Superficie (%)</th>
+<th style="text-align: center;">Viviendas 2014 (unid.)</th>
+<th style="text-align: center;">Viviendas 2025 (unid.)</th>
+<th style="text-align: center;">Δ Viviendas (%)</th>
+<th style="text-align: center;">Δ Sector 10 (pp)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>01</code></td>
+<td style="text-align: left;">Tarapacá</td>
+<td style="text-align: center;">238</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;"><strong>-38,0%</strong></td>
+<td style="text-align: center;">2&nbsp;762</td>
+<td style="text-align: center;">1&nbsp;850</td>
+<td style="text-align: center;"><strong>-33,0%</strong></td>
+<td style="text-align: center;">-0,00 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>02</code></td>
+<td style="text-align: left;">Antofagasta</td>
+<td style="text-align: center;">624</td>
+<td style="text-align: center;">212</td>
+<td style="text-align: center;"><strong>-66,0%</strong></td>
+<td style="text-align: center;">5&nbsp;985</td>
+<td style="text-align: center;">2&nbsp;368</td>
+<td style="text-align: center;"><strong>-60,4%</strong></td>
+<td style="text-align: center;">-0,00 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>03</code></td>
+<td style="text-align: left;">Atacama</td>
+<td style="text-align: center;">118</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;"><strong>-36,0%</strong></td>
+<td style="text-align: center;">1&nbsp;738</td>
+<td style="text-align: center;">983</td>
+<td style="text-align: center;"><strong>-43,4%</strong></td>
+<td style="text-align: center;">-0,01 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>04</code></td>
+<td style="text-align: left;">Coquimbo</td>
+<td style="text-align: center;">637</td>
+<td style="text-align: center;">270</td>
+<td style="text-align: center;"><strong>-57,6%</strong></td>
+<td style="text-align: center;">8&nbsp;957</td>
+<td style="text-align: center;">3&nbsp;835</td>
+<td style="text-align: center;"><strong>-57,2%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>05</code></td>
+<td style="text-align: left;">Valparaíso</td>
+<td style="text-align: center;">1&nbsp;424</td>
+<td style="text-align: center;">760</td>
+<td style="text-align: center;"><strong>-46,6%</strong></td>
+<td style="text-align: center;">16&nbsp;647</td>
+<td style="text-align: center;">8&nbsp;068</td>
+<td style="text-align: center;"><strong>-51,5%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>06</code></td>
+<td style="text-align: left;">O’Higgins</td>
+<td style="text-align: center;">620</td>
+<td style="text-align: center;">548</td>
+<td style="text-align: center;"><strong>-11,6%</strong></td>
+<td style="text-align: center;">8&nbsp;991</td>
+<td style="text-align: center;">6&nbsp;465</td>
+<td style="text-align: center;"><strong>-28,1%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>07</code></td>
+<td style="text-align: left;">Maule</td>
+<td style="text-align: center;">739</td>
+<td style="text-align: center;">594</td>
+<td style="text-align: center;"><strong>-19,7%</strong></td>
+<td style="text-align: center;">13&nbsp;066</td>
+<td style="text-align: center;">7&nbsp;668</td>
+<td style="text-align: center;"><strong>-41,3%</strong></td>
+<td style="text-align: center;">+0,02 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>08</code></td>
+<td style="text-align: left;">Biobío</td>
+<td style="text-align: center;">1&nbsp;532</td>
+<td style="text-align: center;">480</td>
+<td style="text-align: center;"><strong>-68,6%</strong></td>
+<td style="text-align: center;">24&nbsp;803</td>
+<td style="text-align: center;">6&nbsp;591</td>
+<td style="text-align: center;"><strong>-73,4%</strong></td>
+<td style="text-align: center;">+0,02 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>09</code></td>
+<td style="text-align: left;">La Araucanía</td>
+<td style="text-align: center;">611</td>
+<td style="text-align: center;">609</td>
+<td style="text-align: center;"><strong>-0,2%</strong></td>
+<td style="text-align: center;">10&nbsp;401</td>
+<td style="text-align: center;">8&nbsp;681</td>
+<td style="text-align: center;"><strong>-16,5%</strong></td>
+<td style="text-align: center;">+0,02 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>10</code></td>
+<td style="text-align: left;">Los Lagos</td>
+<td style="text-align: center;">466</td>
+<td style="text-align: center;">536</td>
+<td style="text-align: center;"><strong>+15,0%</strong></td>
+<td style="text-align: center;">6&nbsp;884</td>
+<td style="text-align: center;">6&nbsp;374</td>
+<td style="text-align: center;"><strong>-7,4%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>11</code></td>
+<td style="text-align: left;">Aysén</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;"><strong>-12,1%</strong></td>
+<td style="text-align: center;">1&nbsp;047</td>
+<td style="text-align: center;">904</td>
+<td style="text-align: center;"><strong>-13,7%</strong></td>
+<td style="text-align: center;">+0,02 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>12</code></td>
+<td style="text-align: left;">Magallanes</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;"><strong>-50,1%</strong></td>
+<td style="text-align: center;">1&nbsp;300</td>
+<td style="text-align: center;">518</td>
+<td style="text-align: center;"><strong>-60,2%</strong></td>
+<td style="text-align: center;">+0,00 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>13</code></td>
+<td style="text-align: left;">Metropolitana de Santiago</td>
+<td style="text-align: center;">5&nbsp;886</td>
+<td style="text-align: center;">2&nbsp;076</td>
+<td style="text-align: center;"><strong>-64,7%</strong></td>
+<td style="text-align: center;">69&nbsp;218</td>
+<td style="text-align: center;">25&nbsp;154</td>
+<td style="text-align: center;"><strong>-63,7%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>14</code></td>
+<td style="text-align: left;">Los Ríos</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">183</td>
+<td style="text-align: center;"><strong>-8,3%</strong></td>
+<td style="text-align: center;">2&nbsp;817</td>
+<td style="text-align: center;">2&nbsp;135</td>
+<td style="text-align: center;"><strong>-24,2%</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>15</code></td>
+<td style="text-align: left;">Arica y Parinacota</td>
+<td style="text-align: center;">81</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;"><strong>+85,3%</strong></td>
+<td style="text-align: center;">1&nbsp;206</td>
+<td style="text-align: center;">1&nbsp;933</td>
+<td style="text-align: center;"><strong>+60,3%</strong></td>
+<td style="text-align: center;">-0,00 pp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>16</code></td>
+<td style="text-align: left;">Ñuble</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">435</td>
+<td style="text-align: center;"><strong>—</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">6&nbsp;298</td>
+<td style="text-align: center;"><strong>—</strong></td>
+<td style="text-align: center;">+0,01 pp</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="tabla-2-evolución-macroeconómica-de-la-edificación-y-dinamismo-empresarial-20142025" class="level3">
 <h3 class="anchored" data-anchor-id="tabla-2-evolución-macroeconómica-de-la-edificación-y-dinamismo-empresarial-20142025">Tabla 2: Evolución Macroeconómica de la Edificación y Dinamismo Empresarial (2014–2025)</h3>
 <table class="caption-top table">
@@ -541,244 +769,79 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Como revela la Tabla 2 y la Figura 3, el metraje promedio por unidad habitacional autorizada se mantuvo estable en torno a los <strong>74–76 m²</strong> durante todo el decenio. Esto descarta la conjetura de que la menor cantidad de viviendas autorizadas hubiese sido compensada por unidades de mayor metraje unitario o mayor envergadura física.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/fig4_3_composicion_metraje.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 3: Composición de la superficie autorizada y estabilidad del metraje medio por unidad (2014–2025)</figcaption>
+<p><img src="../assets/fig4_1_desacople_macro.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 4.1: El Gran Desacople entre la actividad física de edificación y la renta espacial (2014–2025)</figcaption>
 </figure>
 </div>
-</section>
-</section>
-<section id="la-pauta-territorial-matriz-forense-regional" class="level2">
-<h2 class="anchored" data-anchor-id="la-pauta-territorial-matriz-forense-regional">La pauta territorial: Matriz forense regional</h2>
-<p>La contracción física no es un fenómeno exclusivo de la capital: <strong>13 de las 16 regiones</strong> autorizaban en 2025 menos superficie habitacional que en 2014. El rango de variación va desde Arica y Parinacota (185,3) hasta Biobío (31,4).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición del Gran Desacople Macroeconómico (Figura 4.1)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El gráfico ilustra la divergencia entre la cantidad física autorizada (<span class="math inline">\(SAH\)</span>, índice <strong>53,9</strong>) y la renta espacial del Sector 10 (índice <strong>109,9</strong>). La severa caída en los permisos demuestra que la inflación inmobiliaria no responde a un auge en la inversión real de estructuras físicas.</p>
+</div>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../assets/fig4_2_heterogeneidad_regional.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 2: Heterogeneidad regional en la variación acumulada de la superficie habitacional autorizada (2014 vs.&nbsp;2025)</figcaption>
+<figcaption>Figura 4.2: Heterogeneidad regional en la variación acumulada de la superficie habitacional autorizada (2014 vs.&nbsp;2025)</figcaption>
 </figure>
 </div>
-<p>Las principales áreas metropolitanas del país registraron contracciones severas: - <strong>Región Metropolitana:</strong> la superficie habitacional se contrajo un <strong>-61,8%</strong> (de 5.886 a 2.246 miles de m²) y las viviendas cayeron un <strong>-58,2%</strong> (de 69.218 a 28.935 unidades), mientras la participación del Sector 10 creció <strong>+0,79 pp</strong>. - <strong>Valparaíso:</strong> la superficie cayó un <strong>-47,5%</strong> y las viviendas un <strong>-45,4%</strong>, mientras el Sector 10 escaló <strong>+1,74 pp</strong>. - <strong>Biobío:</strong> la superficie se redujo un <strong>-52,3%</strong> y las viviendas un <strong>-59,0%</strong>, con un alza de <strong>+1,39 pp</strong> en el Sector 10. - <strong>Antofagasta:</strong> la superficie habitacional colapsó un <strong>-65,6%</strong> (de 624 a 214 miles de m²).</p>
-<section id="tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025" class="level3">
-<h3 class="anchored" data-anchor-id="tabla-1-matriz-forense-del-ciclo-de-edificación-por-región-2014-vs.-2025">Tabla 1: Matriz Forense del Ciclo de Edificación por Región (2014 vs.&nbsp;2025)</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 9%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Código</th>
-<th style="text-align: left;">Región</th>
-<th style="text-align: center;">Superficie Hab. 2014 (miles m²)</th>
-<th style="text-align: center;">Superficie Hab. 2025 (miles m²)</th>
-<th style="text-align: center;">Δ Superficie (%)</th>
-<th style="text-align: center;">Viviendas 2014 (unid.)</th>
-<th style="text-align: center;">Viviendas 2025 (unid.)</th>
-<th style="text-align: center;">Δ Viviendas (%)</th>
-<th style="text-align: center;">Δ Sector 10 (pp)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><code>01</code></td>
-<td style="text-align: left;">Tarapacá</td>
-<td style="text-align: center;">238</td>
-<td style="text-align: center;">148</td>
-<td style="text-align: center;"><strong>-38,0%</strong></td>
-<td style="text-align: center;">2&nbsp;762</td>
-<td style="text-align: center;">1&nbsp;850</td>
-<td style="text-align: center;"><strong>-33,0%</strong></td>
-<td style="text-align: center;">-0,30 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>02</code></td>
-<td style="text-align: left;">Antofagasta</td>
-<td style="text-align: center;">624</td>
-<td style="text-align: center;">212</td>
-<td style="text-align: center;"><strong>-66,0%</strong></td>
-<td style="text-align: center;">5&nbsp;985</td>
-<td style="text-align: center;">2&nbsp;368</td>
-<td style="text-align: center;"><strong>-60,4%</strong></td>
-<td style="text-align: center;">-0,44 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>03</code></td>
-<td style="text-align: left;">Atacama</td>
-<td style="text-align: center;">118</td>
-<td style="text-align: center;">75</td>
-<td style="text-align: center;"><strong>-36,0%</strong></td>
-<td style="text-align: center;">1&nbsp;738</td>
-<td style="text-align: center;">983</td>
-<td style="text-align: center;"><strong>-43,4%</strong></td>
-<td style="text-align: center;">-1,15 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>04</code></td>
-<td style="text-align: left;">Coquimbo</td>
-<td style="text-align: center;">637</td>
-<td style="text-align: center;">270</td>
-<td style="text-align: center;"><strong>-57,6%</strong></td>
-<td style="text-align: center;">8&nbsp;957</td>
-<td style="text-align: center;">3&nbsp;835</td>
-<td style="text-align: center;"><strong>-57,2%</strong></td>
-<td style="text-align: center;">+1,16 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>05</code></td>
-<td style="text-align: left;">Valparaíso</td>
-<td style="text-align: center;">1&nbsp;424</td>
-<td style="text-align: center;">760</td>
-<td style="text-align: center;"><strong>-46,6%</strong></td>
-<td style="text-align: center;">16&nbsp;647</td>
-<td style="text-align: center;">8&nbsp;068</td>
-<td style="text-align: center;"><strong>-51,5%</strong></td>
-<td style="text-align: center;">+1,33 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>06</code></td>
-<td style="text-align: left;">O’Higgins</td>
-<td style="text-align: center;">620</td>
-<td style="text-align: center;">548</td>
-<td style="text-align: center;"><strong>-11,6%</strong></td>
-<td style="text-align: center;">8&nbsp;991</td>
-<td style="text-align: center;">6&nbsp;465</td>
-<td style="text-align: center;"><strong>-28,1%</strong></td>
-<td style="text-align: center;">+1,03 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>07</code></td>
-<td style="text-align: left;">Maule</td>
-<td style="text-align: center;">739</td>
-<td style="text-align: center;">594</td>
-<td style="text-align: center;"><strong>-19,7%</strong></td>
-<td style="text-align: center;">13&nbsp;066</td>
-<td style="text-align: center;">7&nbsp;668</td>
-<td style="text-align: center;"><strong>-41,3%</strong></td>
-<td style="text-align: center;">+1,92 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>08</code></td>
-<td style="text-align: left;">Biobío</td>
-<td style="text-align: center;">1&nbsp;532</td>
-<td style="text-align: center;">480</td>
-<td style="text-align: center;"><strong>-68,6%</strong></td>
-<td style="text-align: center;">24&nbsp;803</td>
-<td style="text-align: center;">6&nbsp;591</td>
-<td style="text-align: center;"><strong>-73,4%</strong></td>
-<td style="text-align: center;">+1,54 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>09</code></td>
-<td style="text-align: left;">La Araucanía</td>
-<td style="text-align: center;">611</td>
-<td style="text-align: center;">609</td>
-<td style="text-align: center;"><strong>-0,2%</strong></td>
-<td style="text-align: center;">10&nbsp;401</td>
-<td style="text-align: center;">8&nbsp;681</td>
-<td style="text-align: center;"><strong>-16,5%</strong></td>
-<td style="text-align: center;">+1,51 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>10</code></td>
-<td style="text-align: left;">Los Lagos</td>
-<td style="text-align: center;">466</td>
-<td style="text-align: center;">536</td>
-<td style="text-align: center;"><strong>+15,0%</strong></td>
-<td style="text-align: center;">6&nbsp;884</td>
-<td style="text-align: center;">6&nbsp;374</td>
-<td style="text-align: center;"><strong>-7,4%</strong></td>
-<td style="text-align: center;">+1,08 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>11</code></td>
-<td style="text-align: left;">Aysén</td>
-<td style="text-align: center;">69</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;"><strong>-12,1%</strong></td>
-<td style="text-align: center;">1&nbsp;047</td>
-<td style="text-align: center;">904</td>
-<td style="text-align: center;"><strong>-13,7%</strong></td>
-<td style="text-align: center;">+1,63 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>12</code></td>
-<td style="text-align: left;">Magallanes</td>
-<td style="text-align: center;">79</td>
-<td style="text-align: center;">40</td>
-<td style="text-align: center;"><strong>-50,1%</strong></td>
-<td style="text-align: center;">1&nbsp;300</td>
-<td style="text-align: center;">518</td>
-<td style="text-align: center;"><strong>-60,2%</strong></td>
-<td style="text-align: center;">+0,02 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>13</code></td>
-<td style="text-align: left;">Metropolitana de Santiago</td>
-<td style="text-align: center;">5&nbsp;886</td>
-<td style="text-align: center;">2&nbsp;076</td>
-<td style="text-align: center;"><strong>-64,7%</strong></td>
-<td style="text-align: center;">69&nbsp;218</td>
-<td style="text-align: center;">25&nbsp;154</td>
-<td style="text-align: center;"><strong>-63,7%</strong></td>
-<td style="text-align: center;">+0,71 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>14</code></td>
-<td style="text-align: left;">Los Ríos</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">183</td>
-<td style="text-align: center;"><strong>-8,3%</strong></td>
-<td style="text-align: center;">2&nbsp;817</td>
-<td style="text-align: center;">2&nbsp;135</td>
-<td style="text-align: center;"><strong>-24,2%</strong></td>
-<td style="text-align: center;">+1,41 pp</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><code>15</code></td>
-<td style="text-align: left;">Arica y Parinacota</td>
-<td style="text-align: center;">81</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;"><strong>+85,3%</strong></td>
-<td style="text-align: center;">1&nbsp;206</td>
-<td style="text-align: center;">1&nbsp;933</td>
-<td style="text-align: center;"><strong>+60,3%</strong></td>
-<td style="text-align: center;">-0,15 pp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>16</code></td>
-<td style="text-align: left;">Ñuble</td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">435</td>
-<td style="text-align: center;"><strong>—</strong></td>
-<td style="text-align: center;">—</td>
-<td style="text-align: center;">6&nbsp;298</td>
-<td style="text-align: center;"><strong>—</strong></td>
-<td style="text-align: center;">+1,17 pp</td>
-</tr>
-</tbody>
-</table>
-<div class="caveat">
-<p><strong>Un permiso es intención administrativa, no obra ejecutada.</strong> Un permiso de edificación registra la autorización otorgada por la Dirección de Obras Municipales (DOM), pero no garantiza que la faena comience de inmediato ni que llegue a término. La serie constituye un indicador adelantado del ciclo físico de edificación, no una medida de obra terminada ni de consumo de suelo urbano efectivo.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición de la Contracción Física por Región (Figura 4.2)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un total de <strong>13 de las 16 regiones</strong> registraron niveles de edificación habitacional inferiores a los de 2014. La contracción afectó con severidad a la Región Metropolitana (-61,8%), Antofagasta (-65,6%), Biobío (-52,3%) y Valparaíso (-47,5%).</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig4_3_composicion_metraje.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 4.3: Composición de la superficie autorizada y estabilidad del metraje medio por unidad (2014–2025)</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición del Metraje Medio por Unidad Habitacional (Figura 4.3)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El metraje promedio se mantuvo estable en torno a <strong>74–76 m²</strong> por vivienda en todo el decenio. Esto descarta que la menor cantidad de unidades autorizadas haya sido compensada por viviendas de mayor metraje unitario.</p>
+</div>
 </div>
 </section>
+</section>
+<section id="dinámica-del-empleo-y-la-fuerza-de-trabajo-en-la-construcción" class="level2">
+<h2 class="anchored" data-anchor-id="dinámica-del-empleo-y-la-fuerza-de-trabajo-en-la-construcción">Dinámica del Empleo y la Fuerza de Trabajo en la Construcción</h2>
+<p>La severa caída en la autorización de permisos de edificación impacta de forma directa la capacidad de absorción de mano de obra en el sector productivo de la construcción (Sector 06: <em>Construcción</em>). A diferencia del Sector 10 (<em>Servicios inmobiliarios</em>), que es intensivo en capital patrimonial y rentas, la actividad de edificación física del Sector 06 es altamente intensiva en empleo directo no calificado y calificado. La contracción del -50% en los permisos frena la generación de puestos de trabajo regionales, acelerando la precarización laboral y la contracción de la demanda agregada en las economías regionales.</p>
+<div class="caveat">
+<p><strong>Un permiso es intención administrativa, no obra ejecutada.</strong> Un permiso de edificación registra la autorización municipal, pero no garantiza el inicio ni la finalización inmediata de la faena.</p>
+</div>
 </section>
 <section id="ortogonalidad-del-dinamismo-empresarial-ceys" class="level2">
 <h2 class="anchored" data-anchor-id="ortogonalidad-del-dinamismo-empresarial-ceys">Ortogonalidad del dinamismo empresarial (CEYS)</h2>
-<p>Mientras la actividad física de edificación se redujo a la mitad, las empresas constituidas (<code>CEYS</code>) exhibieron la trayectoria opuesta: pasaron de <strong>52 mil</strong> a <strong>202 mil</strong> empresas entre 2014 y 2025.</p>
-<p>Esta expansión refleja la digitalización y simplificación administrativa del registro de sociedades (creación de empresas en un día), compuesto primordialmente por firmas de servicios y sociedades de responsabilidad limitada sin infraestructura física. Por tanto, <code>CEYS</code> entra al análisis como <strong>control de dinamismo empresarial institucional</strong> y <strong>no forma parte del eje espacial</strong>, por lo que no debe agregarse a los indicadores físicos de construcción.</p>
+<p>Mientras la actividad física de edificación se redujo a la mitad, las empresas constituidas (<code>CEYS</code>) pasaron de <strong>52 mil</strong> a <strong>202 mil</strong> entre 2014 y 2025. Esta expansión responde a la digitalización del registro de sociedades y no forma parte del eje físico espacial.</p>
 </section>
 <section id="nota-metodológica" class="level2">
 <h2 class="anchored" data-anchor-id="nota-metodológica">Nota metodológica</h2>
-<p>Los permisos de edificación provienen del Instituto Nacional de Estadísticas (INE) y se recopilan mensualmente a partir de los formularios municipales. Presentan una marcada estacionalidad (fuertes caídas en el invierno austral y en enero), por lo que el panel mensual computa sumas móviles de 12 meses. El panel anual integra exclusivamente años calendario <strong>completos</strong> (2014–2025).</p>
+<p>Los permisos provienen del INE y se recopilan mensualmente a partir de formularios municipales.</p>
 <div class="fuente">
 <p><strong>Fuente:</strong> elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: <a href="../datos/panel_permits_annual.csv"><code>panel_permits_annual.csv</code></a>.</p>
 </div>
