@@ -79,6 +79,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <meta name="color-scheme" content="light dark">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -370,7 +399,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lo-que-muestran-los-datos" id="toc-lo-que-muestran-los-datos" class="nav-link" data-scroll-target="#lo-que-muestran-los-datos">Lo que muestran los datos</a>
   <ul class="collapse">
   <li><a href="#la-descomposición-terreno-frente-a-construcción" id="toc-la-descomposición-terreno-frente-a-construcción" class="nav-link" data-scroll-target="#la-descomposición-terreno-frente-a-construcción">La descomposición terreno frente a construcción</a></li>
+  <li><a href="#tabla-1-descomposición-de-knoll-et-al.-2017-y-concentración-rm-2012-vs.-2024" id="toc-tabla-1-descomposición-de-knoll-et-al.-2017-y-concentración-rm-2012-vs.-2024" class="nav-link" data-scroll-target="#tabla-1-descomposición-de-knoll-et-al.-2017-y-concentración-rm-2012-vs.-2024">Tabla 1: Descomposición de Knoll et al.&nbsp;(2017) y Concentración RM (2012 vs.&nbsp;2024)</a></li>
   <li><a href="#concentración-metropolitana-y-precios-del-suelo" id="toc-concentración-metropolitana-y-precios-del-suelo" class="nav-link" data-scroll-target="#concentración-metropolitana-y-precios-del-suelo">Concentración metropolitana y precios del suelo</a></li>
+  <li><a href="#tabla-2-matriz-del-ipv-base-2008100-por-macro-zona-y-subzona-rm-20022026" id="toc-tabla-2-matriz-del-ipv-base-2008100-por-macro-zona-y-subzona-rm-20022026" class="nav-link" data-scroll-target="#tabla-2-matriz-del-ipv-base-2008100-por-macro-zona-y-subzona-rm-20022026">Tabla 2: Matriz del IPV (Base 2008=100) por Macro-Zona y Subzona RM (2002–2026)</a></li>
   </ul></li>
   <li><a href="#nota-metodológica" id="toc-nota-metodológica" class="nav-link" data-scroll-target="#nota-metodológica">Nota metodológica</a></li>
   </ul>
@@ -414,10 +445,190 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="la-descomposición-terreno-frente-a-construcción">La descomposición terreno frente a construcción</h3>
 <p>Al descomponer este patrimonio residencial a escala nacional: - El <strong>valor del suelo urbano (<code>VALT</code>)</strong> escaló desde <strong>56,91 billones de pesos</strong> en 2012 hasta <strong>217,66 billones de pesos</strong> en 2024, multiplicándose por <strong>3,8</strong> veces y elevando su participación del <strong>39,1%</strong> al <strong>40,5%</strong> del valor habitacional del país. - El <strong>valor de las estructuras construidas (<code>VALC</code>)</strong> creció de <strong>88,54 billones de pesos</strong> a <strong>319,35 billones de pesos</strong>.</p>
 </section>
+<section id="tabla-1-descomposición-de-knoll-et-al.-2017-y-concentración-rm-2012-vs.-2024" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-1-descomposición-de-knoll-et-al.-2017-y-concentración-rm-2012-vs.-2024">Tabla 1: Descomposición de Knoll et al.&nbsp;(2017) y Concentración RM (2012 vs.&nbsp;2024)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable / Dimensión</th>
+<th style="text-align: center;">2012</th>
+<th style="text-align: center;">2024</th>
+<th style="text-align: center;">Variación (%) / Δ pp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Valor Total Vivienda (<span class="math inline">\(VALV\)</span>)</strong></td>
+<td style="text-align: center;">145,45 billones de pesos</td>
+<td style="text-align: center;">537,00 billones de pesos</td>
+<td style="text-align: center;"><strong>+269,2%</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Riqueza Residencial / PIB</strong></td>
+<td style="text-align: center;">111,9%</td>
+<td style="text-align: center;">172,3%</td>
+<td style="text-align: center;"><strong>+60,4 pp</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Valor del Terreno (<span class="math inline">\(VALT\)</span>)</strong></td>
+<td style="text-align: center;">56,91 billones de pesos</td>
+<td style="text-align: center;">217,66 billones de pesos</td>
+<td style="text-align: center;"><strong>+282,4%</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Participación Suelo (<span class="math inline">\(VALT/VALV\)</span>)</strong></td>
+<td style="text-align: center;">39,1%</td>
+<td style="text-align: center;">40,5%</td>
+<td style="text-align: center;"><strong>+1,4 pp</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Valor Construcción (<span class="math inline">\(VALC\)</span>)</strong></td>
+<td style="text-align: center;">88,54 billones de pesos</td>
+<td style="text-align: center;">319,35 billones de pesos</td>
+<td style="text-align: center;"><strong>+260,7%</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Valor Vivienda en RM</strong></td>
+<td style="text-align: center;">78,48 billones de pesos</td>
+<td style="text-align: center;">287,84 billones de pesos</td>
+<td style="text-align: center;"><strong>+266,8%</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Participación RM en Riqueza Nacional</strong></td>
+<td style="text-align: center;">54,0%</td>
+<td style="text-align: center;">53,6%</td>
+<td style="text-align: center;"><strong>+-0,4 pp</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig5_1_riqueza_pib.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 5.1: Descomposición de Knoll et al.&nbsp;(2017) de la Riqueza Residencial (% del PIB)</figcaption>
+</figure>
+</div>
+</section>
 <section id="concentración-metropolitana-y-precios-del-suelo" class="level3">
 <h3 class="anchored" data-anchor-id="concentración-metropolitana-y-precios-del-suelo">Concentración metropolitana y precios del suelo</h3>
 <p>La riqueza habitacional muestra una marcada concentración espacial: en 2024, la Región Metropolitana concentra <strong>287,84 billones de pesos</strong>, lo que equivale al <strong>53,6%</strong> de toda la riqueza habitacional chilena.</p>
 <p>Esta valorización patrimonial se refleja en el Índice de Precios de Vivienda (<code>IPV</code>). En la Región Metropolitana, el IPV (base 2008=100) transitó desde un nivel inicial de <strong>81,51</strong> en 2002 hasta un pico de <strong>238,85</strong> en 2021 (multiplicándose por <strong>2,9</strong> veces), situándose en <strong>236,93</strong> hacia 2026.</p>
+</section>
+<section id="tabla-2-matriz-del-ipv-base-2008100-por-macro-zona-y-subzona-rm-20022026" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-2-matriz-del-ipv-base-2008100-por-macro-zona-y-subzona-rm-20022026">Tabla 2: Matriz del IPV (Base 2008=100) por Macro-Zona y Subzona RM (2002–2026)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Macro-Zona / Subzona RM</th>
+<th style="text-align: center;">2002</th>
+<th style="text-align: center;">2008 (Base)</th>
+<th style="text-align: center;">2014</th>
+<th style="text-align: center;">2021 (Pico)</th>
+<th style="text-align: center;">2026 (Actual)</th>
+<th style="text-align: center;">Δ Acumulada (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Región Metropolitana (RM General)</strong></td>
+<td style="text-align: center;">81,5</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">145,8</td>
+<td style="text-align: center;"><strong>238,8</strong></td>
+<td style="text-align: center;"><strong>236,9</strong></td>
+<td style="text-align: center;"><strong>+190,7%</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>RM - Zona Oriente (<code>IPVZ41</code>)</em></td>
+<td style="text-align: center;">80,1</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">148,2</td>
+<td style="text-align: center;">245,6</td>
+<td style="text-align: center;">244,1</td>
+<td style="text-align: center;">+204,7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>RM - Zona Poniente (<code>IPVZ43</code>)</em></td>
+<td style="text-align: center;">82,4</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">143,1</td>
+<td style="text-align: center;">234,2</td>
+<td style="text-align: center;">231,8</td>
+<td style="text-align: center;">+181,3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>RM - Zona Sur (<code>IPVZ44</code>)</em></td>
+<td style="text-align: center;">81,9</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">141,5</td>
+<td style="text-align: center;">232,0</td>
+<td style="text-align: center;">229,5</td>
+<td style="text-align: center;">+180,2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>RM - Zona Norte (<code>IPVZ42</code>)</em></td>
+<td style="text-align: center;">83,0</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">142,8</td>
+<td style="text-align: center;">236,1</td>
+<td style="text-align: center;">233,4</td>
+<td style="text-align: center;">+181,2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Macro-Zona Norte</strong></td>
+<td style="text-align: center;">85,1</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">138,5</td>
+<td style="text-align: center;">218,4</td>
+<td style="text-align: center;">216,9</td>
+<td style="text-align: center;">+154,9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Macro-Zona Centro</strong></td>
+<td style="text-align: center;">84,0</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">139,2</td>
+<td style="text-align: center;">222,1</td>
+<td style="text-align: center;">220,5</td>
+<td style="text-align: center;">+162,5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Macro-Zona Sur</strong></td>
+<td style="text-align: center;">84,6</td>
+<td style="text-align: center;">100,0</td>
+<td style="text-align: center;">137,9</td>
+<td style="text-align: center;">220,3</td>
+<td style="text-align: center;">218,7</td>
+<td style="text-align: center;">+158,5%</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig5_2_ipv_subzonas.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 5.2: Trayectoria del Índice de Precios de Vivienda (IPV Base 2008=100) en la RM y Subzonas</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig5_3_densidad_valor.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 5.3: Concentración Territorial y Densidad de Valor por Metro Cuadrado (2024)</figcaption>
+</figure>
+</div>
 <div class="caveat">
 <p><strong>La geografía son macro-zonas, no regiones.</strong> El Banco Central publica el IPV y el valor del stock habitacional para 4 macro-zonas (Norte, Centro, Sur y RM) y cuatro subdivisiones metropolitanas de Santiago. La descomposición terreno/construcción (<code>VALT</code> vs <code>VALC</code>) sólo existe a escala nacional (<code>NAC</code>, <code>CAS</code>, <code>DEP</code>) y no está disponible para macro-zonas individuales.</p>
 </div>
