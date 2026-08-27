@@ -4,7 +4,7 @@
     "href": "reportes/report3-dos-ejes.html",
     "title": "Los dos ejes: renta espacial y renta de recursos",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa renta espacial es difusa y creciente; la renta de recursos es concentrada y se endurece. Son dos geografías distintas dentro del mismo país."
+    "text": "SECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa renta espacial es difusa y creciente; la renta de recursos es concentrada y se endurece. Son dos geografías distintas dentro del mismo país."
   },
   {
     "objectID": "reportes/report3-dos-ejes.html#el-argumento",
@@ -46,7 +46,7 @@
     "href": "reportes/report1-disparidades.html",
     "title": "Disparidades económicas regionales en Chile",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities."
+    "text": "SECTORIAL-REGIONAL · 16 regiones × 13 sectores\nLa geografía productiva de Chile está estructuralmente fijada, mientras que la desigualdad de bienestar apenas oscila con los ciclos de commodities."
   },
   {
     "objectID": "reportes/report1-disparidades.html#introducción",
@@ -130,7 +130,7 @@
     "href": "escalas/sectorial-regional.html",
     "title": "Sectorial-regional",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nRegión por sector, enteramente dentro de Cuentas Nacionales y casi enteramente anual. Es la escala más fina que publica la BDE y la que permite caracterizar la estructura productiva de cada territorio."
+    "text": "SECTORIAL-REGIONAL · 16 regiones × 13 sectores\nRegión por sector, enteramente dentro de Cuentas Nacionales y casi enteramente anual. Es la escala más fina que publica la BDE y la que permite caracterizar la estructura productiva de cada territorio."
   },
   {
     "objectID": "escalas/sectorial-regional.html#el-censo",
@@ -165,7 +165,7 @@
     "href": "escalas/nacional.html",
     "title": "Nacional",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nNACIONAL · una economía\nEs la escala donde la BDE es abundante y larga, y no por casualidad: el mandato del Banco Central es la política monetaria nacional, de modo que mide con detalle aquello que gobierna."
+    "text": "NACIONAL · una economía\nEs la escala donde la BDE es abundante y larga, y no por casualidad: el mandato del Banco Central es la política monetaria nacional, de modo que mide con detalle aquello que gobierna."
   },
   {
     "objectID": "escalas/nacional.html#el-censo",
@@ -200,7 +200,7 @@
     "href": "diseno.html",
     "title": "Diseño",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nA qué responde cada pieza de esta revisión dentro de la formulación del proyecto, y dónde la BDE no alcanza."
+    "text": "A qué responde cada pieza de esta revisión dentro de la formulación del proyecto, y dónde la BDE no alcanza."
   },
   {
     "objectID": "diseno.html#correspondencia",
@@ -228,7 +228,7 @@
     "href": "briefings/briefing_two_axes.html",
     "title": "Nota de familia: Los dos ejes: renta espacial y renta de recursos",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nTier: B (16 regiones) · Frecuencia: anual, con un subconjunto trimestral Fuente: data/raw/regional-spatial-macro-dataset/raw_annual.csv Panel derivado: data/panel_two_axes_annual.csv, data/panel_two_axes_summary.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
+    "text": "SECTORIAL-REGIONAL · 16 regiones × 13 sectores\nTier: B (16 regiones) · Frecuencia: anual, con un subconjunto trimestral Fuente: data/raw/regional-spatial-macro-dataset/raw_annual.csv Panel derivado: data/panel_two_axes_annual.csv, data/panel_two_axes_summary.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
   },
   {
     "objectID": "briefings/briefing_two_axes.html#qué-contiene-la-familia",
@@ -298,7 +298,7 @@
     "href": "briefings/briefing_permits.html",
     "title": "Nota de familia: El ciclo regional de la construcción",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nREGIONAL · 16 regiones\nTier: B (16 regiones) · Frecuencia: mensual Fuente: data/raw/regional-spatial-macro-dataset/raw_monthly.csv Universo: universe_permits.csv (64 series) · Manifiesto: manifest_permits.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
+    "text": "REGIONAL · 16 regiones\nTier: B (16 regiones) · Frecuencia: mensual Fuente: data/raw/regional-spatial-macro-dataset/raw_monthly.csv Universo: universe_permits.csv (64 series) · Manifiesto: manifest_permits.csv\nEsta nota existe para que la próxima persona no tenga que reconstruir lo que ya se aprendió aquí. No resume el reporte: describe los datos."
   },
   {
     "objectID": "briefings/briefing_permits.html#qué-contiene-la-familia",
@@ -347,7 +347,7 @@
     "href": "datos.html",
     "title": "Datos",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nTodas las bases procesadas de la revisión, en CSV y sin registro previo. Cada figura y cada tabla del sitio enlaza la base que la produce; acá están todas juntas."
+    "text": "Todas las bases procesadas de la revisión, en CSV y sin registro previo. Cada figura y cada tabla del sitio enlaza la base que la produce; acá están todas juntas."
   },
   {
     "objectID": "datos.html#cómo-se-regeneran",
@@ -368,7 +368,7 @@
     "href": "escalas/macro-zona.html",
     "title": "Macro-zona",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nMACRO-ZONA · 7 zonas\nLa escala más próxima a la unidad metropolitana que el proyecto mide, y la que la BDE casi no publica. Son siete zonas –Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana–, y la mayor parte vive en Estadísticas Experimentales, no en estadística oficial."
+    "text": "MACRO-ZONA · 7 zonas\nLa escala más próxima a la unidad metropolitana que el proyecto mide, y la que la BDE casi no publica. Son siete zonas –Norte, Centro, Sur y cuatro subzonas de la Región Metropolitana–, y la mayor parte vive en Estadísticas Experimentales, no en estadística oficial."
   },
   {
     "objectID": "escalas/macro-zona.html#el-censo",
@@ -403,7 +403,7 @@
     "href": "escalas/regional.html",
     "title": "Regional",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nREGIONAL · 16 regiones\nDieciséis regiones administrativas, repartidas en varios capítulos del catálogo. Conviene recordar que una región administrativa es una construcción del Estado y no una economía: la Región de Los Lagos no es el área metropolitana de Puerto Montt–Puerto Varas."
+    "text": "REGIONAL · 16 regiones\nDieciséis regiones administrativas, repartidas en varios capítulos del catálogo. Conviene recordar que una región administrativa es una construcción del Estado y no una economía: la Región de Los Lagos no es el área metropolitana de Puerto Montt–Puerto Varas."
   },
   {
     "objectID": "escalas/regional.html#el-censo",
@@ -438,7 +438,7 @@
     "href": "explorar.html",
     "title": "Explorar",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nDos instrumentos autónomos sobre las mismas bases que publican los reportes: si un gráfico y una tabla no coinciden, el CSV manda."
+    "text": "Dos instrumentos autónomos sobre las mismas bases que publican los reportes: si un gráfico y una tabla no coinciden, el CSV manda."
   },
   {
     "objectID": "explorar.html#el-censo-del-catálogo",
@@ -473,7 +473,7 @@
     "href": "metodologia.html",
     "title": "Metodología y límites",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nEsta página existe para que ningún lector infiera de este sitio algo que los datos no sostienen. Los límites de abajo no son notas al pie: son restricciones que cambian qué preguntas se pueden responder."
+    "text": "Esta página existe para que ningún lector infiera de este sitio algo que los datos no sostienen. Los límites de abajo no son notas al pie: son restricciones que cambian qué preguntas se pueden responder."
   },
   {
     "objectID": "metodologia.html#lo-que-no-existe-en-el-catálogo",
@@ -529,7 +529,7 @@
     "href": "reportes/report2-cobertura.html",
     "title": "Reporte de cobertura de datos regionales",
     "section": "",
-    "text": "Diego Polanco\n\nInvestigación\n\nPresentaciones\n\nEnseñanza\n\nBlog\n\nCV\nSECTORIAL-REGIONAL · 16 regiones × 13 sectores\nQué publica efectivamente el Banco Central a nivel regional, por dominio temático, frecuencia y región.\nEste reporte presenta una auditoría exhaustiva y un análisis de cobertura de todas las series de datos a nivel regional (16 regiones administrativas, \\(r = 1 \\dots 16\\)) y sectorial (\\(s = 1 \\dots 12\\)) disponibles a través de la API del Banco Central de Chile (BCCh).\nEsta versión expandida pone especial énfasis en el Desarrollo Sectorial Integrado, analizando conjuntamente las variables del Sistema Financiero Regional y los indicadores de Uso de Suelo y Desarrollo Territorial."
+    "text": "SECTORIAL-REGIONAL · 16 regiones × 13 sectores\nQué publica efectivamente el Banco Central a nivel regional, por dominio temático, frecuencia y región.\nEste reporte presenta una auditoría exhaustiva y un análisis de cobertura de todas las series de datos a nivel regional (16 regiones administrativas, \\(r = 1 \\dots 16\\)) y sectorial (\\(s = 1 \\dots 12\\)) disponibles a través de la API del Banco Central de Chile (BCCh).\nEsta versión expandida pone especial énfasis en el Desarrollo Sectorial Integrado, analizando conjuntamente las variables del Sistema Financiero Regional y los indicadores de Uso de Suelo y Desarrollo Territorial."
   },
   {
     "objectID": "reportes/report2-cobertura.html#resumen-ejecutivo-de-la-cobertura",
