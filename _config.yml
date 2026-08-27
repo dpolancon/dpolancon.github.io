@@ -165,6 +165,7 @@ include:
   - _pages
   - files
   - bcch
+  - bcch/assets
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
