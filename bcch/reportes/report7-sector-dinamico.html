@@ -79,6 +79,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <meta name="color-scheme" content="light dark">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -369,9 +398,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#el-argumento" id="toc-el-argumento" class="nav-link active" data-scroll-target="#el-argumento">El argumento</a></li>
   <li><a href="#lo-que-muestran-los-datos" id="toc-lo-que-muestran-los-datos" class="nav-link" data-scroll-target="#lo-que-muestran-los-datos">Lo que muestran los datos</a>
   <ul class="collapse">
-  <li><a href="#balances-comerciales-polarizados" id="toc-balances-comerciales-polarizados" class="nav-link" data-scroll-target="#balances-comerciales-polarizados">Balances comerciales polarizados</a></li>
+  <li><a href="#tabla-1-matriz-de-apertura-comercial-y-autocontención-por-región-2025" id="toc-tabla-1-matriz-de-apertura-comercial-y-autocontención-por-región-2025" class="nav-link" data-scroll-target="#tabla-1-matriz-de-apertura-comercial-y-autocontención-por-región-2025">Tabla 1: Matriz de Apertura Comercial y Autocontención por Región (2025)</a></li>
+  <li><a href="#tabla-2-matriz-de-flujos-comerciales-interregionales-2025" id="toc-tabla-2-matriz-de-flujos-comerciales-interregionales-2025" class="nav-link" data-scroll-target="#tabla-2-matriz-de-flujos-comerciales-interregionales-2025">Tabla 2: Matriz de Flujos Comerciales Interregionales (2025)</a></li>
   </ul></li>
-  <li><a href="#la-brecha-temporal-la-serie-regional-más-corta" id="toc-la-brecha-temporal-la-serie-regional-más-corta" class="nav-link" data-scroll-target="#la-brecha-temporal-la-serie-regional-más-corta">La brecha temporal: la serie regional más corta</a></li>
   <li><a href="#nota-metodológica" id="toc-nota-metodológica" class="nav-link" data-scroll-target="#nota-metodológica">Nota metodológica</a></li>
   </ul>
 </nav>
@@ -400,35 +429,315 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><span class="escala esc-reg">REGIONAL · 16 regiones</span></p>
-<p><em>Las compraventas interregionales revelan una estructura polarizada: la Región Metropolitana autocontiene tres cuartas partes de su comercio, mientras las regiones productivas dependen de la demanda externa. Sin embargo, la brecha temporal de los datos limita la observación al ciclo posterior a las tasas bajas.</em></p>
+<p><em>Las compraventas interregionales revelan una estructura polarizada: la Región Metropolitana autocontiene el <strong>76,4%</strong> de sus ventas, mientras las economías productivas regionales dependen de la demanda externa.</em></p>
 <hr>
 <section id="el-argumento" class="level2">
 <h2 class="anchored" data-anchor-id="el-argumento">El argumento</h2>
-<p>El marco analítico del proyecto (Reportes 3 y 4) identificó una divergencia clave: la renta espacial se expande mientras la cantidad física construida se contrae, señalando una valorización del stock de activos independiente de la demanda física de suelo. La pregunta subsiguiente para el Objetivo 1 es qué ocurre con el sector productivo transable: si la valorización de activos inmobiliarios convive con el dinamismo o con el estancamiento de la economía real.</p>
-<p>Para evaluar esta articulación, la BDE no provee matrices completas de origen-destino, pero sí publica los márgenes de compraventas regionales (<code>CVRV</code> y <code>CVRC</code>) y sus descomposiciones interregionales (<code>ITE</code>) e intrarregionales (<code>ITA</code>). Estos márgenes permiten medir la fuerza de apertura, el grado de autocontención y los saldos netos comerciales de cada economía regional.</p>
+<p>El análisis de compraventas interregionales evalúa si la valorización de activos inmobiliarios convive con la articulación o el estancamiento del sector productivo transable. Las series del Banco Central desagregan los márgenes de ventas interregionales (<code>ITE</code>) e intrarregionales (<code>ITA</code>), permitiendo evaluar la apertura comercial externa y la autocontención interna de cada región.</p>
+<p>Entre 2018 y 2025, las ventas interregionales nominales pasaron de <strong>79,54 billones de pesos</strong> a <strong>154,23 billones de pesos</strong>, mientras el volumen de facturas emitidas pasó de <strong>106,9 millones</strong> a <strong>139,2 millones</strong>.</p>
 </section>
 <section id="lo-que-muestran-los-datos" class="level2">
 <h2 class="anchored" data-anchor-id="lo-que-muestran-los-datos">Lo que muestran los datos</h2>
-<p>En 2025, la estructura del comercio interregional exhibe una asimetría estructural. La Región Metropolitana opera como un nodo fuertemente autocontenido: retiene el <strong>76,4%</strong> de sus ventas dentro de su propio territorio (autocontención), exhibiendo una tasa de apertura interregional de apenas <strong>23,6%</strong>.</p>
-<p>En el extremo opuesto, las economías productivas del norte y sur dependen primordialmente de los mercados del resto del país. La tasa de apertura interregional alcanza el <strong>70,0%</strong> en Valparaíso, el <strong>69,5%</strong> en Antofagasta y el <strong>64,1%</strong> en Los Ríos. Fuera de la capital, únicamente Los Lagos (<strong>64,2%</strong>) y Aysén (<strong>54,9%</strong>) muestran una fracción sustantiva de comercio intrarregional.</p>
-<section id="balances-comerciales-polarizados" class="level3">
-<h3 class="anchored" data-anchor-id="balances-comerciales-polarizados">Balances comerciales polarizados</h3>
-<p>De las 16 regiones, sólo cuatro logran un balance comercial neto positivo frente al resto de Chile en 2025: Valparaíso (<strong>20,8%</strong> del intercambio bruto), Biobío (<strong>6,2%</strong>), la Región Metropolitana (<strong>5,0%</strong>) y Antofagasta (<strong>1,2%</strong>).</p>
-<p>Las doce regiones restantes transfieren recursos netos como compradoras brutas, registrando brechas deficitarias de <strong>36,8%</strong> en Tarapacá, <strong>35,8%</strong> en Arica y Parinacota, y <strong>30,3%</strong> en Los Lagos.</p>
-<p>Entre 2018 y 2025, las ventas interregionales totales nominales se expandieron de <strong>79,54 billones de pesos</strong> a <strong>154,23 billones de pesos</strong>, mientras el volumen de facturas emitidas pasó de <strong>106,9 millones</strong> a <strong>139,2 millones</strong>.</p>
+<p>La estructura del comercio interregional exhibe una asimetría marcada. La Región Metropolitana opera como un nodo fuertemente autocontenido: retiene el <strong>76,4%</strong> de sus ventas dentro de su territorio, registrando una tasa de apertura interregional de solo <strong>23,6%</strong>.</p>
+<p>En contraste, las regiones productivas dependen de la demanda externa: la tasa de apertura alcanza el <strong>70,0%</strong> en Valparaíso, el <strong>69,5%</strong> en Antofagasta y el <strong>64,1%</strong> en Los Ríos. Fuera de Santiago, únicamente Los Lagos (<strong>64,2%</strong>) y Aysén (<strong>54,9%</strong>) exhiben una fracción relevante de autocontención interna.</p>
+<section id="tabla-1-matriz-de-apertura-comercial-y-autocontención-por-región-2025" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-1-matriz-de-apertura-comercial-y-autocontención-por-región-2025">Tabla 1: Matriz de Apertura Comercial y Autocontención por Región (2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Región</th>
+<th style="text-align: center;">Tasa de Apertura (%)</th>
+<th style="text-align: center;">Tasa de Autocontención (%)</th>
+<th style="text-align: center;">Balance Neto (% Intercambio)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Antofagasta</strong></td>
+<td style="text-align: center;">69,5%</td>
+<td style="text-align: center;">30,5%</td>
+<td style="text-align: center;">1,2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Arica y Parinacota</strong></td>
+<td style="text-align: center;">49,2%</td>
+<td style="text-align: center;">50,8%</td>
+<td style="text-align: center;">-35,8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Atacama</strong></td>
+<td style="text-align: center;">56,5%</td>
+<td style="text-align: center;">43,5%</td>
+<td style="text-align: center;">-12,3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Aysén</strong></td>
+<td style="text-align: center;">45,1%</td>
+<td style="text-align: center;">54,9%</td>
+<td style="text-align: center;">-23,4%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Biobío</strong></td>
+<td style="text-align: center;">58,4%</td>
+<td style="text-align: center;">41,6%</td>
+<td style="text-align: center;">6,2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Coquimbo</strong></td>
+<td style="text-align: center;">53,3%</td>
+<td style="text-align: center;">46,7%</td>
+<td style="text-align: center;">-17,2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>La Araucanía</strong></td>
+<td style="text-align: center;">49,1%</td>
+<td style="text-align: center;">50,9%</td>
+<td style="text-align: center;">-6,6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Los Lagos</strong></td>
+<td style="text-align: center;">35,8%</td>
+<td style="text-align: center;">64,2%</td>
+<td style="text-align: center;">-30,3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Los Ríos</strong></td>
+<td style="text-align: center;">64,1%</td>
+<td style="text-align: center;">35,9%</td>
+<td style="text-align: center;">-3,6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Magallanes</strong></td>
+<td style="text-align: center;">50,5%</td>
+<td style="text-align: center;">49,5%</td>
+<td style="text-align: center;">-14,7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Maule</strong></td>
+<td style="text-align: center;">50,4%</td>
+<td style="text-align: center;">49,6%</td>
+<td style="text-align: center;">-5,4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Metropolitana de Santiago</strong></td>
+<td style="text-align: center;">23,6%</td>
+<td style="text-align: center;">76,4%</td>
+<td style="text-align: center;">5,0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>O’Higgins</strong></td>
+<td style="text-align: center;">53,9%</td>
+<td style="text-align: center;">46,1%</td>
+<td style="text-align: center;">-15,9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Tarapacá</strong></td>
+<td style="text-align: center;">51,7%</td>
+<td style="text-align: center;">48,3%</td>
+<td style="text-align: center;">-36,8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Valparaíso</strong></td>
+<td style="text-align: center;">70,0%</td>
+<td style="text-align: center;">30,0%</td>
+<td style="text-align: center;">20,8%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ñuble</strong></td>
+<td style="text-align: center;">54,5%</td>
+<td style="text-align: center;">45,5%</td>
+<td style="text-align: center;">-12,5%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabla-2-matriz-de-flujos-comerciales-interregionales-2025" class="level3">
+<h3 class="anchored" data-anchor-id="tabla-2-matriz-de-flujos-comerciales-interregionales-2025">Tabla 2: Matriz de Flujos Comerciales Interregionales (2025)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Región</th>
+<th style="text-align: center;">Ventas a Otras Regiones</th>
+<th style="text-align: center;">Compras a Otras Regiones</th>
+<th style="text-align: center;">Saldo Neto Interregional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Antofagasta</strong></td>
+<td style="text-align: center;">9,82 billones de pesos</td>
+<td style="text-align: center;">9,59 billones de pesos</td>
+<td style="text-align: center;">232,45 miles de millones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Arica y Parinacota</strong></td>
+<td style="text-align: center;">612,34 miles de millones de pesos</td>
+<td style="text-align: center;">1,29 billones de pesos</td>
+<td style="text-align: center;">-682,54 miles de millones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Atacama</strong></td>
+<td style="text-align: center;">2,17 billones de pesos</td>
+<td style="text-align: center;">2,77 billones de pesos</td>
+<td style="text-align: center;">-607,25 miles de millones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Aysén</strong></td>
+<td style="text-align: center;">397,57 miles de millones de pesos</td>
+<td style="text-align: center;">640,33 miles de millones de pesos</td>
+<td style="text-align: center;">-242,76 miles de millones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Biobío</strong></td>
+<td style="text-align: center;">11,72 billones de pesos</td>
+<td style="text-align: center;">10,35 billones de pesos</td>
+<td style="text-align: center;">1,37 billones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Coquimbo</strong></td>
+<td style="text-align: center;">3,57 billones de pesos</td>
+<td style="text-align: center;">5,05 billones de pesos</td>
+<td style="text-align: center;">-1,48 billones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>La Araucanía</strong></td>
+<td style="text-align: center;">4,37 billones de pesos</td>
+<td style="text-align: center;">4,99 billones de pesos</td>
+<td style="text-align: center;">-619,95 miles de millones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Los Lagos</strong></td>
+<td style="text-align: center;">5,62 billones de pesos</td>
+<td style="text-align: center;">10,49 billones de pesos</td>
+<td style="text-align: center;">-4,87 billones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Los Ríos</strong></td>
+<td style="text-align: center;">2,77 billones de pesos</td>
+<td style="text-align: center;">2,97 billones de pesos</td>
+<td style="text-align: center;">-206,71 miles de millones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Magallanes</strong></td>
+<td style="text-align: center;">1,27 billones de pesos</td>
+<td style="text-align: center;">1,71 billones de pesos</td>
+<td style="text-align: center;">-439,73 miles de millones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Maule</strong></td>
+<td style="text-align: center;">6,67 billones de pesos</td>
+<td style="text-align: center;">7,44 billones de pesos</td>
+<td style="text-align: center;">-765,36 miles de millones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Metropolitana de Santiago</strong></td>
+<td style="text-align: center;">73,93 billones de pesos</td>
+<td style="text-align: center;">66,89 billones de pesos</td>
+<td style="text-align: center;">7,04 billones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>O’Higgins</strong></td>
+<td style="text-align: center;">7,10 billones de pesos</td>
+<td style="text-align: center;">9,78 billones de pesos</td>
+<td style="text-align: center;">-2,68 billones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Tarapacá</strong></td>
+<td style="text-align: center;">1,97 billones de pesos</td>
+<td style="text-align: center;">4,27 billones de pesos</td>
+<td style="text-align: center;">-2,29 billones de pesos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Valparaíso</strong></td>
+<td style="text-align: center;">20,03 billones de pesos</td>
+<td style="text-align: center;">13,14 billones de pesos</td>
+<td style="text-align: center;">6,89 billones de pesos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ñuble</strong></td>
+<td style="text-align: center;">2,22 billones de pesos</td>
+<td style="text-align: center;">2,85 billones de pesos</td>
+<td style="text-align: center;">-635,97 miles de millones de pesos</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig7_1_autocontencion_vs_apertura.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 7.1: Grado de Apertura Comercial Interregional vs.&nbsp;Autocontención por Región (2025)</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición de Apertura y Autocontención (Figura 7.1)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La tasa de apertura interregional (<span class="math inline">\(AP_{r,t} = V_{inter,r,t} / V_{total,r,t}\)</span>) aísla la fracción de ventas regionales orientadas al resto del país, mientras la autocontención (<span class="math inline">\(AC_{r,t} = V_{intra,r,t} / V_{total,r,t}\)</span>) mide la densidad del mercado interno regional. La alta autocontención de la RM (<strong>76,4%</strong>) refleja su rol como centro de consumo final.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig7_2_balance_comercial_neto.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 7.2: Balance Comercial Neto Interregional por Región (2025)</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición del Balance Neto Interregional (Figura 7.2)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>De las 16 regiones, solo cuatro registran un balance neto positivo frente al resto del país: Valparaíso (<strong>20,8%</strong> del intercambio bruto), Biobío (<strong>6,2%</strong>), la Región Metropolitana (<strong>5,0%</strong>) y Antofagasta (<strong>1,2%</strong>). Las doce regiones restantes son deficitarias netas, destacando brechas de <strong>36,8%</strong> en Tarapacá, <strong>35,8%</strong> en Arica y Parinacota, y <strong>30,3%</strong> en Los Lagos.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/fig7_3_volumen_comercio.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 7.3: Volumen Total de Comercio por Región y Destino (2025)</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Medición de la Masa de Comercio Interregional (Figura 7.3)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La masa comercial combina el volumen de ventas intrarregionales e interregionales. Muestra que la Región Metropolitana absorbe el mayor volumen absoluto de facturas del país, actuando como el principal mercado de destino para la producción regional.</p>
+</div>
+</div>
 <div class="caveat">
-<p><strong>El catálogo no contiene series de productividad.</strong> La búsqueda de «productividad» o PTF en las 25.369 series del Banco Central arroja cero resultados. El dinamismo o estancamiento del sector productivo no se puede inferir como una caída observada de productividad total de factores: debe argumentarse rigurosamente a partir de participaciones de valor, flujos comerciales y márgenes de compraventa.</p>
+<p><strong>El catálogo no contiene series de productividad.</strong> La búsqueda de «productividad» en las series del Banco Central arroja cero resultados. El dinamismo o estancamiento del sector productivo debe argumentarse a partir de participaciones de valor y flujos comerciales.</p>
 </div>
 </section>
 </section>
-<section id="la-brecha-temporal-la-serie-regional-más-corta" class="level2">
-<h2 class="anchored" data-anchor-id="la-brecha-temporal-la-serie-regional-más-corta">La brecha temporal: la serie regional más corta</h2>
-<p>Las series de compraventas regionales inician en <strong>2018</strong> (2018), lo que las convierte en la capa regional más corta que el programa ha ingerido (8 años completos frente a 2008 en morosidad financiera y 2013 en PIB y exportaciones regionales).</p>
-<p>Esta restricción temporal significa que la ventana común 2018–2025 <strong>no cubre el período de tasas de interés mínimas históricas (2010–2017)</strong> donde ocurrió la mayor aceleración del precio del suelo. El año 2026 se excluye por incompleto para evitar registrar caídas artificiales en flujos acumulados.</p>
-</section>
 <section id="nota-metodológica" class="level2">
 <h2 class="anchored" data-anchor-id="nota-metodológica">Nota metodológica</h2>
-<p>Las compraventas usan codificación posicional numérica de 16 regiones (<code>F035.CVRC.FLU.Z.CLP.Z.Z.Z.Z.RR.0.M</code>). Los montos están expresados en pesos nominales y nunca deben sumarse entre compras y ventas, pues cada transacción aparece registrada en ambos lados y su adición duplicaría el comercio nacional. La identidad <code>total = inter + intra</code> se cumple de manera exacta en los datos.</p>
+<p>Las compraventas inician en <strong>2018</strong> (2018), constituyendo la capa regional más corta del sistema. Los montos están en pesos nominales y la identidad <code>total = inter + intra</code> se cumple de forma exacta.</p>
 <div class="fuente">
 <p><strong>Fuente:</strong> elaboración propia (2026) en base a la Base de Datos Estadísticos del Banco Central de Chile. Datos: <a href="../datos/panel_interregional_trade_annual.csv"><code>panel_interregional_trade_annual.csv</code></a>.</p>
 </div>
